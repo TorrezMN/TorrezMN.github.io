@@ -1,8 +1,7 @@
 site_name: Torrez MN 
 theme:
-  #name: dracula
+  name: dracula
   #name: simple-blog
-  name: readthedocs
 
 nav:
   - Home: index.md

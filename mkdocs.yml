@@ -1,0 +1,32 @@
+site_name: Torrez MN 
+theme:
+  # name: dracula
+  #name:  simple-blog
+  name: bootstrap386 
+
+nav:
+  - Home: index.md
+  - Data Science:
+    - Introduction: data_science/introduction.md
+    - Machine Learning:
+      - Algorithms: data_science/machine_learning/algorithms.md
+      - Model Training: data_science/machine_learning/training.md
+    - Data Analysis: data_science/data_analysis.md
+  - Computer Graphics:
+    - Basics: computer_graphics/basics.md
+    - Rendering Techniques:
+      - Ray Tracing: computer_graphics/rendering/ray_tracing.md
+      - Real-time Rendering: computer_graphics/rendering/realtime.md
+    - Animations: computer_graphics/animations.md
+  - General:
+    - About Me: about_me.md
+    - Contact: contact.md
+  - Data Structures:
+    - Arrays: data_structures/arrays.md
+    - Linked Lists: data_structures/linked_lists.md
+    - Trees: data_structures/trees.md
+  - Challenges:
+    - Coding Puzzles: challenges/coding_puzzles.md
+    - Project Ideas: challenges/project_ideas.md
+    - Hackathons: challenges/hackathons.md
+

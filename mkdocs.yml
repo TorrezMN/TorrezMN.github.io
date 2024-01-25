@@ -1,8 +1,8 @@
 site_name: Torrez MN 
 theme:
-  # name: dracula
-  #name:  simple-blog
-  name: bootstrap386 
+  #name: dracula
+  #name: simple-blog
+  name: readthedocs
 
 nav:
   - Home: index.md
@@ -30,3 +30,5 @@ nav:
     - Project Ideas: challenges/project_ideas.md
     - Hackathons: challenges/hackathons.md
 
+
+copyright: Copyright &copy; 2016 - 2020 Martin Donath

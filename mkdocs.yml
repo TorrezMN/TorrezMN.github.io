@@ -17,6 +17,7 @@ nav:
       - Ray Tracing: computer_graphics/rendering/ray_tracing.md
       - Real-time Rendering: computer_graphics/rendering/realtime.md
     - Animations: computer_graphics/animations.md
+    - Games: computer_graphics/games.md
   - General:
     - About Me: about_me.md
     - Contact: contact.md

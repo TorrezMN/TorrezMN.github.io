@@ -11,6 +11,7 @@ nav:
       - Algorithms: data_science/machine_learning/algorithms.md
       - Model Training: data_science/machine_learning/training.md
     - Data Analysis: data_science/data_analysis.md
+    - Projects: data_science/projects.md
   - Computer Graphics:
     - Basics: computer_graphics/basics.md
     - Rendering Techniques:
@@ -18,6 +19,8 @@ nav:
       - Real-time Rendering: computer_graphics/rendering/realtime.md
     - Animations: computer_graphics/animations.md
     - Games: computer_graphics/games.md
+    - Games Design:
+      - Bricks: computer_graphics/games/bricks.md
   - General:
     - About Me: about_me.md
     - Contact: contact.md

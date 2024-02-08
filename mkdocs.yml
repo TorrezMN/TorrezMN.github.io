@@ -13,22 +13,21 @@ nav:
     - Data Analysis: data_science/data_analysis.md
     - Projects: data_science/projects.md
   - Computer Graphics:
-    - Basics: computer_graphics/basics.md
-    - Rendering Techniques:
-      - Ray Tracing: computer_graphics/rendering/ray_tracing.md
-      - Real-time Rendering: computer_graphics/rendering/realtime.md
-    - Animations: computer_graphics/animations.md
-    - Games: computer_graphics/games.md
-    - Games Design:
-      - Bricks: computer_graphics/games/bricks.md
+    - Games:
+      - Bricks Game: computer_graphics/games/bricks.md
+      - Snake: computer_graphics/games/snake.md
+      - Space Ship: computer_graphics/games/space_ship.md
   - General:
     - About Me: about_me.md
     - Contact: contact.md
+  - Frameworks:
+    - Django: django/django_index.md
   - Data Structures:
     - Arrays: data_structures/arrays.md
     - Linked Lists: data_structures/linked_lists.md
     - Trees: data_structures/trees.md
   - Challenges:
+    - Facke Server: challenges/facke_server.md
     - Coding Puzzles: challenges/coding_puzzles.md
     - Project Ideas: challenges/project_ideas.md
     - Hackathons: challenges/hackathons.md

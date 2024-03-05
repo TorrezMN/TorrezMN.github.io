@@ -5,6 +5,8 @@ theme:
 
 nav:
   - Home: index.md
+  - About Me: about_me.md
+  - Contact: contact.md
   - Data Science:
     - Introduction: data_science/introduction.md
     - Machine Learning:
@@ -17,9 +19,6 @@ nav:
       - Bricks Game: computer_graphics/games/bricks.md
       - Snake: computer_graphics/games/snake.md
       - Space Ship: computer_graphics/games/space_ship.md
-  - General:
-    - About Me: about_me.md
-    - Contact: contact.md
   - Frameworks:
     - Django: django/django_index.md
   - Data Structures:

@@ -12,3 +12,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## Data Science
+
+### [Encuesta devs paraguay 2024](data_science/projects/Encuesta_IT_Py_2024/demografia/intro.md)
+
+

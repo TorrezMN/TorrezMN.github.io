@@ -7,29 +7,33 @@ nav:
   - Home: index.md
   - About Me: about_me.md
   - Contact: contact.md
+  - miscellaneous:
+    - How to blog: gral/how_to_blog.md
   - Data Science:
-    - Introduction: data_science/introduction.md
-    - Machine Learning:
-      - Algorithms: data_science/machine_learning/algorithms.md
-      - Model Training: data_science/machine_learning/training.md
-    - Data Analysis: data_science/data_analysis.md
-    - Projects: data_science/projects.md
-  - Computer Graphics:
-    - Games:
-      - Bricks Game: computer_graphics/games/bricks.md
-      - Snake: computer_graphics/games/snake.md
-      - Space Ship: computer_graphics/games/space_ship.md
-  - Frameworks:
-    - Django: django/django_index.md
-  - Data Structures:
-    - Arrays: data_structures/arrays.md
-    - Linked Lists: data_structures/linked_lists.md
-    - Trees: data_structures/trees.md
+    - Encuesta devs Paraguay 2024: data_science/projects/Encuesta_IT_Py_2024/intro.md
+
+      #  - Introduction: data_science/introduction.md
+      #  - Machine Learning:
+      #    - Algorithms: data_science/machine_learning/algorithms.md
+      #    - Model Training: data_science/machine_learning/training.md
+      #  - Data Analysis: data_science/data_analysis.md
+      #  - Projects: data_science/projects.md
+      #- Computer Graphics:
+      #  - Games:
+      #    - Bricks Game: computer_graphics/games/bricks.md
+      #    - Snake: computer_graphics/games/snake.md
+      #    - Space Ship: computer_graphics/games/space_ship.md
+      #- Frameworks:
+      #  - Django: django/django_index.md
+      #- Data Structures:
+      #  - Arrays: data_structures/arrays.md
+      #  - Linked Lists: data_structures/linked_lists.md
+      #  - Trees: data_structures/trees.md
   - Challenges:
     - Facke Server: challenges/facke_server.md
-    - Coding Puzzles: challenges/coding_puzzles.md
-    - Project Ideas: challenges/project_ideas.md
-    - Hackathons: challenges/hackathons.md
+      #  - Coding Puzzles: challenges/coding_puzzles.md
+      #  - Project Ideas: challenges/project_ideas.md
+      #  - Hackathons: challenges/hackathons.md
 
 
-copyright: Copyright &copy; 2016 - 2020 Martin Donath
+copyright: Copyright &copy; 2016 - 2020 Milton Torrez

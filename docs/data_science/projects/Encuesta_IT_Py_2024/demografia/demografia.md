@@ -1,81 +1,16 @@
-```python
-#######################
-# CONFIG ZONE
-#######################
-
-# Importing Libs
-import pandas as pd
-import seaborn as sns
-
-import matplotlib.pyplot as plt
-
-from collections import Counter
-import numpy as np
-
-# My Tools
-import milanesas.eda_helper as eh
-from tools.helpers import (
-    get_column_uniques,
-    get_column_uniques_count,
-    plot_grouped_by_category_barh_charts,
-    barh_chart_unique_values,
-    print_unique_normalized_values_by_group,
-    make_vertical_grouped_chart,
-    make_horizontal_grouped_chart,
-    barh_chart_count,
-)
 
 
-%matplotlib inline
-
-# Reseting figure size params.
-plt.rcParams["figure.figsize"] = [12, 7]
-# Setting seaborn as default plotting lib.
-sns.set()
-sns.set_palette("pastel")
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-df = pd.read_csv("../data/data_fixed.csv")
-```
-
-
-```python
-df = df.drop("Unnamed: 0", axis=1)
-df.columns
-```
-
-
-
-
-    Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
-           'code_for_job', 'IT_exp', 'prof_prog_exp', 'first_code',
-           'assigned_seniority', 'self_assessed_seniority', 'formal_edu', 'majors',
-           'formal_edu_importance', 'gender', 'age', 'monthly_salary',
-           'pro_languages', 'web_frameworks', 'other_tools', 'databases',
-           'platforms', 'fav_language', 'least_fav_language', 'fav_framework',
-           'least_fav_framework', 'tools', 'use_AI_tools', 'AI_replace_dev',
-           'layoffs_23_24', 'working_now', 'unemployed_duration', 'same_role',
-           'current_vs_prev_salary'],
-          dtype='object')
-
-
-
-# **Demographics**
    - Género
    - Edad actual
 
+
+
+```highlight
+**Highlighted Section**
+
+This is a special highlighted section in your Markdown.
+You can add more lines here, and they will all be highlighted.
+```
 
 ### Gender
 
@@ -89,45 +24,21 @@ barh_chart_count(df, "gender", "Gender count by category.", "Count")
 ![png](output_7_0.png)
     
 
-
+```highlight
 [op] en materia de genro se encontraron 3 categorias:
 
-+ *male* 
++ male 
 
-+ *female*
++ female
 
-+ *prefer not to say*
++ prefer not to say
 
-Menos de 50% de los encuestados no pertenece al 'sexo masculino'. Las 2 minorias existentes no logran sumar el 25% de las repuestas totales.
+Menos de 50% de los encuestados no pertenece al 'sexo masculino'. Las 2
+minorias existentes no logran sumar el 25% de las repuestas totales.
+```
+
 
 ### Current age.
-
-
-```python
-df.columns
-```
-
-
-
-
-    Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
-           'code_for_job', 'IT_exp', 'prof_prog_exp', 'first_code',
-           'assigned_seniority', 'self_assessed_seniority', 'formal_edu', 'majors',
-           'formal_edu_importance', 'gender', 'age', 'monthly_salary',
-           'pro_languages', 'web_frameworks', 'other_tools', 'databases',
-           'platforms', 'fav_language', 'least_fav_language', 'fav_framework',
-           'least_fav_framework', 'tools', 'use_AI_tools', 'AI_replace_dev',
-           'layoffs_23_24', 'working_now', 'unemployed_duration', 'same_role',
-           'current_vs_prev_salary'],
-          dtype='object')
-
-
-
-
-```python
-barh_chart_count(df, "age", "Current age.\n (At the time of the survey.)", "age")
-```
-
 
     
 ![png](output_11_0.png)
@@ -229,11 +140,11 @@ for i in gender_groups.groups.keys():
     
     
     
-    
     Grupo ->  prefer_not_to_say
-    age
+    age           count
     25_29 years    1
     45_49 years    1
+
     Name: count, dtype: int64
     
     
@@ -241,24 +152,10 @@ for i in gender_groups.groups.keys():
     
     
     
+# Prefer Not To Say
 
+| age          | count |
+|--------------|-------|
+| 25_29 years  | 1     |
+| 45_49 years  | 1     |
 
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```

@@ -1,0 +1,1179 @@
+<!doctype html>
+<html>
+    <head>
+                <title>Educacion - Torrez MN</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../../../../../assets/img/favicon.ico">
+            
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                        <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../../../../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../../../../assets/css/main.min.css">
+
+            
+                
+            
+     <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Torrez MN</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../../../..">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../../../../about_me/">[About Me]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../../../../contact/">[Contact]</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[miscellaneous]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../../../../gral/how_to_blog/" class="dropdown-item text-decoration-none ">How to blog</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Data Science]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../intro/" class="dropdown-item text-decoration-none ">Encuesta devs Paraguay 2024</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="
+                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Challenges]</a>
+                            <ul class="dropdown-menu">
+                                    <!-- block dropdown-menu -->
+    <li>
+        <a href="../../../../../challenges/facke_server/" class="dropdown-item text-decoration-none ">Facke Server</a>
+    </li>
+<!-- endblock -->
+                            </ul>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main>
+                    <!-- block content -->
+<section class="container post">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Educacion</h1>
+            
+        </header>
+        <p><pre><code class="language-python">#######################
+# CONFIG ZONE
+#######################
+
+# Importing Libs
+import pandas as pd
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+from collections import Counter
+import numpy as np
+
+# My Tools
+import milanesas.eda_helper as eh
+from tools.helpers import (
+    get_column_uniques,
+    get_column_uniques_count,
+    plot_grouped_by_category_barh_charts,
+    barh_chart_unique_values,
+    print_unique_normalized_values_by_group,
+    make_horizontal_grouped_chart,
+    make_vertical_grouped_chart,
+    grouped_grid_pie_chart,
+    grouped_grid_barh_chart,
+    create_grouped_dataframe_list,
+)
+
+
+%matplotlib inline
+
+# Reseting figure size params.
+plt.rcParams[&quot;figure.figsize&quot;] = [12, 7]
+# Setting seaborn as default plotting lib.
+sns.set()
+sns.set_palette(&quot;pastel&quot;)
+</code></pre>
+<pre><code class="language-python">df = pd.read_csv(&quot;../data/data_fixed.csv&quot;)
+</code></pre>
+<pre><code class="language-python">df = df.drop(&quot;Unnamed: 0&quot;, axis=1)
+df.columns
+</code></pre>
+<pre><code>Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
+       'code_for_job', 'IT_exp', 'prof_prog_exp', 'first_code',
+       'assigned_seniority', 'self_assessed_seniority', 'formal_edu', 'majors',
+       'formal_edu_importance', 'gender', 'age', 'monthly_salary',
+       'pro_languages', 'web_frameworks', 'other_tools', 'databases',
+       'platforms', 'fav_language', 'least_fav_language', 'fav_framework',
+       'least_fav_framework', 'tools', 'use_AI_tools', 'AI_replace_dev',
+       'layoffs_23_24', 'working_now', 'unemployed_duration', 'same_role',
+       'current_vs_prev_salary'],
+      dtype='object')
+</code></pre>
+<h1 id="education">Education</h1>
+<ul>
+<li>In this section we explore the "educational" aspect of the data with special enphasis in the inpact on the IT world of the paraguayan profesionals.</li>
+</ul>
+<pre><code class="language-python">get_column_uniques(df, &quot;majors&quot;)
+</code></pre>
+<pre><code>['systems_analysis',
+ 'programming',
+ 'computer_engineering',
+ 'electronic_engineering',
+ 'graphic_design',
+ 'mathematics',
+ 'none',
+ 'other',
+ 'other ingenerías',
+ 'civil_engineering',
+ 'electrical_engineering']
+</code></pre>
+<ul>
+<li>Se puede ver que existe un numero muuy reducido de accrearas representadas.</li>
+</ul>
+<pre><code class="language-python">type(df[&quot;majors&quot;].value_counts())
+</code></pre>
+<pre><code>pandas.core.series.Series
+</code></pre>
+<pre><code class="language-python"># Get the unique counts
+value_counts = get_column_uniques_count(df, &quot;majors&quot;)
+
+# Plot the horizontal bar chart
+ax = value_counts.plot(kind=&quot;barh&quot;, title=&quot;Majors count.&quot;)
+
+# Annotate the bars with the counts
+for index, value in enumerate(value_counts):
+    ax.text(value, index, str(value), va=&quot;center&quot;)
+
+# Show the plot
+plt.show()
+</code></pre>
+<p><a class="glightbox" href="../output_7_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_7_0.png" /></a></p>
+<p>Las carreras con <strong>mayor representacion</strong> entre los encuestados son:</p>
+<ul>
+<li>Programming</li>
+<li>CS Engineering</li>
+<li>Systems analysis</li>
+</ul>
+<p>Entre estas 3 carreras se ditribuye mas del 50% de los encuestados. Siendo <strong>systems analysis</strong> la carrera con mas representacion.</p>
+<pre><code class="language-python">get_column_uniques_count(df, &quot;majors&quot;)
+</code></pre>
+<pre><code>majors
+systems_analysis          203
+computer_engineering      195
+programming               139
+other                      39
+electronic_engineering     12
+mathematics                11
+none                       11
+graphic_design              9
+other ingenerías            8
+civil_engineering           2
+electrical_engineering      2
+Name: count, dtype: int64
+</code></pre>
+<pre><code class="language-python">majors_list = [&quot;systems_analysis&quot;, &quot;computer_engineering&quot;, &quot;programming&quot;]
+</code></pre>
+<pre><code class="language-python"># Comparative chart for gender and majors.
+majors_df = [df[df[&quot;majors&quot;] == i] for i in majors_list]
+
+
+# Grouping by 'column_name'
+grouped_df = create_grouped_dataframe_list(majors_df, &quot;majors&quot;)
+print(grouped_df.groups.keys())
+</code></pre>
+<pre><code>dict_keys(['computer_engineering', 'programming', 'systems_analysis'])
+</code></pre>
+<pre><code class="language-python">gender_group = df.groupby(&quot;gender&quot;)
+</code></pre>
+<h2 id="education-vs-work_mode">Education vs work_mode</h2>
+<pre><code class="language-python">barh_chart_unique_values(df, &quot;majors&quot;, &quot;work_mode&quot;, &quot;Work mode by majors.&quot;, &quot;Work Mode&quot;)
+</code></pre>
+<p><a class="glightbox" href="../output_14_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_0.png" /></a></p>
+<p><a class="glightbox" href="../output_14_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_1.png" /></a></p>
+<p><a class="glightbox" href="../output_14_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_2.png" /></a></p>
+<p><a class="glightbox" href="../output_14_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_3.png" /></a></p>
+<p><a class="glightbox" href="../output_14_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_4.png" /></a></p>
+<p><a class="glightbox" href="../output_14_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_5.png" /></a></p>
+<p><a class="glightbox" href="../output_14_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_6.png" /></a></p>
+<p><a class="glightbox" href="../output_14_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_7.png" /></a></p>
+<p><a class="glightbox" href="../output_14_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_8.png" /></a></p>
+<p><a class="glightbox" href="../output_14_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_9.png" /></a></p>
+<p><a class="glightbox" href="../output_14_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_10.png" /></a></p>
+<pre><code class="language-python">print_unique_normalized_values_by_group(
+    df, &quot;majors&quot;, &quot;work_mode&quot;, &quot;Work mode by majors.&quot;
+)
+</code></pre>
+<pre><code>Work mode by majors. - systems_analysis
+====================
+work_mode
+onsite     38%
+remote     30%
+Hibrído    30%
+none        0%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, electronic_engineering, graphic_design
+====================
+work_mode
+onsite    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming
+====================
+work_mode
+onsite     38%
+remote     30%
+Hibrído    29%
+none        1%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, computer_engineering
+====================
+work_mode
+remote     52%
+onsite     30%
+Hibrído    17%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, mathematics
+====================
+work_mode
+remote     50%
+Hibrído    25%
+onsite     25%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - systems_analysis, computer_engineering
+====================
+work_mode
+remote     41%
+onsite     30%
+Hibrído    27%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis
+====================
+work_mode
+onsite     42%
+Hibrído    36%
+remote     19%
+none        1%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - electronic_engineering
+====================
+work_mode
+remote     58%
+onsite     25%
+Hibrído    16%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - computer_engineering
+====================
+work_mode
+remote     46%
+onsite     30%
+Hibrído    22%
+none        1%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering
+====================
+work_mode
+Hibrído    38%
+onsite     30%
+remote     30%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - none
+====================
+work_mode
+Hibrído    45%
+remote     27%
+onsite     18%
+none        9%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - computer_engineering, other
+====================
+work_mode
+remote    81%
+onsite    18%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - systems_analysis, computer_engineering, other ingenerías
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - other ingenerías
+====================
+work_mode
+onsite     50%
+remote     37%
+Hibrído    12%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, other ingenerías
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, other
+====================
+work_mode
+remote    60%
+onsite    20%
+none      20%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - other
+====================
+work_mode
+remote     51%
+onsite     35%
+Hibrído    11%
+none        2%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - systems_analysis, computer_engineering, other
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, mathematics, other
+====================
+work_mode
+remote    50%
+onsite    50%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, graphic_design, other
+====================
+work_mode
+remote     50%
+Hibrído    50%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, other
+====================
+work_mode
+onsite     83%
+Hibrído    16%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, other ingenerías
+====================
+work_mode
+onsite    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - systems_analysis, civil_engineering
+====================
+work_mode
+onsite    50%
+none      50%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - mathematics, none
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - computer_engineering, mathematics
+====================
+work_mode
+Hibrído    40%
+remote     40%
+onsite     20%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - graphic_design
+====================
+work_mode
+Hibrído    66%
+onsite     22%
+remote     11%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, computer_engineering, other
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, graphic_design
+====================
+work_mode
+Hibrído    75%
+onsite     25%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, electronic_engineering, other ingenerías, other
+====================
+work_mode
+onsite    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - other ingenerías, other
+====================
+work_mode
+onsite    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, other
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, mathematics
+====================
+work_mode
+onsite     50%
+Hibrído    25%
+remote     25%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, electronic_engineering, other
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, electrical_engineering
+====================
+work_mode
+remote    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - electrical_engineering
+====================
+work_mode
+remote    50%
+onsite    50%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, electronic_engineering, mathematics
+====================
+work_mode
+onsite    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, civil_engineering
+====================
+work_mode
+none    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, computer_engineering, graphic_design
+====================
+work_mode
+Hibrído    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, mathematics, other
+====================
+work_mode
+onsite    100%
+Name: proportion, dtype: object
+
+
+
+
+Work mode by majors. - programming, systems_analysis, electronic_engineering
+====================
+work_mode
+onsite    50%
+remote    50%
+Name: proportion, dtype: object
+</code></pre>
+<h2 id="education-vs-employment_mode">Education vs employment_mode</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df, &quot;majors&quot;, &quot;employment_mode&quot;, &quot;Majors vs. Employment mode.&quot;, &quot;Employment Mode&quot;
+)
+</code></pre>
+<p><a class="glightbox" href="../output_17_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_0.png" /></a></p>
+<p><a class="glightbox" href="../output_17_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_1.png" /></a></p>
+<p><a class="glightbox" href="../output_17_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_2.png" /></a></p>
+<p><a class="glightbox" href="../output_17_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_3.png" /></a></p>
+<p><a class="glightbox" href="../output_17_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_4.png" /></a></p>
+<p><a class="glightbox" href="../output_17_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_5.png" /></a></p>
+<p><a class="glightbox" href="../output_17_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_6.png" /></a></p>
+<p><a class="glightbox" href="../output_17_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_7.png" /></a></p>
+<p><a class="glightbox" href="../output_17_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_8.png" /></a></p>
+<p><a class="glightbox" href="../output_17_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_9.png" /></a></p>
+<p><a class="glightbox" href="../output_17_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_10.png" /></a></p>
+<h2 id="education-vs-it_exp">Education vs IT_exp</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df, &quot;majors&quot;, &quot;IT_exp&quot;, &quot;Majors and IT experience.&quot;, &quot;Years of experience.&quot;
+)
+</code></pre>
+<p><a class="glightbox" href="../output_19_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_0.png" /></a></p>
+<p><a class="glightbox" href="../output_19_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_1.png" /></a></p>
+<p><a class="glightbox" href="../output_19_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_2.png" /></a></p>
+<p><a class="glightbox" href="../output_19_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_3.png" /></a></p>
+<p><a class="glightbox" href="../output_19_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_4.png" /></a></p>
+<p><a class="glightbox" href="../output_19_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_5.png" /></a></p>
+<p><a class="glightbox" href="../output_19_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_6.png" /></a></p>
+<p><a class="glightbox" href="../output_19_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_7.png" /></a></p>
+<p><a class="glightbox" href="../output_19_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_8.png" /></a></p>
+<p><a class="glightbox" href="../output_19_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_9.png" /></a></p>
+<p><a class="glightbox" href="../output_19_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_10.png" /></a></p>
+<h2 id="education-vs-first_code">Education vs first_code</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df,
+    &quot;majors&quot;,
+    &quot;first_code&quot;,
+    &quot;Majors and first line of code.&quot;,
+    &quot;First line of code. \n(Aproximated age.)&quot;,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_21_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_0.png" /></a></p>
+<p><a class="glightbox" href="../output_21_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_1.png" /></a></p>
+<p><a class="glightbox" href="../output_21_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_2.png" /></a></p>
+<p><a class="glightbox" href="../output_21_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_3.png" /></a></p>
+<p><a class="glightbox" href="../output_21_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_4.png" /></a></p>
+<p><a class="glightbox" href="../output_21_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_5.png" /></a></p>
+<p><a class="glightbox" href="../output_21_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_6.png" /></a></p>
+<p><a class="glightbox" href="../output_21_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_7.png" /></a></p>
+<p><a class="glightbox" href="../output_21_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_8.png" /></a></p>
+<p><a class="glightbox" href="../output_21_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_9.png" /></a></p>
+<p><a class="glightbox" href="../output_21_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_10.png" /></a></p>
+<h2 id="education-vs-assigned_seniority">Education vs assigned_seniority</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df,
+    &quot;majors&quot;,
+    &quot;assigned_seniority&quot;,
+    &quot;Asigned seniority for: &quot;,
+    &quot;Asigned seniority.&quot;,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_23_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_0.png" /></a></p>
+<p><a class="glightbox" href="../output_23_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_1.png" /></a></p>
+<p><a class="glightbox" href="../output_23_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_2.png" /></a></p>
+<p><a class="glightbox" href="../output_23_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_3.png" /></a></p>
+<p><a class="glightbox" href="../output_23_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_4.png" /></a></p>
+<p><a class="glightbox" href="../output_23_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_5.png" /></a></p>
+<p><a class="glightbox" href="../output_23_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_6.png" /></a></p>
+<p><a class="glightbox" href="../output_23_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_7.png" /></a></p>
+<p><a class="glightbox" href="../output_23_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_8.png" /></a></p>
+<p><a class="glightbox" href="../output_23_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_9.png" /></a></p>
+<p><a class="glightbox" href="../output_23_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_10.png" /></a></p>
+<p>En la mayoria de los casos, segun la carrera elegida por los encuestados,
+se puede observar que la mayoria posee un seniority de <strong>"senior"</strong>.</p>
+<h2 id="education-vs-self_assessed_seniority">Education vs self_assessed_seniority</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df,
+    &quot;majors&quot;,
+    &quot;self_assessed_seniority&quot;,
+    &quot;Self assessed seniority by majors.&quot;,
+    &quot;Self assessed seniority.&quot;,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_26_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_0.png" /></a></p>
+<p><a class="glightbox" href="../output_26_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_1.png" /></a></p>
+<p><a class="glightbox" href="../output_26_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_2.png" /></a></p>
+<p><a class="glightbox" href="../output_26_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_3.png" /></a></p>
+<p><a class="glightbox" href="../output_26_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_4.png" /></a></p>
+<p><a class="glightbox" href="../output_26_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_5.png" /></a></p>
+<p><a class="glightbox" href="../output_26_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_6.png" /></a></p>
+<p><a class="glightbox" href="../output_26_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_7.png" /></a></p>
+<p><a class="glightbox" href="../output_26_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_8.png" /></a></p>
+<p><a class="glightbox" href="../output_26_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_9.png" /></a></p>
+<p><a class="glightbox" href="../output_26_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_10.png" /></a></p>
+<pre><code class="language-python">df.columns
+</code></pre>
+<pre><code>Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
+       'code_for_job', 'IT_exp', 'prof_prog_exp', 'first_code',
+       'assigned_seniority', 'self_assessed_seniority', 'formal_edu', 'majors',
+       'formal_edu_importance', 'gender', 'age', 'monthly_salary',
+       'pro_languages', 'web_frameworks', 'other_tools', 'databases',
+       'platforms', 'fav_language', 'least_fav_language', 'fav_framework',
+       'least_fav_framework', 'tools', 'use_AI_tools', 'AI_replace_dev',
+       'layoffs_23_24', 'working_now', 'unemployed_duration', 'same_role',
+       'current_vs_prev_salary'],
+      dtype='object')
+</code></pre>
+<pre><code class="language-python">
+</code></pre>
+<pre><code class="language-python">
+</code></pre>
+<h2 id="education-vs-formal_edu">Education vs formal_edu</h2>
+<pre><code class="language-python">gender_groups = df.groupby(&quot;gender&quot;)
+</code></pre>
+<pre><code class="language-python">barh_chart_unique_values(
+    df,
+    &quot;majors&quot;,
+    &quot;formal_edu&quot;,
+    &quot;Majors vs. formal education.&quot;,
+    &quot;Importance level.&quot;,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_32_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_0.png" /></a></p>
+<p><a class="glightbox" href="../output_32_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_1.png" /></a></p>
+<p><a class="glightbox" href="../output_32_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_2.png" /></a></p>
+<p><a class="glightbox" href="../output_32_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_3.png" /></a></p>
+<p><a class="glightbox" href="../output_32_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_4.png" /></a></p>
+<p><a class="glightbox" href="../output_32_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_5.png" /></a></p>
+<p><a class="glightbox" href="../output_32_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_6.png" /></a></p>
+<p><a class="glightbox" href="../output_32_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_7.png" /></a></p>
+<p><a class="glightbox" href="../output_32_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_8.png" /></a></p>
+<p><a class="glightbox" href="../output_32_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_9.png" /></a></p>
+<p><a class="glightbox" href="../output_32_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_10.png" /></a></p>
+<h2 id="education-vs-formal_edu_importance">Education vs formal_edu_importance</h2>
+<pre><code class="language-python">df.columns
+</code></pre>
+<pre><code>Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
+       'code_for_job', 'IT_exp', 'prof_prog_exp', 'first_code',
+       'assigned_seniority', 'self_assessed_seniority', 'formal_edu', 'majors',
+       'formal_edu_importance', 'gender', 'age', 'monthly_salary',
+       'pro_languages', 'web_frameworks', 'other_tools', 'databases',
+       'platforms', 'fav_language', 'least_fav_language', 'fav_framework',
+       'least_fav_framework', 'tools', 'use_AI_tools', 'AI_replace_dev',
+       'layoffs_23_24', 'working_now', 'unemployed_duration', 'same_role',
+       'current_vs_prev_salary'],
+      dtype='object')
+</code></pre>
+<pre><code class="language-python">get_column_uniques(df,'formal_edu')
+</code></pre>
+<pre><code>['doctorate', 'Degree', 'high_school', 'master']
+</code></pre>
+<pre><code class="language-python"># Formal education by gender.
+barh_chart_unique_values(
+    df, 
+    &quot;gender&quot;,
+    &quot;formal_edu&quot;,
+    &quot;Formal education by gender.&quot;,
+    &quot;Gender&quot;
+)
+</code></pre>
+<p><a class="glightbox" href="../output_36_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_0.png" /></a></p>
+<p><a class="glightbox" href="../output_36_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_1.png" /></a></p>
+<p><a class="glightbox" href="../output_36_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_2.png" /></a></p>
+<pre><code class="language-python">print_unique_normalized_values_by_group(
+    df, &quot;gender&quot;, &quot;formal_edu&quot;, &quot;Formal education by gender.&quot;
+)
+</code></pre>
+<pre><code>Formal education by gender. - male
+====================
+formal_edu
+Degree         62%
+high_school    30%
+master          7%
+doctorate       0%
+Name: proportion, dtype: object
+
+
+
+
+Formal education by gender. - female
+====================
+formal_edu
+Degree         78%
+high_school    14%
+master          6%
+Name: proportion, dtype: object
+
+
+
+
+Formal education by gender. - prefer_not_to_say
+====================
+formal_edu
+Degree         50%
+high_school    50%
+Name: proportion, dtype: object
+</code></pre>
+<pre><code class="language-python"># Formal education importance by gender.
+barh_chart_unique_values(
+    df,
+    &quot;gender&quot;,
+    &quot;formal_edu_importance&quot;,
+    &quot;Formal education importance by gender.&quot;,
+    &quot;Importance Level&quot;,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_38_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_0.png" /></a></p>
+<p><a class="glightbox" href="../output_38_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_1.png" /></a></p>
+<p><a class="glightbox" href="../output_38_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_2.png" /></a></p>
+<pre><code class="language-python">group_config = {
+    &quot;title&quot;: &quot;Formal education importance. \n (male vs. females)&quot;,
+    &quot;c1_label&quot;: &quot;MAN&quot;,
+    &quot;c2_label&quot;: &quot;WOMAN&quot;,
+    &quot;xlabel&quot;: &quot;Count&quot;,
+    &quot;ylabel&quot;: &quot;formal_edu_importance level&quot;,
+}
+
+make_horizontal_grouped_chart(
+    df,
+    gender_group.get_group(&quot;male&quot;),
+    gender_group.get_group(&quot;female&quot;),
+    &quot;formal_edu_importance&quot;,
+    df[&quot;formal_edu_importance&quot;].unique(),
+    group_config,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_39_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_39_0.png" /></a></p>
+<pre><code class="language-python">get_column_uniques(df, &quot;formal_edu_importance&quot;)
+</code></pre>
+<pre><code>['quite_important',
+ 'critical',
+ 'somewhat_important',
+ 'very_important',
+ 'not_important']
+</code></pre>
+<h2 id="education-vs-gender">Education vs gender</h2>
+<pre><code class="language-python">gender_group.groups.keys()
+</code></pre>
+<pre><code>dict_keys(['female', 'male', 'prefer_not_to_say'])
+</code></pre>
+<pre><code class="language-python">barh_chart_unique_values(df, &quot;majors&quot;, &quot;gender&quot;, &quot;Majors by gender.&quot;, &quot;Gender&quot;)
+</code></pre>
+<p><a class="glightbox" href="../output_43_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_0.png" /></a></p>
+<p><a class="glightbox" href="../output_43_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_1.png" /></a></p>
+<p><a class="glightbox" href="../output_43_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_2.png" /></a></p>
+<p><a class="glightbox" href="../output_43_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_3.png" /></a></p>
+<p><a class="glightbox" href="../output_43_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_4.png" /></a></p>
+<p><a class="glightbox" href="../output_43_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_5.png" /></a></p>
+<p><a class="glightbox" href="../output_43_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_6.png" /></a></p>
+<p><a class="glightbox" href="../output_43_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_7.png" /></a></p>
+<p><a class="glightbox" href="../output_43_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_8.png" /></a></p>
+<p><a class="glightbox" href="../output_43_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_9.png" /></a></p>
+<p><a class="glightbox" href="../output_43_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_10.png" /></a></p>
+<pre><code class="language-python">plot_grouped_by_category_barh_charts(
+    gender_groups, &quot;majors&quot;, &quot;Majors by Gender.&quot;, &quot;Majors&quot;
+)
+</code></pre>
+<p><a class="glightbox" href="../output_44_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_0.png" /></a></p>
+<p><a class="glightbox" href="../output_44_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_1.png" /></a></p>
+<p><a class="glightbox" href="../output_44_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_2.png" /></a></p>
+<pre><code class="language-python">for i in gender_groups.groups.keys():
+    print(&quot;GENDER -&gt; &quot;, i)
+    c = gender_groups.get_group(i)
+    print(get_column_uniques_count(c, &quot;majors&quot;))
+    print(&quot;\n&quot; * 4)
+</code></pre>
+<pre><code>GENDER -&gt;  female
+majors
+systems_analysis        28
+programming             15
+computer_engineering    14
+other                   10
+mathematics              2
+graphic_design           2
+none                     1
+other ingenerías         1
+Name: count, dtype: int64
+
+
+
+
+
+GENDER -&gt;  male
+majors
+computer_engineering      179
+systems_analysis          174
+programming               123
+other                      28
+electronic_engineering     12
+none                       10
+mathematics                 9
+graphic_design              7
+other ingenerías            7
+civil_engineering           2
+electrical_engineering      2
+Name: count, dtype: int64
+
+
+
+
+
+GENDER -&gt;  prefer_not_to_say
+majors
+computer_engineering    2
+programming             1
+systems_analysis        1
+other                   1
+Name: count, dtype: int64
+</code></pre>
+<pre><code class="language-python">for i in grouped_df.groups.keys():
+    d = grouped_df.get_group(i)[&quot;gender&quot;].value_counts()
+    print(&quot;=&quot; * 44)
+    print(&quot;MAJOR --&gt; &quot;, i)
+    print(d)
+    print(&quot;\n&quot; * 3)
+</code></pre>
+<pre><code>============================================
+MAJOR --&gt;  computer_engineering
+gender
+male      98
+female    10
+Name: count, dtype: int64
+
+
+
+
+============================================
+MAJOR --&gt;  programming
+gender
+male      9
+female    2
+Name: count, dtype: int64
+
+
+
+
+============================================
+MAJOR --&gt;  systems_analysis
+gender
+male      72
+female    15
+Name: count, dtype: int64
+</code></pre>
+<pre><code class="language-python"># Defining color for bars
+color_neutro_dark = &quot;gray&quot;  # Assuming a color definition for demonstration
+
+# Function call
+grouped_grid_barh_chart(
+    grouped_df,
+    &quot;gender&quot;,
+    &quot;Majors by gender. \n (Common majors only.)&quot;,
+    3,
+    1,
+    color_neutro_dark,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_48_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_48_0.png" /></a></p>
+<h2 id="education-vs-age">Education vs age</h2>
+<pre><code class="language-python">barh_chart_unique_values(df, &quot;majors&quot;, &quot;age&quot;, &quot;Majors by age.&quot;, &quot;age&quot;)
+</code></pre>
+<p><a class="glightbox" href="../output_50_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_0.png" /></a></p>
+<p><a class="glightbox" href="../output_50_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_1.png" /></a></p>
+<p><a class="glightbox" href="../output_50_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_2.png" /></a></p>
+<p><a class="glightbox" href="../output_50_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_3.png" /></a></p>
+<p><a class="glightbox" href="../output_50_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_4.png" /></a></p>
+<p><a class="glightbox" href="../output_50_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_5.png" /></a></p>
+<p><a class="glightbox" href="../output_50_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_6.png" /></a></p>
+<p><a class="glightbox" href="../output_50_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_7.png" /></a></p>
+<p><a class="glightbox" href="../output_50_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_8.png" /></a></p>
+<p><a class="glightbox" href="../output_50_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_9.png" /></a></p>
+<p><a class="glightbox" href="../output_50_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_10.png" /></a></p>
+<pre><code class="language-python">
+</code></pre>
+<h2 id="education-vs-monthly_salary">Education vs monthly_salary</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df, 
+    &quot;majors&quot;,
+    &quot;monthly_salary&quot;,
+    &quot;Month salary for majors.&quot;,
+    &quot;Salary&quot;
+)
+</code></pre>
+<p><a class="glightbox" href="../output_53_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_0.png" /></a></p>
+<p><a class="glightbox" href="../output_53_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_1.png" /></a></p>
+<p><a class="glightbox" href="../output_53_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_2.png" /></a></p>
+<p><a class="glightbox" href="../output_53_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_3.png" /></a></p>
+<p><a class="glightbox" href="../output_53_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_4.png" /></a></p>
+<p><a class="glightbox" href="../output_53_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_5.png" /></a></p>
+<p><a class="glightbox" href="../output_53_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_6.png" /></a></p>
+<p><a class="glightbox" href="../output_53_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_7.png" /></a></p>
+<p><a class="glightbox" href="../output_53_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_8.png" /></a></p>
+<p><a class="glightbox" href="../output_53_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_9.png" /></a></p>
+<p><a class="glightbox" href="../output_53_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_10.png" /></a></p>
+<h2 id="education-vs-ai_replace_dev">Education vs AI_replace_dev</h2>
+<pre><code class="language-python">get_column_uniques(df, &quot;AI_replace_dev&quot;)
+</code></pre>
+<pre><code>['No', 'maybe_in_10+_years', 'Sí']
+</code></pre>
+<pre><code class="language-python">barh_chart_unique_values(
+    df,
+    &quot;majors&quot;,
+    &quot;AI_replace_dev&quot;,
+    &quot;Majors and AI replacement theorys.&quot;,
+    &quot;AI replacement.&quot;,
+)
+</code></pre>
+<p><a class="glightbox" href="../output_56_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_0.png" /></a></p>
+<p><a class="glightbox" href="../output_56_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_1.png" /></a></p>
+<p><a class="glightbox" href="../output_56_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_2.png" /></a></p>
+<p><a class="glightbox" href="../output_56_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_3.png" /></a></p>
+<p><a class="glightbox" href="../output_56_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_4.png" /></a></p>
+<p><a class="glightbox" href="../output_56_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_5.png" /></a></p>
+<p><a class="glightbox" href="../output_56_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_6.png" /></a></p>
+<p><a class="glightbox" href="../output_56_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_7.png" /></a></p>
+<p><a class="glightbox" href="../output_56_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_8.png" /></a></p>
+<p><a class="glightbox" href="../output_56_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_9.png" /></a></p>
+<p><a class="glightbox" href="../output_56_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_10.png" /></a></p>
+<h2 id="education-vs-layoffs_23_24">Education vs layoffs_23_24</h2>
+<pre><code class="language-python">barh_chart_unique_values(
+    df, 
+    &quot;majors&quot;,
+    &quot;layoffs_23_24&quot;,
+    &quot;Majors and layoffs 23/24.&quot;,
+    &quot;Layoffs&quot;
+)
+</code></pre>
+<p><a class="glightbox" href="../output_58_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_0.png" /></a></p>
+<p><a class="glightbox" href="../output_58_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_1.png" /></a></p>
+<p><a class="glightbox" href="../output_58_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_2.png" /></a></p>
+<p><a class="glightbox" href="../output_58_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_3.png" /></a></p>
+<p><a class="glightbox" href="../output_58_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_4.png" /></a></p>
+<p><a class="glightbox" href="../output_58_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_5.png" /></a></p>
+<p><a class="glightbox" href="../output_58_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_6.png" /></a></p>
+<p><a class="glightbox" href="../output_58_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_7.png" /></a></p>
+<p><a class="glightbox" href="../output_58_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_8.png" /></a></p>
+<p><a class="glightbox" href="../output_58_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_9.png" /></a></p>
+<p><a class="glightbox" href="../output_58_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_10.png" /></a></p>
+<pre><code class="language-python">
+</code></pre>
+<pre><code class="language-python">
+</code></pre>
+<pre><code class="language-python">
+</code></pre>
+<pre><code class="language-python">
+</code></pre>
+<pre><code class="language-python">
+</code></pre></p>
+    </article>
+</section>
+<!-- endblock -->
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+                    <!-- block footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+                <!-- block copyright -->
+    <small class="d-block mb-3">Copyright &copy; 2016 - 2020 Milton Torrez</small>
+
+    <small class="d-block mb-3">
+        Made with
+        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
+            Simple Blog for MkDocs
+        </a>
+    </small>
+
+<!-- endblock -->
+        </div>
+    </div>
+</footer>
+<!-- endblock -->
+            
+        </div>
+
+            <script>var base_url = '../../../../..';</script>
+            <script src="../../../../../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../../../../../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../../../../../assets/js/main.min.js""></script>
+
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+
+</html>

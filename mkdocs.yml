@@ -27,8 +27,8 @@ nav:
   - Home: index.md
   - About Me: about_me.md
   - Contact: contact.md
-  - miscellaneous:
-    - How to blog: gral/how_to_blog.md
+  #- miscellaneous:
+  #  - How to blog: gral/how_to_blog.md
   - Data Science:
     - Encuesta devs Paraguay 2024: data_science/projects/Encuesta_IT_Py_2024/intro.md
 
@@ -49,8 +49,8 @@ nav:
       #  - Arrays: data_structures/arrays.md
       #  - Linked Lists: data_structures/linked_lists.md
       #  - Trees: data_structures/trees.md
-  - Challenges:
-    - Facke Server: challenges/facke_server.md
+      #- Challenges:
+      #  - Facke Server: challenges/facke_server.md
       #  - Coding Puzzles: challenges/coding_puzzles.md
       #  - Project Ideas: challenges/project_ideas.md
       #  - Hackathons: challenges/hackathons.md

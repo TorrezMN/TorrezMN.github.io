@@ -21,5 +21,3 @@
 10 - How would you design an e-commerce store
 
 11 - How would you design a ride-hailing / delivery app
-
-

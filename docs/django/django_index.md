@@ -1,5 +1,7 @@
 # ***Django Framework***
----
+
+______________________________________________________________________
+
 ## 10 Basic Topics on Django Framework
 
 Models and Databases: Creating models to represent your data structure and interacting with various database backends.
@@ -21,7 +23,6 @@ Admin Site: Building a customizable admin interface for managing data and user a
 Signals and Middleware: Extending Django's behavior with signals for custom actions and using middleware for global request/response processing.
 
 Deployment and Production Setup: Configuring and deploying your Django application to a production environment.
-
 
 ## 10 Advanced Topics on Django Framework
 
@@ -45,9 +46,10 @@ Security Best Practices: Implementing robust security measures like CSRF protect
 
 Scalability and High Availability: Optimizing your Django application for handling high traffic and considering solutions for high availability.
 
-
 # Django REST Framework.
----
+
+______________________________________________________________________
+
 ## 10 Basic Topics on Django REST Framework (DRF)
 
 Views and Serializers: Building views for handling API requests and using serializers to convert model data to JSON and vice versa.
@@ -69,7 +71,6 @@ API Throttling and Caching: Limiting API requests and implementing caching mecha
 Signals and Custom Permissions: Extending DRF functionalities with signals and creating custom permission classes for granular control.
 
 ViewSet and Router: Simplifying API development with ViewSets and using the router to automatically generate URLs.
-
 
 ## 10 Advanced Topics on Django REST Framework
 

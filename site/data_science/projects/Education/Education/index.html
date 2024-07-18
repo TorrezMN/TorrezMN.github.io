@@ -70,33 +70,11 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[miscellaneous]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../gral/how_to_blog/" class="dropdown-item text-decoration-none ">How to blog</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
                             nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Data Science]</a>
                             <ul class="dropdown-menu">
                                     <!-- block dropdown-menu -->
     <li>
         <a href="../../Encuesta_IT_Py_2024/intro/" class="dropdown-item text-decoration-none ">Encuesta devs Paraguay 2024</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Challenges]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../challenges/facke_server/" class="dropdown-item text-decoration-none ">Facke Server</a>
     </li>
 <!-- endblock -->
                             </ul>
@@ -320,7 +298,7 @@ plt.show()
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_20_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_20_2.png" /></a></p>
+<p><a class="glightbox" href="../output_20_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_20_2.png" /></a></p>
 <pre><code class="language-python">make_horizontal_bar(
     df,
     &quot;carr_especialidades&quot;,
@@ -332,7 +310,7 @@ plt.show()
 </code></pre>
 <pre><code>&lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_21_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_1.png" /></a></p>
+<p><a class="glightbox" href="../output_21_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_1.png" /></a></p>
 <pre><code class="language-python">carr_esp_uniques = get_column_uniques(df, &quot;carr_especialidades&quot;)
 </code></pre>
 <pre><code class="language-python">carr_esp_uniques
@@ -380,7 +358,7 @@ for k, v in enumerate(df[&quot;imp_ed_formal&quot;].value_counts().values):
     exp_plot.annotate(v, (v, k), va=&quot;center&quot;)
 plt.show()
 </code></pre>
-<p><a class="glightbox" href="../output_27_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_27_0.png" /></a></p>
+<p><a class="glightbox" href="../output_27_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_27_0.png" /></a></p>
 <pre><code class="language-python"># Ploting a figure for this column.
 fig = plt.figure(figsize=(9, 5))
 ax1 = plt.subplot(111)
@@ -402,7 +380,7 @@ for k, v in enumerate(df[&quot;imp_ed_formal&quot;].value_counts(normalize=True)
     exp_plot.annotate(get_percentage(v), (v, k), va=&quot;center&quot;)
 plt.show()
 </code></pre>
-<p><a class="glightbox" href="../output_28_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_28_0.png" /></a></p>
+<p><a class="glightbox" href="../output_28_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_28_0.png" /></a></p>
 <h2 id="educational-level-x-gender">Educational Level x Gender</h2>
 <pre><code>- We explore the &quot;educational level&quot; of the people who answered the survey by gender.
 </code></pre>
@@ -518,7 +496,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_38_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_3.png" /></a></p>
+<p><a class="glightbox" href="../output_38_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_3.png" /></a></p>
 <h3 id="careers-or-specialties-hombre">Careers or Specialties - HOMBRE</h3>
 <pre><code>- Column name : 'carr_especialidades'
 </code></pre>
@@ -612,7 +590,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_41_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_41_3.png" /></a></p>
+<p><a class="glightbox" href="../output_41_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_41_3.png" /></a></p>
 <pre><code class="language-python">make_custom_horizontal_bar(
     carr_hombres_df,
     &quot;carr_especialidades&quot;,
@@ -624,7 +602,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </code></pre>
 <pre><code>&lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_42_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_42_1.png" /></a></p>
+<p><a class="glightbox" href="../output_42_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_42_1.png" /></a></p>
 <pre><code class="language-python">carr_hombres_df = make_df(
     gen.get_group(&quot;MAN&quot;), &quot;carr_especialidades&quot;, &quot;Category&quot;, &quot;count&quot;
 )
@@ -818,7 +796,7 @@ import_plot = import_df.plot(
 
 plt.show()
 </code></pre>
-<p><a class="glightbox" href="../output_52_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_52_0.png" /></a></p>
+<p><a class="glightbox" href="../output_52_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_52_0.png" /></a></p>
 <h3 id="educacion-mujeres">EDUCACION - MUJERES</h3>
 <hr />
 <pre><code>The 'education' of the womens.
@@ -948,7 +926,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_58_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_3.png" /></a></p>
+<p><a class="glightbox" href="../output_58_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_3.png" /></a></p>
 <h3 id="carreras-o-especialidades-mujeres">Carreras o especialidades. - MUJERES</h3>
 <ul>
 <li>column name : 'carr_especialidades'</li>
@@ -1001,7 +979,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_60_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_60_3.png" /></a></p>
+<p><a class="glightbox" href="../output_60_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_60_3.png" /></a></p>
 <h1 id="importancia-de-la-educacion-formal-mujeres">Importancia de la educacion formal. - MUJERES</h1>
 <ul>
 <li>column name : 'imp_ed_formal'</li>
@@ -1028,7 +1006,7 @@ for k, v in enumerate(gen.get_group(&quot;WOMAN&quot;)[&quot;imp_ed_formal&quot;
 
 plt.show()
 </code></pre>
-<p><a class="glightbox" href="../output_64_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_64_0.png" /></a></p>
+<p><a class="glightbox" href="../output_64_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_64_0.png" /></a></p>
 <h3 id="educacion-no-comparto">EDUCACION - NO COMPARTO</h3>
 <pre><code class="language-python">#'educación'
 #'carreras_o_especialidades'
@@ -1079,7 +1057,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_68_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_68_3.png" /></a></p>
+<p><a class="glightbox" href="../output_68_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_68_3.png" /></a></p>
 <h3 id="carreras-o-especialidades-no-definido">Carreras o especialidades. - NO DEFINIDO</h3>
 <pre><code class="language-python">fig = plt.figure(figsize=(9, 5))
 
@@ -1132,7 +1110,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 &lt;Figure size 900x500 with 0 Axes&gt;
 </code></pre>
-<p><a class="glightbox" href="../output_70_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_70_3.png" /></a></p>
+<p><a class="glightbox" href="../output_70_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_70_3.png" /></a></p>
 <h3 id="importancia-de-la-educacion-formal-no-definido">Importancia de la educacion formal. - NO DEFINIDO</h3>
 <pre><code class="language-python">fig = plt.figure(figsize=(9, 5))
 imp_ed_no_comp_df = gen.get_group(&quot;DONT SHARE&quot;)[&quot;imp_ed_formal&quot;].value_counts()
@@ -1154,7 +1132,7 @@ for k, v in enumerate(
 
 plt.show()
 </code></pre>
-<p><a class="glightbox" href="../output_72_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_72_0.png" /></a></p>
+<p><a class="glightbox" href="../output_72_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_72_0.png" /></a></p>
 <pre><code class="language-python">df.columns
 </code></pre>
 <pre><code>Index(['marca_temp', 'modalidad', 'trabajo', 'tipo_de_trabajo', 'devops',
@@ -1193,9 +1171,9 @@ plt.figure(figsize=(4, 20), dpi=80)
 
 # plt.subplots_adjust(left=0.1, bottom=0.1, right=0.9, top=0.3, wspace=0.4, hspace=0.4)
 </code></pre>
-<p><a class="glightbox" href="../output_76_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_76_0.png" /></a></p>
-<p><a class="glightbox" href="../output_76_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_76_1.png" /></a></p>
-<p><a class="glightbox" href="../output_76_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_76_2.png" /></a></p>
+<p><a class="glightbox" href="../output_76_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_76_0.png" /></a></p>
+<p><a class="glightbox" href="../output_76_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_76_1.png" /></a></p>
+<p><a class="glightbox" href="../output_76_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_76_2.png" /></a></p>
 <pre><code class="language-python">for k, v in enumerate(generos):
     ie_df = gen.get_group(v)[&quot;imp_ed_formal&quot;].value_counts(normalize=True)
     print(f&quot;Gender : {v}\nImportance of formal education.&quot;)
@@ -1262,7 +1240,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_79_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_79_0.png" /></a></p>
+<p><a class="glightbox" href="../output_79_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_79_0.png" /></a></p>
 <h2 id="carreras-o-especialidades">Carreras o especialidades.</h2>
 <ul>
 <li>Column name 'carr_especialidades'.</li>
@@ -1285,7 +1263,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_82_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_82_0.png" /></a></p>
+<p><a class="glightbox" href="../output_82_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_82_0.png" /></a></p>
 <h1 id="edad_actual">edad_actual</h1>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;edad_actual by Gender \n&quot;,
@@ -1304,7 +1282,7 @@ make_vertical_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_84_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_84_0.png" /></a></p>
+<p><a class="glightbox" href="../output_84_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_84_0.png" /></a></p>
 <pre><code class="language-python">print(&quot;HOMBRES &quot;, gen.get_group(&quot;MAN&quot;).fillna(&quot;&quot;)[&quot;edad_actual&quot;].value_counts())
 print(&quot;\n&quot; * 3)
 print(&quot;MUJERES &quot;, gen.get_group(&quot;WOMAN&quot;).fillna(&quot;&quot;)[&quot;edad_actual&quot;].value_counts())
@@ -1351,7 +1329,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_87_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_87_0.png" /></a></p>
+<p><a class="glightbox" href="../output_87_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_87_0.png" /></a></p>
 <pre><code class="language-python">
 </code></pre>
 <pre><code class="language-python">
@@ -1468,7 +1446,7 @@ fig.tight_layout()
 
 plt.show()
 </code></pre>
-<p><a class="glightbox" href="../output_106_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_106_0.png" /></a></p>
+<p><a class="glightbox" href="../output_106_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_106_0.png" /></a></p>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;Education by Gender \n&quot;,
     &quot;c1_label&quot;: &quot;Hombres&quot;,
@@ -1486,7 +1464,7 @@ make_vertical_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_107_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_107_0.png" /></a></p>
+<p><a class="glightbox" href="../output_107_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_107_0.png" /></a></p>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;exp_en_IT by Gender \n&quot;,
     &quot;c1_label&quot;: &quot;Hombres&quot;,
@@ -1504,7 +1482,7 @@ make_vertical_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_108_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_108_0.png" /></a></p>
+<p><a class="glightbox" href="../output_108_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_108_0.png" /></a></p>
 <pre><code class="language-python">df[&quot;leng_mas_odiado&quot;].dropna(inplace=True)
 </code></pre>
 <pre><code class="language-python">get_column_uniques(df, &quot;1_linea_de_codigo&quot;)
@@ -1539,7 +1517,7 @@ make_vertical_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_111_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_111_0.png" /></a></p>
+<p><a class="glightbox" href="../output_111_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_111_0.png" /></a></p>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;modalidad by Gender \n&quot;,
     &quot;c1_label&quot;: &quot;Hombres&quot;,
@@ -1557,7 +1535,7 @@ make_vertical_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_112_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_112_0.png" /></a></p>
+<p><a class="glightbox" href="../output_112_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_112_0.png" /></a></p>
 <pre><code class="language-python">df.columns
 </code></pre>
 <pre><code>Index(['marca_temp', 'modalidad', 'trabajo', 'tipo_de_trabajo', 'devops',
@@ -1586,7 +1564,7 @@ make_vertical_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_114_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_114_0.png" /></a></p>
+<p><a class="glightbox" href="../output_114_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_114_0.png" /></a></p>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;carr_especialidades by Gender \n&quot;,
     &quot;c1_label&quot;: &quot;Hombres&quot;,
@@ -1604,7 +1582,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_115_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_115_0.png" /></a></p>
+<p><a class="glightbox" href="../output_115_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_115_0.png" /></a></p>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;carr_especialidades by Gender \n&quot;,
     &quot;c1_label&quot;: &quot;Hombres&quot;,
@@ -1622,7 +1600,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_116_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_116_0.png" /></a></p>
+<p><a class="glightbox" href="../output_116_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_116_0.png" /></a></p>
 <pre><code class="language-python">print(
     &quot;MAN &quot;,
     get_uniques_col_count(gen.get_group(&quot;MAN&quot;).fillna(&quot;&quot;), &quot;carr_especialidades&quot;),
@@ -1661,7 +1639,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_119_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_119_0.png" /></a></p>
+<p><a class="glightbox" href="../output_119_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_119_0.png" /></a></p>
 <pre><code class="language-python">
 </code></pre>
 <h1 id="segun-el-sueldo">Segun el sueldo.</h1>

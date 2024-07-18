@@ -70,33 +70,11 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[miscellaneous]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../../gral/how_to_blog/" class="dropdown-item text-decoration-none ">How to blog</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
                             nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Data Science]</a>
                             <ul class="dropdown-menu">
                                     <!-- block dropdown-menu -->
     <li>
         <a href="../../intro/" class="dropdown-item text-decoration-none ">Encuesta devs Paraguay 2024</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Challenges]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../../challenges/facke_server/" class="dropdown-item text-decoration-none ">Facke Server</a>
     </li>
 <!-- endblock -->
                             </ul>
@@ -142,58 +120,74 @@
 <li>Género</li>
 <li>Edad actual</li>
 </ul>
-<!---
-
-<pre><code class="language-highlight">**Highlighted Section**
-
-This is a special highlighted section in your Markdown.
-You can add more lines here, and they will all be highlighted.
-</code></pre>
-
---->
-
 <h3 id="gender">Gender</h3>
-<pre><code class="language-python">barh_chart_count(df, &quot;gender&quot;, &quot;Gender count by category.&quot;, &quot;Count&quot;)
-</code></pre>
-<p><a class="glightbox" href="../output_7_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_7_0.png" /></a></p>
-<pre><code class="language-highlight">[op] en materia de genro se encontraron 3 categorias:
+<p><a class="glightbox" href="../output_7_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_7_0.png" /></a></p>
+<p>En materia de genro se presentan 3 categorias:</p>
+<ul>
+<li>
+<p>male</p>
+</li>
+<li>
+<p>female</p>
+</li>
+<li>
+<p>prefer not to say</p>
+</li>
+</ul>
+<p>Menos de 50% de los encuestados no pertenece al sexo masculino. Las 2 minorias
+existentes no logran sumar el 25% de las repuestas totales. En este caso se
+asumio que "<strong>prefer not to say es una minoria irrelevante</strong>" para ser tomada
+en consideracion.</p>
+<details>
+  <summary style="background-color: #f0f0f0; font-weight: bold; padding: 10px;">Chat GPT</summary>
 
-+ male 
+<hr>
+  <div style="background-color: #f8f8f8; color: black; padding: 10px; margin-top: 10px;">
+  Según los datos del censo de población y viviendas del Paraguay del año 2012,
+  la distribución por género es aproximadamente equitativa. Según la Dirección
+  General de Estadística, Encuestas y Censos (DGEEC), la población femenina
+  representaba el 49.9% y la masculina el 50.1% de la población total. 
 
-+ female
+<a href='https://www.dgeec.gov.py/'> Dirección General de Estadística,
+Encuestas y Censos (DGEEC) - Censo 2012</a> </div>
 
-+ prefer not to say
+<div style="background-color: #f8f8f8; color: black; padding: 10px; margin-top: 10px;">
+  Según un informe de LinkedIn sobre la diversidad en la tecnología en América
+  Latina en 2021, las mujeres representan aproximadamente el 30% de la fuerza
+  laboral en tecnología en la región, lo que refleja una significativa brecha
+  de género en comparación con otros sectores.
 
-Menos de 50% de los encuestados no pertenece al 'sexo masculino'. Las 2
-minorias existentes no logran sumar el 25% de las repuestas totales.
-</code></pre>
-<h3 id="current-age">Current age.</h3>
-<p><a class="glightbox" href="../output_11_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_11_0.png" /></a></p>
-<pre><code class="language-highlight">[op] Los grupos mas concentrados de encuestados tienen mas de 35 años
+<a
+href='https://business.linkedin.com/talent-solutions/blog/diversity/2021/diversity-in-tech-2021-report'>LinkedIn
+
+- Diversidad en Tecnología en América Latina (2021)</a> </div>
+
+</details>
+
+<h3 id="current-age">Current Age</h3>
+<p><a class="glightbox" href="../output_11_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_11_0.png" /></a></p>
+<p>Los grupos mas concentrados de encuestados tienen mas de 35 años
 mientras que la los grupos de menor edad, en todas las categorias, no alcanzan
 a sobrepasar el 50%. La mayor concentracion de encuestados esta en el grupo
 etario de 30-34 años. El grupo etarios de encuestados que concentra la
-mayor cantidad de encuestados comienza en los 30 años y termina el los 39 años.
-</code></pre>
-<h1 id="ages-by-gender">Ages by gender.</h1>
-<p><a class="glightbox" href="../output_16_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_16_0.png" /></a></p>
-<pre><code class="language-highlight">[op] En el caso de la comparacion de distribuciones etarias por genero. Cuando
+mayor cantidad de encuestados comienza en los 30 años y termina el los 39 años.</p>
+<h1 id="ages-by-gender">Ages by Gender</h1>
+<p><a class="glightbox" href="../output_16_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_16_0.png" /></a></p>
+<p>En el caso de la comparacion de distribuciones etarias por genero. Cuando
 se comparan genero masculino y femenino. Se observan que en la mayoria de las
-categorias etarias, en ningun caso, existe una distribucion &quot;igualitaria&quot; de
-representacion de generos. En todos los casos la representacion &quot;masculina&quot;
+categorias etarias, en ningun caso, existe una distribucion "igualitaria" de
+representacion de generos. En todos los casos la representacion "masculina"
 supera amplamente a la femenina. (No se tomo en consideracion la categoria
-&quot;prefiero no contestar debido que no es una categoria representativa.)
-
-Las 4 categorias con mayor reprecentacion som:
-
-* 20-24
-* 25-29
-* 30-34
-* 35-39
-
-En ninguno de los casos anteriores el % de mujeres supera el 50% del total de
-la categoria.
-</code></pre>
+"prefiero no contestar debido que no es una categoria representativa.)</p>
+<p>Las 4 categorias con mayor reprecentacion som:</p>
+<ul>
+<li>20-24</li>
+<li>25-29</li>
+<li>30-34</li>
+<li>35-39</li>
+</ul>
+<p>En ninguno de los casos anteriores el % de mujeres supera el 50% del total de
+la categoria.</p>
 <h3 id="female">Female</h3>
 <table>
 <thead>
@@ -229,19 +223,57 @@ la categoria.
 </tr>
 </tbody>
 </table>
-<h3 id="male">male</h3>
-<p>|    age       |  count  |\
-|--------------|-------|
-|    30_34 years  |  103    |\
-|    25_29 years  |   78    |\
-|    35_39 years  |   58    |\
-|    40_44 years  |   43    |\
-|    20_24 years  |   40    |\
-|    45_49 years  |   10    |\
-|    15_19 years  |    5    |\
-|    50_54 years  |    4    |\
-|    60+ years    |    3    |\
-|    55_59 years  |    1    |</p>
+<h3 id="male">Male</h3>
+<table>
+<thead>
+<tr>
+<th>age</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30_34 years</td>
+<td>103</td>
+</tr>
+<tr>
+<td>25_29 years</td>
+<td>78</td>
+</tr>
+<tr>
+<td>35_39 years</td>
+<td>58</td>
+</tr>
+<tr>
+<td>40_44 years</td>
+<td>43</td>
+</tr>
+<tr>
+<td>20_24 years</td>
+<td>40</td>
+</tr>
+<tr>
+<td>45_49 years</td>
+<td>10</td>
+</tr>
+<tr>
+<td>15_19 years</td>
+<td>5</td>
+</tr>
+<tr>
+<td>50_54 years</td>
+<td>4</td>
+</tr>
+<tr>
+<td>60+ years</td>
+<td>3</td>
+</tr>
+<tr>
+<td>55_59 years</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 <h1 id="prefer-not-to-say">Prefer Not To Say</h1>
 <table>
 <thead>

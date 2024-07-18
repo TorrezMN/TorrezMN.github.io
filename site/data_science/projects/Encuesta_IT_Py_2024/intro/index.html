@@ -69,34 +69,12 @@
                             nav-link text-gray text-decoration-none" href="../../../../contact/">[Contact]</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[miscellaneous]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../gral/how_to_blog/" class="dropdown-item text-decoration-none ">How to blog</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
                             <a class=" active 
                             nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Data Science]</a>
                             <ul class="dropdown-menu">
                                     <!-- block dropdown-menu -->
     <li>
         <a href="./" class="dropdown-item text-decoration-none  active ">Encuesta devs Paraguay 2024</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Challenges]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../challenges/facke_server/" class="dropdown-item text-decoration-none ">Facke Server</a>
     </li>
 <!-- endblock -->
                             </ul>
@@ -138,7 +116,58 @@
                 <h1 class=" title" id="component-title">Encuesta devs Paraguay 2024</h1>
             
         </header>
-        <p><h1 id="indice">Índice</h1>
+        <p><h2 id="disclaimer-consideraciones-previas">Disclaimer / Consideraciones Previas</h2>
+<hr />
+<ol>
+<li><strong>Fuente de los Datos</strong>: Los datos utilizados en este estudio provienen de
+   <a href="https://proyectosbeta.net/2024/06/resultados-de-la-encuesta-sobre-developers-en-paraguay-2024/">Proyectos
+   Beta</a>.
+   Ellos muy gentilmente pusieron a disposicion publica los datos de la
+   encuesta.</li>
+<li><strong>Limitaciones del Dataset</strong>: Los datos contenidos en el dataset se limitan
+   al año 2024 por lo tanto  podrian no reflejar tendencias posteriores o
+   posibles cambios.</li>
+<li>Con conjunto de datos no es posible <strong><em>determinar la representatividad</em></strong>
+     de los resultados de la encuesta. Solo se puede determinar que se obtuvo
+     <strong><em>394 respuestas</em></strong>.</li>
+<li>En algunos casos no esposible determinar con exactitud <strong><em>valores
+     representativos</em></strong>. (Se eligio usar "rangos" en lugar de valores
+     enteros.)</li>
+<li>En algunos casos existe <strong><em>superposicion de dominios y claridad</em></strong> en las
+     preguntas.</li>
+<li><strong>Métodos de Recolección de Datos</strong>: Los datos se recolectaron usando las
+   facilidades que ofrece la <strong><em>plataforma de google forms</em></strong> dado que permite
+   realizar la encuesta y posteriormente descargar los resultados en formato csv.</li>
+<li><strong>Análisis y Suposiciones</strong>: El análisis se realizó utilizando métodos
+   estadísticos estándar, y se asumió que los datos eran representativos de la
+   población general.</li>
+<li><strong>Interpretación de los Resultados</strong>: Los resultados de este estudio deben
+   interpretarse con cautela y no se deben generalizar más allá del alcance de los
+   datos proporcionados.</li>
+<li>Se presentan intepretaciones personales sobre los datos.</li>
+<li>Se exponen tambien datos encontrados mendiante el uso de la herramienta Chat
+     GPT. Se especifica claramente en la seccion. Estos datos se incluyen con el
+     fin de proveer contexto a la interpretacion y proveer un panorama mas amplio
+     ya sea local o regional a nivel latino americano.</li>
+<li><strong>Cambios y Actualizaciones</strong>: Este análisis está basado en la versión
+   actual del dataset, para lo cual las interpertaciones presentadas aqui podrian
+   actualizarse conforme se conozcan o puedan aparecer nuevos datos sobre algunos
+   de los temas analizados aqui.</li>
+<li><strong>Responsabilidad y Uso</strong>: El autor no se responsabiliza por el uso indebido
+   de la información presentada. Los datos y resultados deben ser utilizados
+   únicamente con fines informativos/exploratorios y no como base única para
+   decisiones críticas.</li>
+</ol>
+<h3 id="motivaciones">Motivaciones</h3>
+<p>La motivación para realizar este estudio sobre el dataset de la Encuesta de
+Profesionales en Tecnología del Paraguay 2024 se basa en varios objetivos clave.
+Primero, quería obtener una comprensión más profunda de la comunidad
+tecnológica en el país, incluyendo los perfiles y características de sus
+miembros. Segundo, tenía el interés de conocer los stacks tecnológicos más
+utilizados y emergentes dentro de esta comunidad. Finalmente, me propuse
+confirmar o refutar algunas creencias personales sobre la industria tecnológica
+local, basándome en datos reales y no solo en percepciones.</p>
+<h1 id="indice-de-temas">Índice de Temas</h1>
 <hr />
 <ul>
 <li><a href="../demografia/demografia/">Demografía</a></li>
@@ -154,13 +183,13 @@
                     <!-- block preview -->
         <div class="row row-cols-md-3 text-center pt-md-3" id="component-preview">
             <div class="col themed-grid-col">
-                <a rel="prev" href="../../../../gral/how_to_blog/" class="nav-link">
+                <a rel="prev" href="../../../../contact/" class="nav-link">
                     <i class="fa fa-arrow-left"></i> Previous
                 </a>
             </div>
             <div class="col themed-grid-col"></div>
             <div class="col themed-grid-col">
-                <a rel="next" href="../../../../challenges/facke_server/" class="nav-link">
+                <a rel="next" class="nav-link disabled">
                     Next <i class="fa fa-arrow-right"></i>
                 </a>
             </div>

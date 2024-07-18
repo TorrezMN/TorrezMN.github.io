@@ -70,33 +70,11 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[miscellaneous]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../../gral/how_to_blog/" class="dropdown-item text-decoration-none ">How to blog</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
                             nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Data Science]</a>
                             <ul class="dropdown-menu">
                                     <!-- block dropdown-menu -->
     <li>
         <a href="../../intro/" class="dropdown-item text-decoration-none ">Encuesta devs Paraguay 2024</a>
-    </li>
-<!-- endblock -->
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="
-                            nav-link dropdown-toggle text-decoration-none" href="#" data-bs-toggle="dropdown">[Challenges]</a>
-                            <ul class="dropdown-menu">
-                                    <!-- block dropdown-menu -->
-    <li>
-        <a href="../../../../../challenges/facke_server/" class="dropdown-item text-decoration-none ">Facke Server</a>
     </li>
 <!-- endblock -->
                             </ul>
@@ -138,107 +116,28 @@
                 <h1 class=" title" id="component-title">Educacion</h1>
             
         </header>
-        <p><pre><code class="language-python">#######################
-# CONFIG ZONE
-#######################
+        <p><p>In this section we explore the "educational" aspect of the data with
+special enphasis in the inpact on the IT world of the paraguayan
+profesionals.</p>
+<figure>
+  <a href="output_7_0.png" class="glightbox">
+    <a class="glightbox" href="output_7_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img src="output_7_0.png" alt="Image description"></a>
+  </a>
+  <figcaption style="text-align: center;"><em>This is a brief comment below the image.</em></figcaption>
+</figure>
 
-# Importing Libs
-import pandas as pd
-import seaborn as sns
-
-import matplotlib.pyplot as plt
-
-from collections import Counter
-import numpy as np
-
-# My Tools
-import milanesas.eda_helper as eh
-from tools.helpers import (
-    get_column_uniques,
-    get_column_uniques_count,
-    plot_grouped_by_category_barh_charts,
-    barh_chart_unique_values,
-    print_unique_normalized_values_by_group,
-    make_horizontal_grouped_chart,
-    make_vertical_grouped_chart,
-    grouped_grid_pie_chart,
-    grouped_grid_barh_chart,
-    create_grouped_dataframe_list,
-)
-
-
-%matplotlib inline
-
-# Reseting figure size params.
-plt.rcParams[&quot;figure.figsize&quot;] = [12, 7]
-# Setting seaborn as default plotting lib.
-sns.set()
-sns.set_palette(&quot;pastel&quot;)
-</code></pre>
-<pre><code class="language-python">df = pd.read_csv(&quot;../data/data_fixed.csv&quot;)
-</code></pre>
-<pre><code class="language-python">df = df.drop(&quot;Unnamed: 0&quot;, axis=1)
-df.columns
-</code></pre>
-<pre><code>Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
-       'code_for_job', 'IT_exp', 'prof_prog_exp', 'first_code',
-       'assigned_seniority', 'self_assessed_seniority', 'formal_edu', 'majors',
-       'formal_edu_importance', 'gender', 'age', 'monthly_salary',
-       'pro_languages', 'web_frameworks', 'other_tools', 'databases',
-       'platforms', 'fav_language', 'least_fav_language', 'fav_framework',
-       'least_fav_framework', 'tools', 'use_AI_tools', 'AI_replace_dev',
-       'layoffs_23_24', 'working_now', 'unemployed_duration', 'same_role',
-       'current_vs_prev_salary'],
-      dtype='object')
-</code></pre>
-<h1 id="education">Education</h1>
-<ul>
-<li>In this section we explore the "educational" aspect of the data with special enphasis in the inpact on the IT world of the paraguayan profesionals.</li>
-</ul>
-<pre><code class="language-python">get_column_uniques(df, &quot;majors&quot;)
-</code></pre>
-<pre><code>['systems_analysis',
- 'programming',
- 'computer_engineering',
- 'electronic_engineering',
- 'graphic_design',
- 'mathematics',
- 'none',
- 'other',
- 'other ingenerías',
- 'civil_engineering',
- 'electrical_engineering']
-</code></pre>
 <ul>
 <li>Se puede ver que existe un numero muuy reducido de accrearas representadas.</li>
 </ul>
-<pre><code class="language-python">type(df[&quot;majors&quot;].value_counts())
-</code></pre>
-<pre><code>pandas.core.series.Series
-</code></pre>
-<pre><code class="language-python"># Get the unique counts
-value_counts = get_column_uniques_count(df, &quot;majors&quot;)
-
-# Plot the horizontal bar chart
-ax = value_counts.plot(kind=&quot;barh&quot;, title=&quot;Majors count.&quot;)
-
-# Annotate the bars with the counts
-for index, value in enumerate(value_counts):
-    ax.text(value, index, str(value), va=&quot;center&quot;)
-
-# Show the plot
-plt.show()
-</code></pre>
-<p><a class="glightbox" href="../output_7_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_7_0.png" /></a></p>
+<p><a class="glightbox" href="../output_7_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_7_0.png" /></a></p>
 <p>Las carreras con <strong>mayor representacion</strong> entre los encuestados son:</p>
 <ul>
 <li>Programming</li>
 <li>CS Engineering</li>
 <li>Systems analysis</li>
 </ul>
-<p>Entre estas 3 carreras se ditribuye mas del 50% de los encuestados. Siendo <strong>systems analysis</strong> la carrera con mas representacion.</p>
-<pre><code class="language-python">get_column_uniques_count(df, &quot;majors&quot;)
-</code></pre>
+<p>Entre estas 3 carreras se ditribuye mas del 50% de los encuestados.
+Siendo <strong>systems analysis</strong> la carrera con mas representacion.</p>
 <pre><code>majors
 systems_analysis          203
 computer_engineering      195
@@ -253,473 +152,258 @@ civil_engineering           2
 electrical_engineering      2
 Name: count, dtype: int64
 </code></pre>
-<pre><code class="language-python">majors_list = [&quot;systems_analysis&quot;, &quot;computer_engineering&quot;, &quot;programming&quot;]
-</code></pre>
-<pre><code class="language-python"># Comparative chart for gender and majors.
-majors_df = [df[df[&quot;majors&quot;] == i] for i in majors_list]
-
-
-# Grouping by 'column_name'
-grouped_df = create_grouped_dataframe_list(majors_df, &quot;majors&quot;)
-print(grouped_df.groups.keys())
-</code></pre>
-<pre><code>dict_keys(['computer_engineering', 'programming', 'systems_analysis'])
-</code></pre>
-<pre><code class="language-python">gender_group = df.groupby(&quot;gender&quot;)
-</code></pre>
 <h2 id="education-vs-work_mode">Education vs work_mode</h2>
 <pre><code class="language-python">barh_chart_unique_values(df, &quot;majors&quot;, &quot;work_mode&quot;, &quot;Work mode by majors.&quot;, &quot;Work Mode&quot;)
 </code></pre>
-<p><a class="glightbox" href="../output_14_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_0.png" /></a></p>
-<p><a class="glightbox" href="../output_14_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_1.png" /></a></p>
-<p><a class="glightbox" href="../output_14_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_2.png" /></a></p>
-<p><a class="glightbox" href="../output_14_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_3.png" /></a></p>
-<p><a class="glightbox" href="../output_14_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_4.png" /></a></p>
-<p><a class="glightbox" href="../output_14_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_5.png" /></a></p>
-<p><a class="glightbox" href="../output_14_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_6.png" /></a></p>
-<p><a class="glightbox" href="../output_14_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_7.png" /></a></p>
-<p><a class="glightbox" href="../output_14_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_8.png" /></a></p>
-<p><a class="glightbox" href="../output_14_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_9.png" /></a></p>
-<p><a class="glightbox" href="../output_14_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_10.png" /></a></p>
-<pre><code class="language-python">print_unique_normalized_values_by_group(
-    df, &quot;majors&quot;, &quot;work_mode&quot;, &quot;Work mode by majors.&quot;
-)
-</code></pre>
-<pre><code>Work mode by majors. - systems_analysis
-====================
-work_mode
+<p><a class="glightbox" href="../output_14_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_0.png" /></a></p>
+<p><a class="glightbox" href="../output_14_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_1.png" /></a></p>
+<p><a class="glightbox" href="../output_14_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_2.png" /></a></p>
+<p><a class="glightbox" href="../output_14_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_3.png" /></a></p>
+<p><a class="glightbox" href="../output_14_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_4.png" /></a></p>
+<p><a class="glightbox" href="../output_14_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_5.png" /></a></p>
+<p><a class="glightbox" href="../output_14_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_6.png" /></a></p>
+<p><a class="glightbox" href="../output_14_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_7.png" /></a></p>
+<p><a class="glightbox" href="../output_14_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_8.png" /></a></p>
+<p><a class="glightbox" href="../output_14_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_9.png" /></a></p>
+<p><a class="glightbox" href="../output_14_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_14_10.png" /></a></p>
+<h1 id="work-mode-by-majors-systems_analysis">Work mode by majors. - systems_analysis</h1>
+<p>work_mode
 onsite     38%
 remote     30%
 Hibrído    30%
 none        0%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, electronic_engineering, graphic_design
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-electronic_engineering-graphic_design">Work mode by majors. - programming, systems_analysis, computer_engineering, electronic_engineering, graphic_design</h1>
+<p>work_mode
 onsite    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming">Work mode by majors. - programming</h1>
+<p>work_mode
 onsite     38%
 remote     30%
 Hibrído    29%
 none        1%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, computer_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-computer_engineering">Work mode by majors. - programming, computer_engineering</h1>
+<p>work_mode
 remote     52%
 onsite     30%
 Hibrído    17%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, mathematics
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-mathematics">Work mode by majors. - programming, systems_analysis, computer_engineering, mathematics</h1>
+<p>work_mode
 remote     50%
 Hibrído    25%
 onsite     25%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - systems_analysis, computer_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-systems_analysis-computer_engineering">Work mode by majors. - systems_analysis, computer_engineering</h1>
+<p>work_mode
 remote     41%
 onsite     30%
 Hibrído    27%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis">Work mode by majors. - programming, systems_analysis</h1>
+<p>work_mode
 onsite     42%
 Hibrído    36%
 remote     19%
 none        1%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - electronic_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-electronic_engineering">Work mode by majors. - electronic_engineering</h1>
+<p>work_mode
 remote     58%
 onsite     25%
 Hibrído    16%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - computer_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-computer_engineering">Work mode by majors. - computer_engineering</h1>
+<p>work_mode
 remote     46%
 onsite     30%
 Hibrído    22%
 none        1%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering">Work mode by majors. - programming, systems_analysis, computer_engineering</h1>
+<p>work_mode
 Hibrído    38%
 onsite     30%
 remote     30%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - none
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-none">Work mode by majors. - none</h1>
+<p>work_mode
 Hibrído    45%
 remote     27%
 onsite     18%
 none        9%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - computer_engineering, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-computer_engineering-other">Work mode by majors. - computer_engineering, other</h1>
+<p>work_mode
 remote    81%
 onsite    18%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - systems_analysis, computer_engineering, other ingenerías
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-systems_analysis-computer_engineering-other-ingenerias">Work mode by majors. - systems_analysis, computer_engineering, other ingenerías</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - other ingenerías
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-other-ingenerias">Work mode by majors. - other ingenerías</h1>
+<p>work_mode
 onsite     50%
 remote     37%
 Hibrído    12%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, other ingenerías
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-other-ingenerias">Work mode by majors. - programming, systems_analysis, computer_engineering, other ingenerías</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-other">Work mode by majors. - programming, other</h1>
+<p>work_mode
 remote    60%
 onsite    20%
 none      20%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-other">Work mode by majors. - other</h1>
+<p>work_mode
 remote     51%
 onsite     35%
 Hibrído    11%
 none        2%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - systems_analysis, computer_engineering, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-systems_analysis-computer_engineering-other">Work mode by majors. - systems_analysis, computer_engineering, other</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, mathematics, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-mathematics-other">Work mode by majors. - programming, systems_analysis, computer_engineering, mathematics, other</h1>
+<p>work_mode
 remote    50%
 onsite    50%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, graphic_design, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-graphic_design-other">Work mode by majors. - programming, graphic_design, other</h1>
+<p>work_mode
 remote     50%
 Hibrído    50%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-other">Work mode by majors. - programming, systems_analysis, other</h1>
+<p>work_mode
 onsite     83%
 Hibrído    16%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, other ingenerías
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-other-ingenerias">Work mode by majors. - programming, other ingenerías</h1>
+<p>work_mode
 onsite    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - systems_analysis, civil_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-systems_analysis-civil_engineering">Work mode by majors. - systems_analysis, civil_engineering</h1>
+<p>work_mode
 onsite    50%
 none      50%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - mathematics, none
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-mathematics-none">Work mode by majors. - mathematics, none</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - computer_engineering, mathematics
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-computer_engineering-mathematics">Work mode by majors. - computer_engineering, mathematics</h1>
+<p>work_mode
 Hibrído    40%
 remote     40%
 onsite     20%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - graphic_design
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-graphic_design">Work mode by majors. - graphic_design</h1>
+<p>work_mode
 Hibrído    66%
 onsite     22%
 remote     11%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, computer_engineering, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-computer_engineering-other">Work mode by majors. - programming, computer_engineering, other</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, graphic_design
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-graphic_design">Work mode by majors. - programming, systems_analysis, graphic_design</h1>
+<p>work_mode
 Hibrído    75%
 onsite     25%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, electronic_engineering, other ingenerías, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-electronic_engineering-other-ingenerias-other">Work mode by majors. - programming, systems_analysis, electronic_engineering, other ingenerías, other</h1>
+<p>work_mode
 onsite    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - other ingenerías, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-other-ingenerias-other">Work mode by majors. - other ingenerías, other</h1>
+<p>work_mode
 onsite    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-other">Work mode by majors. - programming, systems_analysis, computer_engineering, other</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, mathematics
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-mathematics">Work mode by majors. - programming, systems_analysis, mathematics</h1>
+<p>work_mode
 onsite     50%
 Hibrído    25%
 remote     25%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, electronic_engineering, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-electronic_engineering-other">Work mode by majors. - programming, electronic_engineering, other</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, electrical_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-electrical_engineering">Work mode by majors. - programming, systems_analysis, computer_engineering, electrical_engineering</h1>
+<p>work_mode
 remote    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - electrical_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-electrical_engineering">Work mode by majors. - electrical_engineering</h1>
+<p>work_mode
 remote    50%
 onsite    50%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, electronic_engineering, mathematics
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-electronic_engineering-mathematics">Work mode by majors. - programming, electronic_engineering, mathematics</h1>
+<p>work_mode
 onsite    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, civil_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-civil_engineering">Work mode by majors. - programming, systems_analysis, civil_engineering</h1>
+<p>work_mode
 none    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, computer_engineering, graphic_design
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-computer_engineering-graphic_design">Work mode by majors. - programming, systems_analysis, computer_engineering, graphic_design</h1>
+<p>work_mode
 Hibrído    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, mathematics, other
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-mathematics-other">Work mode by majors. - programming, systems_analysis, mathematics, other</h1>
+<p>work_mode
 onsite    100%
-Name: proportion, dtype: object
-
-
-
-
-Work mode by majors. - programming, systems_analysis, electronic_engineering
-====================
-work_mode
+Name: proportion, dtype: object</p>
+<h1 id="work-mode-by-majors-programming-systems_analysis-electronic_engineering">Work mode by majors. - programming, systems_analysis, electronic_engineering</h1>
+<p>work_mode
 onsite    50%
 remote    50%
-Name: proportion, dtype: object
-</code></pre>
+Name: proportion, dtype: object</p>
 <h2 id="education-vs-employment_mode">Education vs employment_mode</h2>
 <pre><code class="language-python">barh_chart_unique_values(
     df, &quot;majors&quot;, &quot;employment_mode&quot;, &quot;Majors vs. Employment mode.&quot;, &quot;Employment Mode&quot;
 )
 </code></pre>
-<p><a class="glightbox" href="../output_17_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_0.png" /></a></p>
-<p><a class="glightbox" href="../output_17_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_1.png" /></a></p>
-<p><a class="glightbox" href="../output_17_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_2.png" /></a></p>
-<p><a class="glightbox" href="../output_17_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_3.png" /></a></p>
-<p><a class="glightbox" href="../output_17_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_4.png" /></a></p>
-<p><a class="glightbox" href="../output_17_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_5.png" /></a></p>
-<p><a class="glightbox" href="../output_17_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_6.png" /></a></p>
-<p><a class="glightbox" href="../output_17_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_7.png" /></a></p>
-<p><a class="glightbox" href="../output_17_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_8.png" /></a></p>
-<p><a class="glightbox" href="../output_17_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_9.png" /></a></p>
-<p><a class="glightbox" href="../output_17_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_10.png" /></a></p>
+<p><a class="glightbox" href="../output_17_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_0.png" /></a></p>
+<p><a class="glightbox" href="../output_17_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_1.png" /></a></p>
+<p><a class="glightbox" href="../output_17_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_2.png" /></a></p>
+<p><a class="glightbox" href="../output_17_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_3.png" /></a></p>
+<p><a class="glightbox" href="../output_17_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_4.png" /></a></p>
+<p><a class="glightbox" href="../output_17_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_5.png" /></a></p>
+<p><a class="glightbox" href="../output_17_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_6.png" /></a></p>
+<p><a class="glightbox" href="../output_17_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_7.png" /></a></p>
+<p><a class="glightbox" href="../output_17_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_8.png" /></a></p>
+<p><a class="glightbox" href="../output_17_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_9.png" /></a></p>
+<p><a class="glightbox" href="../output_17_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_17_10.png" /></a></p>
 <h2 id="education-vs-it_exp">Education vs IT_exp</h2>
 <pre><code class="language-python">barh_chart_unique_values(
     df, &quot;majors&quot;, &quot;IT_exp&quot;, &quot;Majors and IT experience.&quot;, &quot;Years of experience.&quot;
 )
 </code></pre>
-<p><a class="glightbox" href="../output_19_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_0.png" /></a></p>
-<p><a class="glightbox" href="../output_19_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_1.png" /></a></p>
-<p><a class="glightbox" href="../output_19_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_2.png" /></a></p>
-<p><a class="glightbox" href="../output_19_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_3.png" /></a></p>
-<p><a class="glightbox" href="../output_19_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_4.png" /></a></p>
-<p><a class="glightbox" href="../output_19_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_5.png" /></a></p>
-<p><a class="glightbox" href="../output_19_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_6.png" /></a></p>
-<p><a class="glightbox" href="../output_19_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_7.png" /></a></p>
-<p><a class="glightbox" href="../output_19_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_8.png" /></a></p>
-<p><a class="glightbox" href="../output_19_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_9.png" /></a></p>
-<p><a class="glightbox" href="../output_19_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_10.png" /></a></p>
+<p><a class="glightbox" href="../output_19_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_0.png" /></a></p>
+<p><a class="glightbox" href="../output_19_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_1.png" /></a></p>
+<p><a class="glightbox" href="../output_19_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_2.png" /></a></p>
+<p><a class="glightbox" href="../output_19_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_3.png" /></a></p>
+<p><a class="glightbox" href="../output_19_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_4.png" /></a></p>
+<p><a class="glightbox" href="../output_19_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_5.png" /></a></p>
+<p><a class="glightbox" href="../output_19_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_6.png" /></a></p>
+<p><a class="glightbox" href="../output_19_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_7.png" /></a></p>
+<p><a class="glightbox" href="../output_19_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_8.png" /></a></p>
+<p><a class="glightbox" href="../output_19_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_9.png" /></a></p>
+<p><a class="glightbox" href="../output_19_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_10.png" /></a></p>
 <h2 id="education-vs-first_code">Education vs first_code</h2>
 <pre><code class="language-python">barh_chart_unique_values(
     df,
@@ -729,17 +413,17 @@ Name: proportion, dtype: object
     &quot;First line of code. \n(Aproximated age.)&quot;,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_21_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_0.png" /></a></p>
-<p><a class="glightbox" href="../output_21_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_1.png" /></a></p>
-<p><a class="glightbox" href="../output_21_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_2.png" /></a></p>
-<p><a class="glightbox" href="../output_21_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_3.png" /></a></p>
-<p><a class="glightbox" href="../output_21_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_4.png" /></a></p>
-<p><a class="glightbox" href="../output_21_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_5.png" /></a></p>
-<p><a class="glightbox" href="../output_21_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_6.png" /></a></p>
-<p><a class="glightbox" href="../output_21_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_7.png" /></a></p>
-<p><a class="glightbox" href="../output_21_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_8.png" /></a></p>
-<p><a class="glightbox" href="../output_21_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_9.png" /></a></p>
-<p><a class="glightbox" href="../output_21_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_10.png" /></a></p>
+<p><a class="glightbox" href="../output_21_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_0.png" /></a></p>
+<p><a class="glightbox" href="../output_21_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_1.png" /></a></p>
+<p><a class="glightbox" href="../output_21_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_2.png" /></a></p>
+<p><a class="glightbox" href="../output_21_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_3.png" /></a></p>
+<p><a class="glightbox" href="../output_21_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_4.png" /></a></p>
+<p><a class="glightbox" href="../output_21_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_5.png" /></a></p>
+<p><a class="glightbox" href="../output_21_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_6.png" /></a></p>
+<p><a class="glightbox" href="../output_21_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_7.png" /></a></p>
+<p><a class="glightbox" href="../output_21_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_8.png" /></a></p>
+<p><a class="glightbox" href="../output_21_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_9.png" /></a></p>
+<p><a class="glightbox" href="../output_21_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_21_10.png" /></a></p>
 <h2 id="education-vs-assigned_seniority">Education vs assigned_seniority</h2>
 <pre><code class="language-python">barh_chart_unique_values(
     df,
@@ -749,17 +433,17 @@ Name: proportion, dtype: object
     &quot;Asigned seniority.&quot;,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_23_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_0.png" /></a></p>
-<p><a class="glightbox" href="../output_23_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_1.png" /></a></p>
-<p><a class="glightbox" href="../output_23_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_2.png" /></a></p>
-<p><a class="glightbox" href="../output_23_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_3.png" /></a></p>
-<p><a class="glightbox" href="../output_23_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_4.png" /></a></p>
-<p><a class="glightbox" href="../output_23_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_5.png" /></a></p>
-<p><a class="glightbox" href="../output_23_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_6.png" /></a></p>
-<p><a class="glightbox" href="../output_23_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_7.png" /></a></p>
-<p><a class="glightbox" href="../output_23_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_8.png" /></a></p>
-<p><a class="glightbox" href="../output_23_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_9.png" /></a></p>
-<p><a class="glightbox" href="../output_23_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_10.png" /></a></p>
+<p><a class="glightbox" href="../output_23_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_0.png" /></a></p>
+<p><a class="glightbox" href="../output_23_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_1.png" /></a></p>
+<p><a class="glightbox" href="../output_23_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_2.png" /></a></p>
+<p><a class="glightbox" href="../output_23_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_3.png" /></a></p>
+<p><a class="glightbox" href="../output_23_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_4.png" /></a></p>
+<p><a class="glightbox" href="../output_23_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_5.png" /></a></p>
+<p><a class="glightbox" href="../output_23_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_6.png" /></a></p>
+<p><a class="glightbox" href="../output_23_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_7.png" /></a></p>
+<p><a class="glightbox" href="../output_23_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_8.png" /></a></p>
+<p><a class="glightbox" href="../output_23_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_9.png" /></a></p>
+<p><a class="glightbox" href="../output_23_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_23_10.png" /></a></p>
 <p>En la mayoria de los casos, segun la carrera elegida por los encuestados,
 se puede observar que la mayoria posee un seniority de <strong>"senior"</strong>.</p>
 <h2 id="education-vs-self_assessed_seniority">Education vs self_assessed_seniority</h2>
@@ -771,17 +455,17 @@ se puede observar que la mayoria posee un seniority de <strong>"senior"</strong>
     &quot;Self assessed seniority.&quot;,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_26_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_0.png" /></a></p>
-<p><a class="glightbox" href="../output_26_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_1.png" /></a></p>
-<p><a class="glightbox" href="../output_26_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_2.png" /></a></p>
-<p><a class="glightbox" href="../output_26_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_3.png" /></a></p>
-<p><a class="glightbox" href="../output_26_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_4.png" /></a></p>
-<p><a class="glightbox" href="../output_26_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_5.png" /></a></p>
-<p><a class="glightbox" href="../output_26_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_6.png" /></a></p>
-<p><a class="glightbox" href="../output_26_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_7.png" /></a></p>
-<p><a class="glightbox" href="../output_26_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_8.png" /></a></p>
-<p><a class="glightbox" href="../output_26_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_9.png" /></a></p>
-<p><a class="glightbox" href="../output_26_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_10.png" /></a></p>
+<p><a class="glightbox" href="../output_26_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_0.png" /></a></p>
+<p><a class="glightbox" href="../output_26_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_1.png" /></a></p>
+<p><a class="glightbox" href="../output_26_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_2.png" /></a></p>
+<p><a class="glightbox" href="../output_26_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_3.png" /></a></p>
+<p><a class="glightbox" href="../output_26_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_4.png" /></a></p>
+<p><a class="glightbox" href="../output_26_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_5.png" /></a></p>
+<p><a class="glightbox" href="../output_26_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_6.png" /></a></p>
+<p><a class="glightbox" href="../output_26_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_7.png" /></a></p>
+<p><a class="glightbox" href="../output_26_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_8.png" /></a></p>
+<p><a class="glightbox" href="../output_26_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_9.png" /></a></p>
+<p><a class="glightbox" href="../output_26_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_26_10.png" /></a></p>
 <pre><code class="language-python">df.columns
 </code></pre>
 <pre><code>Index(['work_mode', 'employment_mode', 'role', 'prog_skills_in_role',
@@ -810,17 +494,17 @@ se puede observar que la mayoria posee un seniority de <strong>"senior"</strong>
     &quot;Importance level.&quot;,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_32_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_0.png" /></a></p>
-<p><a class="glightbox" href="../output_32_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_1.png" /></a></p>
-<p><a class="glightbox" href="../output_32_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_2.png" /></a></p>
-<p><a class="glightbox" href="../output_32_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_3.png" /></a></p>
-<p><a class="glightbox" href="../output_32_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_4.png" /></a></p>
-<p><a class="glightbox" href="../output_32_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_5.png" /></a></p>
-<p><a class="glightbox" href="../output_32_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_6.png" /></a></p>
-<p><a class="glightbox" href="../output_32_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_7.png" /></a></p>
-<p><a class="glightbox" href="../output_32_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_8.png" /></a></p>
-<p><a class="glightbox" href="../output_32_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_9.png" /></a></p>
-<p><a class="glightbox" href="../output_32_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_10.png" /></a></p>
+<p><a class="glightbox" href="../output_32_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_0.png" /></a></p>
+<p><a class="glightbox" href="../output_32_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_1.png" /></a></p>
+<p><a class="glightbox" href="../output_32_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_2.png" /></a></p>
+<p><a class="glightbox" href="../output_32_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_3.png" /></a></p>
+<p><a class="glightbox" href="../output_32_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_4.png" /></a></p>
+<p><a class="glightbox" href="../output_32_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_5.png" /></a></p>
+<p><a class="glightbox" href="../output_32_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_6.png" /></a></p>
+<p><a class="glightbox" href="../output_32_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_7.png" /></a></p>
+<p><a class="glightbox" href="../output_32_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_8.png" /></a></p>
+<p><a class="glightbox" href="../output_32_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_9.png" /></a></p>
+<p><a class="glightbox" href="../output_32_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_32_10.png" /></a></p>
 <h2 id="education-vs-formal_edu_importance">Education vs formal_edu_importance</h2>
 <pre><code class="language-python">df.columns
 </code></pre>
@@ -848,9 +532,9 @@ barh_chart_unique_values(
     &quot;Gender&quot;
 )
 </code></pre>
-<p><a class="glightbox" href="../output_36_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_0.png" /></a></p>
-<p><a class="glightbox" href="../output_36_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_1.png" /></a></p>
-<p><a class="glightbox" href="../output_36_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_2.png" /></a></p>
+<p><a class="glightbox" href="../output_36_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_0.png" /></a></p>
+<p><a class="glightbox" href="../output_36_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_1.png" /></a></p>
+<p><a class="glightbox" href="../output_36_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_36_2.png" /></a></p>
 <pre><code class="language-python">print_unique_normalized_values_by_group(
     df, &quot;gender&quot;, &quot;formal_edu&quot;, &quot;Formal education by gender.&quot;
 )
@@ -894,9 +578,9 @@ barh_chart_unique_values(
     &quot;Importance Level&quot;,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_38_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_0.png" /></a></p>
-<p><a class="glightbox" href="../output_38_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_1.png" /></a></p>
-<p><a class="glightbox" href="../output_38_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_2.png" /></a></p>
+<p><a class="glightbox" href="../output_38_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_0.png" /></a></p>
+<p><a class="glightbox" href="../output_38_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_1.png" /></a></p>
+<p><a class="glightbox" href="../output_38_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_38_2.png" /></a></p>
 <pre><code class="language-python">group_config = {
     &quot;title&quot;: &quot;Formal education importance. \n (male vs. females)&quot;,
     &quot;c1_label&quot;: &quot;MAN&quot;,
@@ -914,7 +598,7 @@ make_horizontal_grouped_chart(
     group_config,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_39_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_39_0.png" /></a></p>
+<p><a class="glightbox" href="../output_39_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_39_0.png" /></a></p>
 <pre><code class="language-python">get_column_uniques(df, &quot;formal_edu_importance&quot;)
 </code></pre>
 <pre><code>['quite_important',
@@ -930,24 +614,24 @@ make_horizontal_grouped_chart(
 </code></pre>
 <pre><code class="language-python">barh_chart_unique_values(df, &quot;majors&quot;, &quot;gender&quot;, &quot;Majors by gender.&quot;, &quot;Gender&quot;)
 </code></pre>
-<p><a class="glightbox" href="../output_43_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_0.png" /></a></p>
-<p><a class="glightbox" href="../output_43_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_1.png" /></a></p>
-<p><a class="glightbox" href="../output_43_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_2.png" /></a></p>
-<p><a class="glightbox" href="../output_43_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_3.png" /></a></p>
-<p><a class="glightbox" href="../output_43_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_4.png" /></a></p>
-<p><a class="glightbox" href="../output_43_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_5.png" /></a></p>
-<p><a class="glightbox" href="../output_43_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_6.png" /></a></p>
-<p><a class="glightbox" href="../output_43_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_7.png" /></a></p>
-<p><a class="glightbox" href="../output_43_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_8.png" /></a></p>
-<p><a class="glightbox" href="../output_43_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_9.png" /></a></p>
-<p><a class="glightbox" href="../output_43_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_10.png" /></a></p>
+<p><a class="glightbox" href="../output_43_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_0.png" /></a></p>
+<p><a class="glightbox" href="../output_43_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_1.png" /></a></p>
+<p><a class="glightbox" href="../output_43_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_2.png" /></a></p>
+<p><a class="glightbox" href="../output_43_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_3.png" /></a></p>
+<p><a class="glightbox" href="../output_43_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_4.png" /></a></p>
+<p><a class="glightbox" href="../output_43_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_5.png" /></a></p>
+<p><a class="glightbox" href="../output_43_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_6.png" /></a></p>
+<p><a class="glightbox" href="../output_43_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_7.png" /></a></p>
+<p><a class="glightbox" href="../output_43_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_8.png" /></a></p>
+<p><a class="glightbox" href="../output_43_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_9.png" /></a></p>
+<p><a class="glightbox" href="../output_43_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_43_10.png" /></a></p>
 <pre><code class="language-python">plot_grouped_by_category_barh_charts(
     gender_groups, &quot;majors&quot;, &quot;Majors by Gender.&quot;, &quot;Majors&quot;
 )
 </code></pre>
-<p><a class="glightbox" href="../output_44_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_0.png" /></a></p>
-<p><a class="glightbox" href="../output_44_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_1.png" /></a></p>
-<p><a class="glightbox" href="../output_44_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_2.png" /></a></p>
+<p><a class="glightbox" href="../output_44_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_0.png" /></a></p>
+<p><a class="glightbox" href="../output_44_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_1.png" /></a></p>
+<p><a class="glightbox" href="../output_44_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_44_2.png" /></a></p>
 <pre><code class="language-python">for i in gender_groups.groups.keys():
     print(&quot;GENDER -&gt; &quot;, i)
     c = gender_groups.get_group(i)
@@ -1031,110 +715,55 @@ male      72
 female    15
 Name: count, dtype: int64
 </code></pre>
-<pre><code class="language-python"># Defining color for bars
-color_neutro_dark = &quot;gray&quot;  # Assuming a color definition for demonstration
-
-# Function call
-grouped_grid_barh_chart(
-    grouped_df,
-    &quot;gender&quot;,
-    &quot;Majors by gender. \n (Common majors only.)&quot;,
-    3,
-    1,
-    color_neutro_dark,
-)
-</code></pre>
-<p><a class="glightbox" href="../output_48_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_48_0.png" /></a></p>
+<p><a class="glightbox" href="../output_48_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_48_0.png" /></a></p>
 <h2 id="education-vs-age">Education vs age</h2>
-<pre><code class="language-python">barh_chart_unique_values(df, &quot;majors&quot;, &quot;age&quot;, &quot;Majors by age.&quot;, &quot;age&quot;)
-</code></pre>
-<p><a class="glightbox" href="../output_50_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_0.png" /></a></p>
-<p><a class="glightbox" href="../output_50_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_1.png" /></a></p>
-<p><a class="glightbox" href="../output_50_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_2.png" /></a></p>
-<p><a class="glightbox" href="../output_50_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_3.png" /></a></p>
-<p><a class="glightbox" href="../output_50_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_4.png" /></a></p>
-<p><a class="glightbox" href="../output_50_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_5.png" /></a></p>
-<p><a class="glightbox" href="../output_50_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_6.png" /></a></p>
-<p><a class="glightbox" href="../output_50_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_7.png" /></a></p>
-<p><a class="glightbox" href="../output_50_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_8.png" /></a></p>
-<p><a class="glightbox" href="../output_50_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_9.png" /></a></p>
-<p><a class="glightbox" href="../output_50_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_10.png" /></a></p>
-<pre><code class="language-python">
-</code></pre>
+<p><a class="glightbox" href="../output_50_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_0.png" /></a></p>
+<p><a class="glightbox" href="../output_50_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_1.png" /></a></p>
+<p><a class="glightbox" href="../output_50_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_2.png" /></a></p>
+<p><a class="glightbox" href="../output_50_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_3.png" /></a></p>
+<p><a class="glightbox" href="../output_50_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_4.png" /></a></p>
+<p><a class="glightbox" href="../output_50_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_5.png" /></a></p>
+<p><a class="glightbox" href="../output_50_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_6.png" /></a></p>
+<p><a class="glightbox" href="../output_50_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_7.png" /></a></p>
+<p><a class="glightbox" href="../output_50_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_8.png" /></a></p>
+<p><a class="glightbox" href="../output_50_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_9.png" /></a></p>
+<p><a class="glightbox" href="../output_50_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_50_10.png" /></a></p>
 <h2 id="education-vs-monthly_salary">Education vs monthly_salary</h2>
-<pre><code class="language-python">barh_chart_unique_values(
-    df, 
-    &quot;majors&quot;,
-    &quot;monthly_salary&quot;,
-    &quot;Month salary for majors.&quot;,
-    &quot;Salary&quot;
-)
-</code></pre>
-<p><a class="glightbox" href="../output_53_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_0.png" /></a></p>
-<p><a class="glightbox" href="../output_53_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_1.png" /></a></p>
-<p><a class="glightbox" href="../output_53_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_2.png" /></a></p>
-<p><a class="glightbox" href="../output_53_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_3.png" /></a></p>
-<p><a class="glightbox" href="../output_53_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_4.png" /></a></p>
-<p><a class="glightbox" href="../output_53_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_5.png" /></a></p>
-<p><a class="glightbox" href="../output_53_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_6.png" /></a></p>
-<p><a class="glightbox" href="../output_53_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_7.png" /></a></p>
-<p><a class="glightbox" href="../output_53_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_8.png" /></a></p>
-<p><a class="glightbox" href="../output_53_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_9.png" /></a></p>
-<p><a class="glightbox" href="../output_53_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_10.png" /></a></p>
+<p><a class="glightbox" href="../output_53_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_0.png" /></a></p>
+<p><a class="glightbox" href="../output_53_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_1.png" /></a></p>
+<p><a class="glightbox" href="../output_53_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_2.png" /></a></p>
+<p><a class="glightbox" href="../output_53_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_3.png" /></a></p>
+<p><a class="glightbox" href="../output_53_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_4.png" /></a></p>
+<p><a class="glightbox" href="../output_53_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_5.png" /></a></p>
+<p><a class="glightbox" href="../output_53_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_6.png" /></a></p>
+<p><a class="glightbox" href="../output_53_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_7.png" /></a></p>
+<p><a class="glightbox" href="../output_53_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_8.png" /></a></p>
+<p><a class="glightbox" href="../output_53_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_9.png" /></a></p>
+<p><a class="glightbox" href="../output_53_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_53_10.png" /></a></p>
 <h2 id="education-vs-ai_replace_dev">Education vs AI_replace_dev</h2>
-<pre><code class="language-python">get_column_uniques(df, &quot;AI_replace_dev&quot;)
-</code></pre>
-<pre><code>['No', 'maybe_in_10+_years', 'Sí']
-</code></pre>
-<pre><code class="language-python">barh_chart_unique_values(
-    df,
-    &quot;majors&quot;,
-    &quot;AI_replace_dev&quot;,
-    &quot;Majors and AI replacement theorys.&quot;,
-    &quot;AI replacement.&quot;,
-)
-</code></pre>
-<p><a class="glightbox" href="../output_56_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_0.png" /></a></p>
-<p><a class="glightbox" href="../output_56_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_1.png" /></a></p>
-<p><a class="glightbox" href="../output_56_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_2.png" /></a></p>
-<p><a class="glightbox" href="../output_56_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_3.png" /></a></p>
-<p><a class="glightbox" href="../output_56_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_4.png" /></a></p>
-<p><a class="glightbox" href="../output_56_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_5.png" /></a></p>
-<p><a class="glightbox" href="../output_56_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_6.png" /></a></p>
-<p><a class="glightbox" href="../output_56_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_7.png" /></a></p>
-<p><a class="glightbox" href="../output_56_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_8.png" /></a></p>
-<p><a class="glightbox" href="../output_56_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_9.png" /></a></p>
-<p><a class="glightbox" href="../output_56_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_10.png" /></a></p>
+<p><a class="glightbox" href="../output_56_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_0.png" /></a></p>
+<p><a class="glightbox" href="../output_56_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_1.png" /></a></p>
+<p><a class="glightbox" href="../output_56_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_2.png" /></a></p>
+<p><a class="glightbox" href="../output_56_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_3.png" /></a></p>
+<p><a class="glightbox" href="../output_56_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_4.png" /></a></p>
+<p><a class="glightbox" href="../output_56_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_5.png" /></a></p>
+<p><a class="glightbox" href="../output_56_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_6.png" /></a></p>
+<p><a class="glightbox" href="../output_56_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_7.png" /></a></p>
+<p><a class="glightbox" href="../output_56_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_8.png" /></a></p>
+<p><a class="glightbox" href="../output_56_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_9.png" /></a></p>
+<p><a class="glightbox" href="../output_56_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_10.png" /></a></p>
 <h2 id="education-vs-layoffs_23_24">Education vs layoffs_23_24</h2>
-<pre><code class="language-python">barh_chart_unique_values(
-    df, 
-    &quot;majors&quot;,
-    &quot;layoffs_23_24&quot;,
-    &quot;Majors and layoffs 23/24.&quot;,
-    &quot;Layoffs&quot;
-)
-</code></pre>
-<p><a class="glightbox" href="../output_58_0.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_0.png" /></a></p>
-<p><a class="glightbox" href="../output_58_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_1.png" /></a></p>
-<p><a class="glightbox" href="../output_58_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_2.png" /></a></p>
-<p><a class="glightbox" href="../output_58_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_3.png" /></a></p>
-<p><a class="glightbox" href="../output_58_4.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_4.png" /></a></p>
-<p><a class="glightbox" href="../output_58_5.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_5.png" /></a></p>
-<p><a class="glightbox" href="../output_58_6.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_6.png" /></a></p>
-<p><a class="glightbox" href="../output_58_7.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_7.png" /></a></p>
-<p><a class="glightbox" href="../output_58_8.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_8.png" /></a></p>
-<p><a class="glightbox" href="../output_58_9.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_9.png" /></a></p>
-<p><a class="glightbox" href="../output_58_10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_10.png" /></a></p>
-<pre><code class="language-python">
-</code></pre>
-<pre><code class="language-python">
-</code></pre>
-<pre><code class="language-python">
-</code></pre>
-<pre><code class="language-python">
-</code></pre>
-<pre><code class="language-python">
-</code></pre></p>
+<p><a class="glightbox" href="../output_58_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_0.png" /></a></p>
+<p><a class="glightbox" href="../output_58_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_1.png" /></a></p>
+<p><a class="glightbox" href="../output_58_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_2.png" /></a></p>
+<p><a class="glightbox" href="../output_58_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_3.png" /></a></p>
+<p><a class="glightbox" href="../output_58_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_4.png" /></a></p>
+<p><a class="glightbox" href="../output_58_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_5.png" /></a></p>
+<p><a class="glightbox" href="../output_58_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_6.png" /></a></p>
+<p><a class="glightbox" href="../output_58_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_7.png" /></a></p>
+<p><a class="glightbox" href="../output_58_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_8.png" /></a></p>
+<p><a class="glightbox" href="../output_58_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_9.png" /></a></p>
+<p><a class="glightbox" href="../output_58_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_58_10.png" /></a></p></p>
     </article>
 </section>
 <!-- endblock -->

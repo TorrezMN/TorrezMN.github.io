@@ -19,7 +19,6 @@ existing ones fail to add up to 25% of the total responses. In this case it
 assumed that **"prefer not to say" is an irrelevant minority** to be taken
 in consideration.
 
-
 <details>
   <summary style="background-color: #f0f0f0; font-weight: bold; padding: 10px;">Chat GPT</summary>
 
@@ -85,7 +84,6 @@ la categoria.
 
 <center>
 
-
 ### Female
 
 | age         | count |
@@ -101,7 +99,6 @@ la categoria.
 Total count by age range in "females".
 </em></p>
 <br/>
-
 
 ### Male
 

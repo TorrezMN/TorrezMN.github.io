@@ -1,14 +1,24 @@
-- Género
-- Edad actual
+
+<!--
+<div id="canvas1"></div>
+<div id="canvas2"></div>
+-->
+
+# **DEMOGRAPHY**       
+---
+    
+- GENDER
+- CURRENT AGE 
 
 <br/>
 
 ### Gender
+---
 
 ![png](demografia_images/output_7_0.png)
 
 In terms of **gender classification or identification**. the survey respondents can
-be clasificated in one of 3 single categories. this categories are:
+be clasificated in one of **3 single categories**. this categories are:
 
 - male
 - female
@@ -16,7 +26,7 @@ be clasificated in one of 3 single categories. this categories are:
 
 Less than 50% of those surveyed are not male. The 2 minorities
 existing ones fail to add up to 25% of the total responses. In this case it
-assumed that **"prefer not to say" is an irrelevant minority** to be taken
+assumed that *"prefer not to say" is an irrelevant minority* to be taken
 in consideration.
 
 <details>
@@ -24,19 +34,19 @@ in consideration.
 
 <hr>
   <div style="background-color: #f8f8f8; color: black; padding: 10px; margin-top: 10px;">
-  Según los datos del censo de población y viviendas del Paraguay del año 2012,
-  la distribución por género es aproximadamente equitativa. Según la Dirección
-  General de Estadística, Encuestas y Censos (DGEEC), la población femenina
-  representaba el 49.9% y la masculina el 50.1% de la población total. 
+  According to data from the population and housing census of Paraguay in 2012,
+  <strong>the gender distribution is approximately equal.</strong> According to the Directorate
+  General Statistics, Surveys and Censuses (DGEEC), the female population
+  represented 49.9% and males represented 50.1% of the total population.
 
 <a href='https://www.dgeec.gov.py/'> Dirección General de Estadística,
 Encuestas y Censos (DGEEC) - Censo 2012</a> </div>
 
 <div style="background-color: #f8f8f8; color: black; padding: 10px; margin-top: 10px;">
-  Según un informe de LinkedIn sobre la diversidad en la tecnología en América
-  Latina en 2021, las mujeres representan aproximadamente el 30% de la fuerza
-  laboral en tecnología en la región, lo que refleja una significativa brecha
-  de género en comparación con otros sectores.
+According to a LinkedIn report on diversity in technology in America Latina in
+2021, <strong>women represent approximately 30% of the force employment in technology</strong>    
+in the region, which reflects a significant gap gender compared to other
+sectors.
 
 <a
 href='https://business.linkedin.com/talent-solutions/blog/diversity/2021/diversity-in-tech-2021-report'>LinkedIn
@@ -47,44 +57,26 @@ href='https://business.linkedin.com/talent-solutions/blog/diversity/2021/diversi
 
 <br/>
 
-### Current Age
+### Current Age[^1]
+---
+[^1]: The "current age" values in the dataset was provided as **integer ranges**. Ej: 30-40
 
 ![png](demografia_images/output_11_0.png)
 
-Los grupos mas concentrados de encuestados tienen mas de 35 años
-mientras que la los grupos de menor edad, en todas las categorias, no alcanzan
-a sobrepasar el 50%. La mayor concentracion de encuestados esta en el grupo
-etario de 30-34 años. El grupo etarios de encuestados que concentra la
-mayor cantidad de encuestados comienza en los 30 años y termina el los 39 años.
 
 <br/>
 
 ### Ages by Gender
+---
 
 ![png](demografia_images/output_16_0.png)
 
-En el caso de la comparacion de distribuciones etarias por genero. Cuando
-se comparan genero masculino y femenino. Se observan que en la mayoria de las
-categorias etarias, en ningun caso, existe una distribucion "igualitaria" de
-representacion de generos. En todos los casos la representacion "masculina"
-supera amplamente a la femenina. (No se tomo en consideracion la categoria
-"prefiero no contestar debido que no es una categoria representativa.)
-
-Las 4 categorias con mayor reprecentacion som:
-
-- 20-24
-- 25-29
-- 30-34
-- 35-39
-
-En ninguno de los casos anteriores el % de mujeres supera el 50% del total de
-la categoria.
 
 <br/>
 
-<center>
+##### <b> Female   </b> 
 
-### Female
+<center>
 
 | age         | count |
 | ----------- | ----- |
@@ -99,8 +91,13 @@ la categoria.
 Total count by age range in "females".
 </em></p>
 <br/>
+</center>
 
-### Male
+
+##### <b> Male  </b> 
+
+
+<center>
 
 | age         | count |
 | ----------- | ----- |
@@ -119,8 +116,12 @@ Total count by age range in "females".
 Total count by age range in "males".
 </em></p>
 <br/>
+</center>
 
-### Prefer Not To Say
+##### <b> Prefer Not To Say </b> 
+
+    
+<center>
 
 | age         | count |
 | ----------- | ----- |

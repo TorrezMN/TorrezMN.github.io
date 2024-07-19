@@ -1,4 +1,13 @@
-## DISCLAIMER AND PREVIOUS CONSIDERATIONS
+# DISCLAIMER AND PREVIOUS CONSIDERATIONS
+
+
+
+<!--
+<div id="canvas1"></div>
+<div id="canvas2"></div>
+-->
+
+
 
 ______________________________________________________________________
 
@@ -16,54 +25,72 @@ ______________________________________________________________________
        the poblation of IT personel in Paraguay.
      - The dataset only has 394 answers.    
      - Even with the considerations set out in the previous points. In some
-       cases it *is not posible to make a "real" asumption on some topics* becaus
-       its used "range of values" istead of "integer values".
+       cases it *is not posible to make a "real" asumption on some topics*
+       becaus its used "range of values" istead of "integer values".
      - In some of the questions asked and optional aswers. There is
-       *"superposition of topic domains"* or some questions are mising some clarity
-       in the formulation.
+       *"cross-domain questions/answers"*.[^1]
+[^1]:   The question asks for: "Favorite backend framework" and offers a
+programming language as answer option.
+     - Some questions are mising some clarity in the formulation.
      - In some cases it is not postible to make an asumption or *determine the
-       "temporality"* of the expected answer or question formulated. [^1]   
-[^1]: Por ej. "Modalidad de trabajao."
+       "temporality"* of the expected answer or question formulated. [^2]   
+[^2]: ej. "Modalidad de trabajao."
 
 
 
-3. **Métodos de Recolección de Datos**: Los datos se recolectaron usando las
-   facilidades que ofrece la **plataforma de google forms** dado que permite
-   realizar la encuesta y posteriormente descargar los resultados en formato csv.
-4. **Análisis y Suposiciones**: El análisis se realizó utilizando métodos
-   estadísticos estándar, y se asumió que los datos eran representativos de la
-   población general.
-5. **Interpretación de los Resultados**: Los resultados de este estudio deben
-   interpretarse con cautela y no se deben generalizar más allá del alcance de los
-   datos proporcionados.
-   - Se presentan intepretaciones personales sobre los datos.
-   - Se exponen tambien datos encontrados mendiante el uso de la herramienta Chat
-     GPT. Se especifica claramente en la seccion. Estos datos se incluyen con el
-     fin de proveer contexto a la interpretacion y proveer un panorama mas amplio
-     ya sea local o regional a nivel latino americano.
-6. **Cambios y Actualizaciones**: Este análisis está basado en la versión
-   actual del dataset, para lo cual las interpertaciones presentadas aqui podrian
-   actualizarse conforme se conozcan o puedan aparecer nuevos datos sobre algunos
-   de los temas analizados aqui.
-7. **Responsabilidad y Uso**: El autor no se responsabiliza por el uso indebido
-   de la información presentada. Los datos y resultados deben ser utilizados
-   únicamente con fines informativos/exploratorios y no como base única para
-   decisiones críticas.
+3. **Data collection methods**:All data was collected using the tools provided
+   by the "*Google Forms*" platform. This platform allows users to:
+    - *Create* the survey quickly and easily.
+    - *Share* the survey on different platforms through a link.
+    - *Download* survey results in a wide variety of formats. 
 
-### Motivaciones
 
-La motivación para realizar este estudio sobre el dataset de la Encuesta de
-Profesionales en Tecnología del Paraguay 2024 se basa en varios objetivos clave.
-Primero, quería obtener una comprensión más profunda de la comunidad
-tecnológica en el país, incluyendo los perfiles y características de sus
-miembros. Segundo, tenía el interés de conocer los stacks tecnológicos más
-utilizados y emergentes dentro de esta comunidad. Finalmente, me propuse
-confirmar o refutar algunas creencias personales sobre la industria tecnológica
-local, basándome en datos reales y no solo en percepciones.
 
-# Índice de Temas
+
+4. **Results and Interpretations**: 
+The results of this study must be interpreted with caution and this results
+must not be generalized more than the data provided previously by the dataset.
+
+    - *Personal interpretations* over the data and charts resulted are presented.
+      Each interpretation its "marked" indicating that its a personal
+      interpretation. 
+
+    - To add extra contex to the results in some cases *"Chat GPT" was used*.
+      This tool was used to retreive information about "latin america" over
+      diferent topics related to the survey. As pointed in the previous
+      paragraph, when "Chat GPT" information its presented. This information is "marked" to
+      indicate clearly the origin of it.
+
+5. **Changes and Actualizations**: This work its based on the current version
+of the dataset. For this reazon the information and interpretations
+presented here can be changed or modified as new data its collected or "new
+interpretations" are made.
+
+
+6. **Liability and Use**: The author is not responsible for improper use
+of the information presented here. The data and results must be used
+for informational/exploratory purposes only and not as the sole basis for
+critical decisions.
+
+
+### Motivations
+The motivation to do this work over the results of the "Paraguayan IT
+Professionals" of the 2024 are the following:
+
+- Get a deeper comprehencion of the IT comunity. Its members and technical
+  profiles.
+
+- Get to know "technical stacks" of the comunity. Trending stacks, future
+  trends, etc.
+
+- Confirm or refute personal beliefs over the local IT comunity. Based on
+  actual data not in "personal perceptions".
+
+
+# Topic Index 
 
 ______________________________________________________________________
 
-- [Demografía](demografia/demografia.md)
-- [Educacion](educacion/educacion.md)
+- [Demography](demografia/demografia.md)
+- [Education](educacion/educacion.md)
+- [Employment and work conditions.](empleo_y_condiciones_de_trabajo/empleo_y_condiciones_de_trabajo.md)

@@ -3,6 +3,7 @@ site_name: Torrez MN
 
 theme:
     name: simple-blog
+    #custom_dir: 'docs/overrides'  # Specify the directory containing the custom template
 
 markdown_extensions:
   - footnotes
@@ -13,6 +14,9 @@ extra_css:
   
 extra_javascript:
   - js/extra.js
+  #- js/p5.js
+  # Custom charts.
+  #- js/enc_devs_2024_scripts/demography.js
 
 plugins:
    - glightbox:
@@ -38,8 +42,8 @@ nav:
   - Contact: contact.md
   #- miscellaneous:
   #  - How to blog: gral/how_to_blog.md
-  - Data Science:
-    - Encuesta devs Paraguay 2024: data_science/projects/Encuesta_IT_Py_2024/intro.md
+  #- Data Science:
+  #  - Encuesta devs Paraguay 2024: data_science/projects/Encuesta_IT_Py_2024/intro.md
 
       #  - Introduction: data_science/introduction.md
       #  - Machine Learning:
@@ -65,4 +69,4 @@ nav:
       #  - Hackathons: challenges/hackathons.md
 
 
-copyright: Copyright &copy; 2016 - 2020 Milton Torrez
+    #copyright: Copyright &copy; Torrez, Milton 

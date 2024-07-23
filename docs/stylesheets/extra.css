@@ -3,6 +3,11 @@
 
 .title {display: none;}
 
+body {
+//    font-family: 'Press Start 2P', monospace;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 
 .site-name{
     background:black;
@@ -13,6 +18,9 @@
 
 main{
     min-height:90vh;
+}
+post{
+    font-size:2rem;
 }
 /*Main menu titles.*/
 article li {
@@ -27,8 +35,95 @@ article li a:hover {
     font-size:20px;
 }
 
+img{
+    min-width: 60vw;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+/* Tables */
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stats_table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    //border: 2px solid black;  /* Uniform border on all sides */
+
+}
+
+.stats_table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.stats_table th,
+.stats_table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.stats_table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.stats_table td {
+    background-color: #fff;
+}
+
+.table_title > em{
+    font-size: 1.2em;
+    margin-top: 5px;
+    text-decoration: none;
+    transition:1s;
+
+}
+
+.table_subtitle > em {
+    font-size: .8em;
+    margin-top: 2px;
+    color: #666;
+        text-decoration: none;
+}
 
 
+/* Changes the objec on hover. */
+.stats_table:hover .table_title>em {
+    font-weight: bold;  /* Make the child text bold */
+    background-color:black;
+    color:whitesmoke;
+    padding:2px 10px 2px 10px;
+}
+
+.stats_table:hover .table_subtitle>em {
+    font-weight: bold;  /* Make the child text bold */
+}
+
+
+
+.glightbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.glightbox {
+    display: inline-block;
+    max-width: 600px;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
 
 
 /* Footer content. */

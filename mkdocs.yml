@@ -9,6 +9,8 @@ markdown_extensions:
   - footnotes
 
 extra_css:
+  - https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap
+  - https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap
   - stylesheets/extra.css
 
   

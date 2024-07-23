@@ -10,7 +10,7 @@ body {
 
 
 .site-name{
-    background:black;
+    background:#31363F;
     color:white;
     padding-left:5px;
     padding-right:5px;
@@ -24,12 +24,12 @@ post{
 }
 /*Main menu titles.*/
 article li {
-  color: black;
+  color: #31363F;
   font-size: 16px;
 }
 
 article li a:hover {
-    background: black !important;
+    background: #31363F !important;
     color: white !important;
     padding:5px;
     font-size:20px;
@@ -42,64 +42,47 @@ img{
 
 /* Tables */
 
-.title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
-}
 
-.stats_table {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    //border: 2px solid black;  /* Uniform border on all sides */
-
-}
-
-.stats_table table {
-    width: 100%;
+/* Ensure the table has a border-collapse to make the hover effect more apparent */
+table {
     border-collapse: collapse;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-top:5rem;
 }
 
-.stats_table th,
-.stats_table td {
-    border: 1px solid #ddd;
+/* Add a border to the table for better visibility */
+table, th, td {
+    border: 1px solid #31363F;
+}
+
+/* Style the table header */
+table thead th {
+    background-color: #31363F;
+    color: white;
     padding: 8px;
-    text-align: center;
+    text-align: left;
 }
 
-.stats_table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+/* Style the table cells */
+table tbody td {
+    padding: 8px;
+    text-align: left;
 }
 
-.stats_table td {
-    background-color: #fff;
-}
-
-.table_title > em{
-    font-size: 1.2em;
-    margin-top: 5px;
-    text-decoration: none;
-    transition:1s;
-
-}
-
-.table_subtitle > em {
-    font-size: .8em;
-    margin-top: 2px;
-    color: #666;
-        text-decoration: none;
+/* Change the background color of the rows on hover */
+table tbody tr:hover {
+    background-color: #31363F; /* Change this to the desired hover color */
+    color:whitesmoke;
 }
 
 
 /* Changes the objec on hover. */
 .stats_table:hover .table_title>em {
     font-weight: bold;  /* Make the child text bold */
-    background-color:black;
+    background-color:#31363F;
     color:whitesmoke;
-    padding:2px 10px 2px 10px;
+    padding:5px 10px 5px 10px;
+    text-decoration:none;
 }
 
 .stats_table:hover .table_subtitle>em {
@@ -108,17 +91,25 @@ img{
 
 
 
-.glightbox img {
-    width: 100%;
-    height: auto;
+/* Centering the GLightbox image container */
+.glightbox .gslide img {
     display: block;
-    margin: 0 auto;
+    max-width: 100%; /* Ensure image doesn't overflow horizontally */
+    max-height: 100vh; /* Ensure image doesn't overflow vertically */
+    margin: 0 auto; /* Center image horizontally */
+    border: 0; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: add shadow */
 }
 
-.glightbox {
-    display: inline-block;
-    max-width: 600px;
+/* Ensure the GLightbox overlay is properly centered */
+.glightbox .glightbox-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
 }
+
 
 .center {
     text-align: center;
@@ -148,7 +139,7 @@ img{
 
 /* Highlight texts. */
 strong{
-    background:black;
+    background:#31363F;
     color:white;
     padding:5px;
 }

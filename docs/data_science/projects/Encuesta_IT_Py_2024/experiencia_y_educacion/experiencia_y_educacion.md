@@ -308,26 +308,7 @@ plot_uniques_count(
 )
 ```
 
-```python
 
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
+<center>
+[Volver](../../intro/#topic_index)
+</center>

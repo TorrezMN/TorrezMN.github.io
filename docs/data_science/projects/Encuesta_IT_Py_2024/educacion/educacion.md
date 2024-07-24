@@ -623,3 +623,7 @@ Name: count, dtype: int64
 <center>![png](educacion_images/output_51_9.png)  </center> 
 <br/><br/>
 <center>![png](educacion_images/output_51_10.png) </center>  
+
+<center>
+[Volver](../../intro/#topic_index)
+</center>

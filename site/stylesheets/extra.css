@@ -9,6 +9,23 @@ body {
 }
 
 
+/*Go back button.*/      
+.go_back_button{
+    /*background:#31363F;*/ 
+    padding:2rem;   
+    color:red;
+}
+
+.go_back_button a {
+  /* Your styles here */
+    background:#31363F;
+    color: whitesmoke !important;
+    padding:1rem 2rem 1rem 2rem;
+    border-radius:15px;
+}
+
+
+   
 .site-name{
     background:#31363F;
     color:white;

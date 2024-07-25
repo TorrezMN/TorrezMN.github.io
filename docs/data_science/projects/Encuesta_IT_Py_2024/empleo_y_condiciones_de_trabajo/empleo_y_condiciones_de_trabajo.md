@@ -214,5 +214,7 @@
 ![png](empleo_y_condiciones_de_trabajo_images/output_55_0.png)
 
 <center>
-[Volver](../../intro/#topic_index)
+<span class='go_back_button'>
+[Go Back](../../intro/#topic_index)
+<span>
 </center>

@@ -308,7 +308,8 @@ plot_uniques_count(
 )
 ```
 
-
 <center>
-[Volver](../../intro/#topic_index)
+<span class='go_back_button'>
+[Go Back](../../intro/#topic_index)
+<span>
 </center>

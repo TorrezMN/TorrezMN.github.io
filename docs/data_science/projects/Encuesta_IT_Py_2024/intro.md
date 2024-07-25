@@ -97,3 +97,4 @@ ______________________________________________________________________
 - [Employment and work conditions.](empleo_y_condiciones_de_trabajo/empleo_y_condiciones_de_trabajo.md)
 - [Experiencia y educacion.](experiencia_y_educacion/experiencia_y_educacion.md)
 - [Salarios](salarios/salarios.md) 
+- [Conclusions](../conclucions)

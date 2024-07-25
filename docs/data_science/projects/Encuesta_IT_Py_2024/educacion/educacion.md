@@ -368,7 +368,6 @@ se puede observar que la mayoria posee un seniority de **"senior"**.
 | Degree      | 60%        |
 | high_school | 32%        |
 | master      | 7%         |
-| doctorate   | 0%         |
 
 <p class="table_title"><em>Formal education by gender. 
 <p class="table_subtitle">(male)<p></em></p>
@@ -625,5 +624,7 @@ Name: count, dtype: int64
 <center>![png](educacion_images/output_51_10.png) </center>  
 
 <center>
-[Volver](../../intro/#topic_index)
+<span class='go_back_button'>
+[Go Back](../../intro/#topic_index)
+<span>
 </center>

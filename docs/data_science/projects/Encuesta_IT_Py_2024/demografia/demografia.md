@@ -75,8 +75,6 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 | 45_49 years | 2%         |
 | 15_19 years | 1%         |
 | 50_54 years | 1%         |
-| 60+ years   | 0%         |
-| 55_59 years | 0%         |
 
 </div>
 </div>
@@ -990,8 +988,8 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
     </div>
 </center>
 
-
-
 <center>
-[Volver](../../intro/#topic_index)
+<span class='go_back_button'>
+[Go Back](../../intro/#topic_index)
+<span>
 </center>

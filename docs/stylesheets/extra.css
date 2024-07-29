@@ -8,13 +8,14 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-/*Go back button.*/      
-.go_back_button{
-    /*background:#31363F;*/ 
-    padding:2rem;   
-    color:red;
+/*general config */ 
+article{
 }
+
+article p{
+}
+/*Go back button.*/      
+
 
 .go_back_button a {
   /* Your styles here */

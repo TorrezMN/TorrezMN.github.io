@@ -87,6 +87,13 @@ Professionals" of the 2024 are the following:
   actual data not in "personal perceptions".
 
 
+# How to read this.
+
+- type of analaisis.
+- stack of technologies.
+
+
+
 <a id='topic_index'></a>
 # Topic Index 
 
@@ -98,3 +105,8 @@ ______________________________________________________________________
 - [Experiencia y educacion.](experiencia_y_educacion/experiencia_y_educacion.md)
 - [Salarios](salarios/salarios.md) 
 - [Conclusions](../conclucions)
+
+
+
+
+

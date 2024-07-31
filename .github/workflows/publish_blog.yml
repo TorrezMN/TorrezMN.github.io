@@ -25,8 +25,8 @@ jobs:
           pip install mdformat-myst
 
       - name: Prepare the site
-        run: ./prepare.sh
+        run: sh prepare.sh
 
       - name: Publish the blog
-        run: ./publish.sh
+        run: sh publish.sh
 

@@ -1,0 +1,77 @@
+Post 1: Motivaciones y Problemas Iniciales
+
+Título: "De la Tediosa Repetición a la Automatización: El Inicio de mi
+Proyecto"
+
+Secciones:
+
+    Introducción: Presentación y breve contexto del proyecto. Introducción a la
+    encuesta y el dataset.
+
+    Motivaciones: Problemas iniciales con la limpieza de datos y creación de
+    gráficos. Necesidad de encontrar una solución más eficiente.
+
+    Primeras Funciones: Desarrollo de las primeras funciones para automatizar
+    tareas. Ejemplos específicos de funciones y cómo facilitaron tu trabajo.
+
+    Conclusión del Post: Resumen de los problemas iniciales y primeras
+    soluciones. Avance hacia la siguiente etapa del proyecto.
+
+Llamada a la Acción:
+
+    Invita a los lectores a compartir sus experiencias similares y a
+    suscribirse para el próximo post.
+
+Post 2: Del Paquete a la Librería
+
+Título: "Transformando Funciones en una Librería: El Proceso de Desarrollo"
+
+Secciones:
+
+    Introducción: Breve resumen del primer post y transición a la evolución del
+    proyecto.
+
+    Desarrollo del Paquete: Cómo las funciones se agruparon en un paquete.
+    Herramientas y bibliotecas utilizadas.
+
+    De Paquete a Librería: Proceso de convertir el paquete en una librería más
+    completa. Desafíos y soluciones encontradas durante el desarrollo.
+
+    Publicación en PyPI: Pasos para publicar la librería en PyPI. Recursos y
+    guías útiles que te ayudaron.
+
+    Conclusión del Post: Reflexión sobre el aprendizaje y el progreso
+    realizado. Adelanto del contenido del próximo post.
+
+Llamada a la Acción:
+
+    Anima a los lectores a probar la librería y dejar comentarios o
+    sugerencias.
+
+Post 3: Usos, Beneficios y Reflexiones Finales
+
+Título: "Impacto y Futuro: Usando y Mejorando mi Librería de Análisis de
+Encuestas"
+
+Secciones:
+
+    Introducción: Breve resumen de los posts anteriores y transición al uso de
+    la librería.
+
+    Casos de Uso: Ejemplos prácticos de cómo utilizar la librería para el
+    análisis de datos. Código de ejemplo y visualizaciones.
+
+    Resultados y Beneficios: Impacto de la librería en tu trabajo diario.
+    Feedback de usuarios y estadísticas de uso (si las tienes).
+
+    Lecciones Aprendidas y Mejoras Futuras: Reflexiones personales sobre el
+    proceso de desarrollo y lo aprendido. Posibles mejoras y nuevas
+    funcionalidades planeadas.
+
+    Conclusión del Post: Resumen de toda la serie de posts. Reflexión final
+    sobre la importancia de la automatización y compartir conocimientos.
+
+Llamada a la Acción:
+
+    Invita a los lectores a contribuir al proyecto, compartir sus experiencias
+    y seguir el blog para futuros contenidos.

@@ -23,7 +23,6 @@ jobs:
           pip install mdformat-gfm
           pip install mdformat-gfm mdformat-frontmatter mdformat-footnote
           pip install mdformat-myst
-
       - name: Prepare the site
         run: sh prepare.sh
       - uses: actions/deploy-pages@v1
@@ -32,7 +31,5 @@ jobs:
           # Customize these paths based on your setup
           source: "site/"  # Replace with your directory
           branch: gh-pages                 # Replace with your Pages branch
-
       - name: FINAL 
         run: echo "https://torrezmn.github.io/"
-

@@ -1,1 +1,2 @@
-mkdocs gh-deploy --clean
+mkdocs gh-deploy --clean --verbose
+

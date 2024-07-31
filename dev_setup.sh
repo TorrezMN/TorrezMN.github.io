@@ -1,5 +1,6 @@
 
 pip install mkdocs  # Install MkDocs if not already installed
+pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
 
 # FORMATERS 
 pip install mdformat

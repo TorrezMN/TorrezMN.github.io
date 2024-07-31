@@ -6035,12 +6035,12 @@ nan,
 
 | Category | Percentage |
 | -------- | ---------- |
-| Java | 28% |
-| SQL | 14% |
-| Assembly | 14% |
-| Ruby | 14% |
-| C | 14% |
-| RPG | 14% |
+| Java     | 28%        |
+| SQL      | 14%        |
+| Assembly | 14%        |
+| Ruby     | 14%        |
+| C        | 14%        |
+| RPG      | 14%        |
 
 <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite language".
 <p class="table_subtitle">(les_than_minimum_wage)<p></em></p>
@@ -6054,20 +6054,20 @@ nan,
      <div class='stats_table'>
  <a id="monthly_salary_vs_favorite_framework_table_VPrOT"></a>
 
-| Category | Percentage |
-| -------- | ---------- |
-| React.js | 23% |
-| Django | 16% |
-| Vue.js | 10% |
-| ASP.NET Core | 10% |
-| Laravel | 10% |
-| Angular | 6% |
-| Spring | 6% |
-| Flask | 3% |
-| Express | 3% |
-| CodeIgniter | 3% |
-| ASP.NET | 3% |
-| JQuery | 3% |
+| Category     | Percentage |
+| ------------ | ---------- |
+| React.js     | 23%        |
+| Django       | 16%        |
+| Vue.js       | 10%        |
+| ASP.NET Core | 10%        |
+| Laravel      | 10%        |
+| Angular      | 6%         |
+| Spring       | 6%         |
+| Flask        | 3%         |
+| Express      | 3%         |
+| CodeIgniter  | 3%         |
+| ASP.NET      | 3%         |
+| JQuery       | 3%         |
 
 <p class="table_subtitle">(3.5M_5M)<p></em></p>
    </div>
@@ -6078,16 +6078,16 @@ nan,
       <div class='stats_table'>
   <a id="monthly_salary_vs_favorite_framework_table_gSrmH"></a>
 
-| Category | Percentage |
-| -------- | ---------- |
-| React.js | 26% |
-| Angular | 20% |
-| Laravel | 13% |
-| Django | 13% |
-| Express | 6% |
-| ASP.NET Core | 6% |
-| Ruby on Rails | 6% |
-| Spring | 6% |
+| Category      | Percentage |
+| ------------- | ---------- |
+| React.js      | 26%        |
+| Angular       | 20%        |
+| Laravel       | 13%        |
+| Django        | 13%        |
+| Express       | 6%         |
+| ASP.NET Core  | 6%         |
+| Ruby on Rails | 6%         |
+| Spring        | 6%         |
 
 <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(18M_21M)<p></em></p>

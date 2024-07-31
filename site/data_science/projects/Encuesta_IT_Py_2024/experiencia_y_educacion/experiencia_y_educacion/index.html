@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-                <title>Experiencia y educacion - Torrez MN</title>
+                <title>Experience and Education - Torrez MN</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,53 +106,10 @@
     <article>
         <header>
             
-                <h1 class=" title" id="component-title">Experiencia y educacion</h1>
+                <h1 class=" title" id="component-title">Experience and Education</h1>
             
         </header>
-        <p><pre><code class="language-python">#######################
-# CONFIG ZONE
-#######################
-
-# Importing Libs
-import pandas as pd
-import seaborn as sns
-
-import matplotlib.pyplot as plt
-
-from collections import Counter
-import numpy as np
-
-# My Tools
-import milanesas.eda_helper as eh
-from tools.helpers import (
-    get_column_uniques,
-    get_column_uniques_count,
-    plot_grouped_by_category_barh_charts,
-    barh_chart_unique_values,
-    print_unique_normalized_values_by_group,
-    make_vertical_grouped_chart,
-    plot_uniques_count,
-    uniques_count_to_dataframe,
-    md_table,
-)
-
-
-%matplotlib inline
-
-# Reseting figure size params.
-plt.rcParams[&quot;figure.figsize&quot;] = [12, 7]
-# Setting seaborn as default plotting lib.
-sns.set()
-sns.set_palette(&quot;pastel&quot;)
-</code></pre>
-<pre><code class="language-python">df = pd.read_csv(&quot;../data/data_fixed.csv&quot;)
-</code></pre>
-<pre><code class="language-python">df = df.drop(&quot;Unnamed: 0&quot;, axis=1)
-
-</code></pre>
-<pre><code class="language-python">gender_group = df.groupby(&quot;gender&quot;)
-</code></pre>
-<h3 id="3-experience-and-education">3. <strong>Experience and Education</strong></h3>
+        <p><h1 id="experience-and-education"><strong>Experience and Education</strong></h1>
 <ul>
 <li>Experiencia en TI</li>
 <li>Experiencia programando profesionalmente</li>
@@ -162,207 +119,106 @@ sns.set_palette(&quot;pastel&quot;)
 <li>Importancia educación formal</li>
 </ul>
 <h3 id="experiencia-en-ti">Experiencia en TI</h3>
-<pre><code class="language-python"># Print column uniques.
-get_column_uniques(df, &quot;IT_exp&quot;)
-</code></pre>
-<pre><code>['18_25 years',
- '3_5 years',
- '10_12 years',
- '26+ years',
- '13_17 years',
- '6_9 years',
- '1_2 years',
- '&lt;1 year']
-</code></pre>
-<pre><code class="language-python">it_exp_df = uniques_count_to_dataframe(get_column_uniques_count(df, &quot;IT_exp&quot;))
-</code></pre>
-<pre><code class="language-python">it_exp_df
-</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-
-<pre><code>.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-</code></pre>
-
-
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>category</th>
-      <th>count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6_9 years</td>
-      <td>85</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>10_12 years</td>
-      <td>81</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>3_5 years</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>13_17 years</td>
-      <td>49</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>18_25 years</td>
-      <td>34</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1_2 years</td>
-      <td>32</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>26+ years</td>
-      <td>19</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>&lt;1 year</td>
-      <td>19</td>
-    </tr>
-  </tbody>
+<ul>
+<li>'18_25 years',</li>
+<li>'3_5 years',</li>
+<li>'10_12 years',</li>
+<li>'26+ years',</li>
+<li>'13_17 years',</li>
+<li>'6_9 years',</li>
+<li>'1_2 years',</li>
+<li>'\&lt;1 year'</li>
+</ul>
+<p><center>
+<a id="exp_en_it_total_count_table_JzJ6Q"></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">category</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">6_9 years</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr>
+<td style="text-align: left;">10_12 years</td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr>
+<td style="text-align: left;">3_5 years</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr>
+<td style="text-align: left;">13_17 years</td>
+<td style="text-align: right;">49</td>
+</tr>
+<tr>
+<td style="text-align: left;">18_25 years</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td style="text-align: left;">1_2 years</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td style="text-align: left;">26+ years</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td style="text-align: left;">\&lt;1 year</td>
+<td style="text-align: right;">19</td>
+</tr>
+</tbody>
 </table>
-</div>
-
-<pre><code class="language-python">md_table(
-    &quot;exp_en_it_total_count_table&quot;,
-    it_exp_df,
-    &quot;IT experience total count.&quot;
-)
-</code></pre>
-<pre><code>        &lt;center&gt;
-        &lt;a id=&quot;exp_en_it_total_count_table_JzJ6Q&quot;&gt;&lt;/a&gt;
-
-        | category    |   count |
-|:------------|--------:|
-| 6_9 years   |      85 |
-| 10_12 years |      81 |
-| 3_5 years   |      75 |
-| 13_17 years |      49 |
-| 18_25 years |      34 |
-| 1_2 years   |      32 |
-| 26+ years   |      19 |
-| &lt;1 year     |      19 |
-
-        &lt;p style=&quot;text-align: center;&quot;&gt;&lt;em&gt;IT experience total count.&lt;/em&gt;&lt;/p&gt;
-        &lt;/center&gt;
-        &lt;br/&gt;
-        &lt;br/&gt;
-</code></pre>
-<pre><code class="language-python">plot_uniques_count(
-    it_exp_df, &quot;IT experience total count.&quot;, &quot;count&quot;, &quot;IT exp. in years.&quot;
-)
-</code></pre>
+<p style="text-align: center;"><em>IT experience total count.</em></p>
+<p></center>
+<br/>
+<br/></p>
 <p><a class="glightbox" href="../experiencia_y_educacion_images/output_10_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../experiencia_y_educacion_images/output_10_0.png" /></a></p>
 <h3 id="experiencia-programando-profesionalmente">Experiencia programando profesionalmente</h3>
-<pre><code class="language-python"># Get the unique values in the column.
-get_column_uniques(df, &quot;prof_prog_exp&quot;)
-</code></pre>
-<pre><code>['13_17 years',
- '3_5 years',
- '6_9 years',
- '18_25 years',
- '26+ years',
- '10_12 years',
- '1_2 years',
- '&lt;1 year',
- nan]
-</code></pre>
-<pre><code class="language-python">prof_prog_exp_count = uniques_count_to_dataframe(
-    get_column_uniques_count(df, &quot;prof_prog_exp&quot;)
-)
-
-
-plot_uniques_count(
-    prof_prog_exp_count,
-    &quot;Prof. programming experience total count.&quot;,
-    &quot;count&quot;,
-    &quot;exp. in years.&quot;,
-)
-</code></pre>
+<ul>
+<li>
+<p>PROFESIONAL PROGRAMMING EXPERIENCE.</p>
+</li>
+<li>
+<p>'13_17 years'</p>
+</li>
+<li>'3_5 years',</li>
+<li>'6_9 years',</li>
+<li>'18_25 years',</li>
+<li>'26+ years',</li>
+<li>'10_12 years',</li>
+<li>'1_2 years',</li>
+<li>'\&lt;1 year',</li>
+</ul>
 <p><a class="glightbox" href="../experiencia_y_educacion_images/output_13_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../experiencia_y_educacion_images/output_13_0.png" /></a></p>
 <h3 id="primera-linea-de-codigo-en-una-maquina">Primera línea de código en una máquina</h3>
-<pre><code class="language-python"># Obtener los valores unicos en la columna.
-get_column_uniques(df, &quot;first_code&quot;)
-</code></pre>
-<pre><code>['16_17 years',
- '&lt;10 years',
- '14_15 years',
- '12_13 years',
- '28_29 years',
- '30+ years',
- '10_11 years',
- '18_19 years',
- '24_25 years',
- '26_27 years',
- '20_21 years',
- '22_23 years']
-</code></pre>
-<pre><code class="language-python">plot_uniques_count(
-    uniques_count_to_dataframe(get_column_uniques_count(df, &quot;first_code&quot;)),
-    &quot;First line of code.&quot;,
-    &quot;count&quot;,
-    &quot;First line of code. \n(years)&quot;,
-)
-</code></pre>
+<ul>
+<li>
+<p>FIRST LINE OF CODE.</p>
+</li>
+<li>
+<p>'16_17 years',</p>
+</li>
+<li>'\&lt;10 years',</li>
+<li>'14_15 years',</li>
+<li>'12_13 years',</li>
+<li>'28_29 years',</li>
+<li>'30+ years',</li>
+<li>'10_11 years',</li>
+<li>'18_19 years',</li>
+<li>'24_25 years',</li>
+<li>'26_27 years',</li>
+<li>'20_21 years',</li>
+<li>'22_23 years'</li>
+</ul>
 <p><a class="glightbox" href="../experiencia_y_educacion_images/output_16_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../experiencia_y_educacion_images/output_16_0.png" /></a></p>
 <h3 id="educacion-formal">Educación Formal</h3>
-<pre><code class="language-python">barh_chart_unique_values(
-    df, &quot;majors&quot;, &quot;IT_exp&quot;, &quot;Formal education vs. IT experience.&quot;, &quot;IT exp. (years)&quot;
-)
-</code></pre>
 <p><a class="glightbox" href="../experiencia_y_educacion_images/output_18_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../experiencia_y_educacion_images/output_18_0.png" /></a></p>
 <p><a class="glightbox" href="../experiencia_y_educacion_images/output_18_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../experiencia_y_educacion_images/output_18_1.png" /></a></p>
-<h3 id="carreras-o-especialidades">Carreras o especialidades</h3>
-<pre><code class="language-python">barh_chart_unique_values(
-    df, &quot;formal_edu&quot;, &quot;IT_exp&quot;, &quot;Formal education. vs. IT exp. &quot;, &quot;IT exp.&quot;
-)
-</code></pre>
-<h3 id="importancia-educacion-formal">Importancia educación formal</h3>
-<pre><code class="language-python">gender_group
-</code></pre>
-<pre><code class="language-python">plot_grouped_by_category_barh_charts(
-    gender_group,
-    &quot;formal_edu_importance&quot;,
-    &quot;Formal education importance by GENDER&quot;,
-    &quot;Importance Level&quot;,
-)
-</code></pre>
-<pre><code class="language-python"># Get column uniques.
-get_column_uniques(df, &quot;formal_edu_importance&quot;)
-</code></pre>
-<pre><code class="language-python">plot_uniques_count(
-    uniques_count_to_dataframe(get_column_uniques_count(df, &quot;formal_edu_importance&quot;)),
-    &quot;Formal education importance.\n (GENERAL)&quot;,
-    &quot;count&quot;,
-    &quot;Importance levels.&quot;,
-)
-</code></pre>
 <p><center>
 <span class='go_back_button'>
 <a href="../../intro/#topic_index">Go Back</a>

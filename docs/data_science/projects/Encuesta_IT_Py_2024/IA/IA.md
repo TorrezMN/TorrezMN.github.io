@@ -1,5 +1,3 @@
-
-
 ### 5. **Artificial Intelligence**
 
 - ¿Usás regularmente\* alguna de estas herramientas de I.A. para ayudarte en tu proceso de desarrollo?
@@ -8,36 +6,31 @@
 
 - ¿Usás regularmente\* alguna de estas herramientas de I.A. para ayudarte en tu proceso de desarrollo?
 
-
-
 <center>
      <div class='stats_table'>
   <a id="ia_use_total_count_table_o5nCT"></a>
-        
-| category          |   count |
-|:------------------|--------:|
-| ChatGPT           |     300 |
-| Github Copilot    |     100 |
-| Google Bard       |      49 |
-| Bing AI           |      45 |
-| Notion AI         |      17 |
-| WolframAlpha      |       5 |
-| AWS CodeWhisperer |       5 |
-| Codeium           |       4 |
-| Claude.ai         |       2 |
-| Copilot           |       1 |
-        
+
+| category          | count |
+| :---------------- | ----: |
+| ChatGPT           |   300 |
+| Github Copilot    |   100 |
+| Google Bard       |    49 |
+| Bing AI           |    45 |
+| Notion AI         |    17 |
+| WolframAlpha      |     5 |
+| AWS CodeWhisperer |     5 |
+| Codeium           |     4 |
+| Claude.ai         |     2 |
+| Copilot           |     1 |
+
 <p style="text-align: center;"><em>Use of IA total count.</em></p>
   <br/>
   </div>
 </center>
 
-
 ![png](output_8_0.png)
 
-
 - ¿Creés que la inteligencia artificial reemplazará al desarrollador?
-
 
 ![png](output_12_0.png)
 

@@ -23,4 +23,3 @@
 <center>![png](educacion_images/output_49_10.png)  </center>
 
 </br></br>
-

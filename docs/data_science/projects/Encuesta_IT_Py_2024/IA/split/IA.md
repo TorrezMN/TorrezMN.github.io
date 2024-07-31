@@ -1,5 +1,3 @@
-
-
 ### 5. **Artificial Intelligence**
 
 - ¿Usás regularmente\* alguna de estas herramientas de I.A. para ayudarte en tu proceso de desarrollo?
@@ -150,4 +148,3 @@ plot_uniques_count(ai_replacement_df, "Will AI replace dev's?\n", "count", "resp
 ```
 
 ![png](output_12_0.png)
-

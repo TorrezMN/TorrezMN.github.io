@@ -13,4 +13,3 @@ grouped_grid_barh_chart(
 ```
 
 ![png](output_61_0.png)
-

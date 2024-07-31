@@ -28,4 +28,3 @@ En la mayoria de los casos, segun la carrera elegida por los encuestados,
 se puede observar que la mayoria posee un seniority de **"senior"**.
 
 </br></br>
-

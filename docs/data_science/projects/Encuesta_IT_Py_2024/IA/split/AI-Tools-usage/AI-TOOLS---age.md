@@ -303,4 +303,3 @@ md_group_table("age_vs_use_ai", df, "age", "use_AI_tools", "Age vs Use AI")
     <br/>
 </center>
 ```
-

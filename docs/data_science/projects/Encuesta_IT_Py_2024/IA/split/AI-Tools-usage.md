@@ -12,4 +12,3 @@ plot_uniques_count(ai_usage_uniques_df, "AI usage counts.", "Count.", "AI")
 ```
 
 ![png](output_15_0.png)
-

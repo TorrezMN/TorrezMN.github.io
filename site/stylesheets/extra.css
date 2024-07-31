@@ -3,18 +3,27 @@
 
 .title {display: none;}
 
+
+*{
+    font-size:20px;
+}
+
+
+
+
 body {
 //    font-family: 'Press Start 2P', monospace;
     font-family: 'Ubuntu', sans-serif;
 }
 
-
-/*Go back button.*/      
-.go_back_button{
-    /*background:#31363F;*/ 
-    padding:2rem;   
-    color:red;
+/*general config */ 
+article{
 }
+
+article p{
+}
+/*Go back button.*/      
+
 
 .go_back_button a {
   /* Your styles here */
@@ -164,4 +173,5 @@ em {
     text-decoration: underline;
     text-decoration-thickness: 2px; /* Adjust the thickness as needed */
 }
+
 

@@ -66,4 +66,3 @@
 <center>![png](educacion_images/output_35_0.png)  </center> 
 
 </br></br>
-

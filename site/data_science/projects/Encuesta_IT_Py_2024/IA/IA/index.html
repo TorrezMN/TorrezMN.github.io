@@ -109,48 +109,7 @@
                 <h1 class=" title" id="component-title">IA</h1>
             
         </header>
-        <p><pre><code class="language-python">#######################
-# CONFIG ZONE
-#######################
-
-# Importing Libs
-import pandas as pd
-import seaborn as sns
-
-import matplotlib.pyplot as plt
-
-from collections import Counter
-import numpy as np
-
-# My Tools
-import milanesas.eda_helper as eh
-from tools.helpers import (
-    get_column_uniques,
-    get_column_uniques_count,
-    plot_grouped_by_category_barh_charts,
-    barh_chart_unique_values,
-    print_unique_normalized_values_by_group,
-    make_vertical_grouped_chart,
-    plot_uniques_count,
-    uniques_count_to_dataframe,
-    grouped_grid_barh_chart,
-    barh_chart_unique_values_grid,
-    md_table,
-    md_group_table,
-)
-
-
-%matplotlib inline
-
-# Reseting figure size params.
-plt.rcParams[&quot;figure.figsize&quot;] = [12, 7]
-# Setting seaborn as default plotting lib.
-sns.set()
-sns.set_palette(&quot;pastel&quot;)
-</code></pre>
-<pre><code class="language-python">df = pd.read_csv(&quot;../data/data_fixed.csv&quot;)
-</code></pre>
-<h3 id="5-artificial-intelligence">5. <strong>Artificial Intelligence</strong></h3>
+        <p><h3 id="5-artificial-intelligence">5. <strong>Artificial Intelligence</strong></h3>
 <ul>
 <li>
 <p>¿Usás regularmente* alguna de estas herramientas de I.A. para ayudarte en tu proceso de desarrollo?</p>
@@ -162,131 +121,68 @@ sns.set_palette(&quot;pastel&quot;)
 <p>¿Usás regularmente* alguna de estas herramientas de I.A. para ayudarte en tu proceso de desarrollo?</p>
 </li>
 </ul>
-<pre><code class="language-python">ia_use_df = uniques_count_to_dataframe(get_column_uniques_count(df, &quot;use_AI_tools&quot;))
-</code></pre>
-<pre><code class="language-python">ia_use_df
-</code></pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-
-<pre><code>.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-</code></pre>
-
-
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>category</th>
-      <th>count</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>ChatGPT</td>
-      <td>300</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Github Copilot</td>
-      <td>100</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Google Bard</td>
-      <td>49</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Bing AI</td>
-      <td>45</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Notion AI</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>WolframAlpha</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>AWS CodeWhisperer</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Codeium</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Claude.ai</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Copilot</td>
-      <td>1</td>
-    </tr>
-  </tbody>
+<p><center>
+     <div class='stats_table'>
+  <a id="ia_use_total_count_table_o5nCT"></a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">category</th>
+<th style="text-align: right;">count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ChatGPT</td>
+<td style="text-align: right;">300</td>
+</tr>
+<tr>
+<td style="text-align: left;">Github Copilot</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google Bard</td>
+<td style="text-align: right;">49</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bing AI</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;">Notion AI</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;">WolframAlpha</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">AWS CodeWhisperer</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Codeium</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Claude.ai</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Copilot</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
 </table>
-</div>
-
-<pre><code class="language-python">md_table(&quot;ia_use_total_count_table&quot;, ia_use_df, &quot;Use of IA total count.&quot;)
-</code></pre>
-<pre><code>        &lt;center&gt;
-        &lt;a id=&quot;ia_use_total_count_table_o5nCT&quot;&gt;&lt;/a&gt;
-
-        | category          |   count |
-|:------------------|--------:|
-| ChatGPT           |     300 |
-| Github Copilot    |     100 |
-| Google Bard       |      49 |
-| Bing AI           |      45 |
-| Notion AI         |      17 |
-| WolframAlpha      |       5 |
-| AWS CodeWhisperer |       5 |
-| Codeium           |       4 |
-| Claude.ai         |       2 |
-| Copilot           |       1 |
-
-        &lt;p style=&quot;text-align: center;&quot;&gt;&lt;em&gt;Use of IA total count.&lt;/em&gt;&lt;/p&gt;
-        &lt;/center&gt;
-        &lt;br/&gt;
-        &lt;br/&gt;
-</code></pre>
-<pre><code class="language-python">
-</code></pre>
-<pre><code class="language-python">plot_uniques_count(ia_use_df, &quot;Use IA tools regularly.&quot;, &quot;Count&quot;, &quot;Tool&quot;)
-</code></pre>
-<p><a class="glightbox" href="../output_8_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_8_0.png" /></a></p>
-<pre><code class="language-python">
-</code></pre>
+<p style="text-align: center;"><em>Use of IA total count.</em></p>
+<p><br/>
+  </div>
+</center></p>
+<p><a class="glightbox" href="output_8_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_8_0.png" /></a></p>
 <ul>
 <li>¿Creés que la inteligencia artificial reemplazará al desarrollador?</li>
 </ul>
-<pre><code class="language-python">ai_replacement_df = uniques_count_to_dataframe(
-    get_column_uniques_count(df, &quot;AI_replace_dev&quot;)
-)
-</code></pre>
-<pre><code class="language-python">plot_uniques_count(ai_replacement_df, &quot;Will AI replace dev's?\n&quot;, &quot;count&quot;, &quot;resp.&quot;)
-</code></pre>
-<p><a class="glightbox" href="../output_12_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_12_0.png" /></a></p>
+<p><a class="glightbox" href="output_12_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_12_0.png" /></a></p>
 <h1 id="ai-tools-usage">AI Tools usage</h1>
 <pre><code class="language-python"># print uniques in column.
 ai_usage_uniques_df = uniques_count_to_dataframe(
@@ -295,7 +191,7 @@ ai_usage_uniques_df = uniques_count_to_dataframe(
 </code></pre>
 <pre><code class="language-python">plot_uniques_count(ai_usage_uniques_df, &quot;AI usage counts.&quot;, &quot;Count.&quot;, &quot;AI&quot;)
 </code></pre>
-<p><a class="glightbox" href="../output_15_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_15_0.png" /></a></p>
+<p><a class="glightbox" href="output_15_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_15_0.png" /></a></p>
 <h2 id="ai-tools-work_mode">AI TOOLS - work_mode</h2>
 <pre><code class="language-python"># Mostrar uniques in 'work_mode' column.
 </code></pre>
@@ -307,28 +203,28 @@ ai_usage_uniques_df = uniques_count_to_dataframe(
     df, &quot;use_AI_tools&quot;, &quot;work_mode&quot;, &quot;AI tools usage by work mode.&quot;, &quot;Work mode.&quot;
 )
 </code></pre>
-<p><a class="glightbox" href="../output_19_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_0.png" /></a></p>
-<p><a class="glightbox" href="../output_19_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_1.png" /></a></p>
-<p><a class="glightbox" href="../output_19_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_2.png" /></a></p>
-<p><a class="glightbox" href="../output_19_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_3.png" /></a></p>
-<p><a class="glightbox" href="../output_19_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_4.png" /></a></p>
-<p><a class="glightbox" href="../output_19_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_5.png" /></a></p>
-<p><a class="glightbox" href="../output_19_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_6.png" /></a></p>
-<p><a class="glightbox" href="../output_19_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_7.png" /></a></p>
-<p><a class="glightbox" href="../output_19_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_8.png" /></a></p>
-<p><a class="glightbox" href="../output_19_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_9.png" /></a></p>
-<p><a class="glightbox" href="../output_19_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_10.png" /></a></p>
-<p><a class="glightbox" href="../output_19_11.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_11.png" /></a></p>
-<p><a class="glightbox" href="../output_19_12.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_12.png" /></a></p>
-<p><a class="glightbox" href="../output_19_13.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_13.png" /></a></p>
-<p><a class="glightbox" href="../output_19_14.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_14.png" /></a></p>
-<p><a class="glightbox" href="../output_19_15.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_15.png" /></a></p>
-<p><a class="glightbox" href="../output_19_16.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_16.png" /></a></p>
-<p><a class="glightbox" href="../output_19_17.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_17.png" /></a></p>
-<p><a class="glightbox" href="../output_19_18.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_18.png" /></a></p>
-<p><a class="glightbox" href="../output_19_19.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_19.png" /></a></p>
-<p><a class="glightbox" href="../output_19_20.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_20.png" /></a></p>
-<p><a class="glightbox" href="../output_19_21.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_19_21.png" /></a></p>
+<p><a class="glightbox" href="output_19_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_0.png" /></a></p>
+<p><a class="glightbox" href="output_19_1.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_1.png" /></a></p>
+<p><a class="glightbox" href="output_19_2.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_2.png" /></a></p>
+<p><a class="glightbox" href="output_19_3.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_3.png" /></a></p>
+<p><a class="glightbox" href="output_19_4.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_4.png" /></a></p>
+<p><a class="glightbox" href="output_19_5.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_5.png" /></a></p>
+<p><a class="glightbox" href="output_19_6.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_6.png" /></a></p>
+<p><a class="glightbox" href="output_19_7.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_7.png" /></a></p>
+<p><a class="glightbox" href="output_19_8.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_8.png" /></a></p>
+<p><a class="glightbox" href="output_19_9.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_9.png" /></a></p>
+<p><a class="glightbox" href="output_19_10.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_10.png" /></a></p>
+<p><a class="glightbox" href="output_19_11.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_11.png" /></a></p>
+<p><a class="glightbox" href="output_19_12.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_12.png" /></a></p>
+<p><a class="glightbox" href="output_19_13.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_13.png" /></a></p>
+<p><a class="glightbox" href="output_19_14.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_14.png" /></a></p>
+<p><a class="glightbox" href="output_19_15.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_15.png" /></a></p>
+<p><a class="glightbox" href="output_19_16.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_16.png" /></a></p>
+<p><a class="glightbox" href="output_19_17.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_17.png" /></a></p>
+<p><a class="glightbox" href="output_19_18.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_18.png" /></a></p>
+<p><a class="glightbox" href="output_19_19.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_19.png" /></a></p>
+<p><a class="glightbox" href="output_19_20.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_20.png" /></a></p>
+<p><a class="glightbox" href="output_19_21.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_19_21.png" /></a></p>
 <h2 id="ai-tools-employment_mode">AI TOOLS - employment_mode</h2>
 <pre><code class="language-python">md_group_table(
     &quot;ai_tools_by_employment_mode_table&quot;,
@@ -12337,7 +12233,7 @@ ai_usage_uniques_df = uniques_count_to_dataframe(
     ai_replace_group, &quot;IT_exp&quot;, &quot;AI replacement and IT experience.&quot;, 3, 1, &quot;black&quot;, 9
 )
 </code></pre>
-<p><a class="glightbox" href="../output_46_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_46_0.png" /></a></p>
+<p><a class="glightbox" href="output_46_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_46_0.png" /></a></p>
 <h2 id="ai-replacement-by-gender">AI replacement by gender.</h2>
 <pre><code class="language-python">gender_gorups = df.groupby(&quot;gender&quot;)
 </code></pre>
@@ -12345,7 +12241,7 @@ ai_usage_uniques_df = uniques_count_to_dataframe(
     gender_gorups, &quot;AI_replace_dev&quot;, &quot;AI replacement by gender.&quot;, 3, 1, &quot;black&quot;, 8.5
 )
 </code></pre>
-<p><a class="glightbox" href="../output_49_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_49_0.png" /></a></p>
+<p><a class="glightbox" href="output_49_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_49_0.png" /></a></p>
 <h2 id="ai-replacement-vs-work_mode">AI replacement vs. work_mode</h2>
 <pre><code class="language-python">md_group_table(
     &quot;work_mode_vs_AI_replace_dev&quot;,
@@ -12460,7 +12356,7 @@ get_column_uniques(df, &quot;employment_mode&quot;)
     8.5,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_54_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_54_0.png" /></a></p>
+<p><a class="glightbox" href="output_54_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_54_0.png" /></a></p>
 <h2 id="ai-replacement-vs-prog_skills_in_role">AI replacement vs. prog_skills_in_role</h2>
 <pre><code class="language-python">grouped_grid_barh_chart(
     df.groupby(&quot;prog_skills_in_role&quot;),
@@ -12472,7 +12368,7 @@ get_column_uniques(df, &quot;employment_mode&quot;)
     8.5,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_56_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_56_0.png" /></a></p>
+<p><a class="glightbox" href="output_56_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_56_0.png" /></a></p>
 <h2 id="ai-replacement-vs-code_for_job">AI replacement vs. code_for_job</h2>
 <h2 id="ai-replacement-vs-it_exp">AI replacement vs. IT_exp</h2>
 <pre><code class="language-python">md_group_table(
@@ -12672,7 +12568,7 @@ get_column_uniques(df, &quot;employment_mode&quot;)
     8.5,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_61_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_61_0.png" /></a></p>
+<p><a class="glightbox" href="output_61_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_61_0.png" /></a></p>
 <h2 id="ai-replacement-vs-majors">AI replacement vs. majors</h2>
 <pre><code class="language-python">md_group_table(
     &quot;majors_vs_AI_replace_dev&quot;,
@@ -13551,7 +13447,7 @@ get_column_uniques(df, &quot;employment_mode&quot;)
     8.5,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_65_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_65_0.png" /></a></p>
+<p><a class="glightbox" href="output_65_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_65_0.png" /></a></p>
 <h2 id="ai-replacement-vs-age">AI replacement vs. age</h2>
 <pre><code class="language-python">plt.rcParams[&quot;figure.figsize&quot;] = [22, 7]
 
@@ -13565,7 +13461,7 @@ grouped_grid_barh_chart(
     8.5,
 )
 </code></pre>
-<p><a class="glightbox" href="../output_67_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="../output_67_0.png" /></a></p>
+<p><a class="glightbox" href="output_67_0.png" data-type="image" data-width="150%" data-height="auto" data-desc-position="bottom"><img alt="png" src="output_67_0.png" /></a></p>
 <pre><code class="language-python">
 </code></pre>
 <pre><code class="language-python">

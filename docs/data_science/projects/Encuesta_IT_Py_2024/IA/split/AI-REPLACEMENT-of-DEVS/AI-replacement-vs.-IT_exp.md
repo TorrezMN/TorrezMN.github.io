@@ -189,4 +189,3 @@ md_group_table(
     <br/>
 </center>
 ```
-

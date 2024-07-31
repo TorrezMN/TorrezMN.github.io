@@ -122,4 +122,3 @@ Name: count, dtype: int64
 <center>![png](educacion_images/output_43_0.png) </center> 
 
 </br></br>
-

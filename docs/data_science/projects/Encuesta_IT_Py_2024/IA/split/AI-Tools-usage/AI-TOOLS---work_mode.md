@@ -61,4 +61,3 @@ barh_chart_unique_values(
 ![png](output_19_20.png)
 
 ![png](output_19_21.png)
-

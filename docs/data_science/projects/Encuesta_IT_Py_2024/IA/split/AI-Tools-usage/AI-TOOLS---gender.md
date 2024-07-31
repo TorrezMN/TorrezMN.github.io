@@ -1215,4 +1215,3 @@ md_group_table("gender_vs_use_ai", df, "use_AI_tools", "gender", "Gender vs Use 
 ```python
 
 ```
-

@@ -2819,4 +2819,3 @@ md_group_table("ai_tools_by_role", df, "role", "use_AI_tools", "Use AI tools by 
     <br/>
 </center>
 ```
-

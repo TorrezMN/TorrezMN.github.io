@@ -14,7 +14,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup dependencies
-        run: ./dev_setup.sh
+        run: |
+          ./dev_setup.sh
+          pip install mdformat
+          pip install mdformat-gfm
+          pip install mdformat-gfm mdformat-frontmatter mdformat-footnote
+          pip install mdformat-myst
 
       - name: Prepare the site
         run: ./prepare.sh

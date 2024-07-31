@@ -29,4 +29,6 @@ jobs:
 
       - name: Publish the blog
         run: sh publish.sh
+      - name: FINAL 
+        run: echo "https://torrezmn.github.io/"
 

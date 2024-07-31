@@ -1,3 +1,8 @@
+
+
+
+pip install mkdocs  # Install MkDocs if not already installed
+
 pip install mdformat
 
 

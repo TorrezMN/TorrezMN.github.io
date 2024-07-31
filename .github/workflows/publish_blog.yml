@@ -1,0 +1,24 @@
+name: Deploy MkDocs Blog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup dependencies
+        run: ./dev_setup.sh
+
+      - name: Prepare the site
+        run: ./prepare.sh
+
+      - name: Publish the blog
+        run: ./publish.sh
+

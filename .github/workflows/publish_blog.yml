@@ -26,14 +26,11 @@ jobs:
 
       - name: Prepare the site
         run: sh prepare.sh
-
-      - name: Publish the blog
-        run: sh publish.sh
       - uses: actions/deploy-pages@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Customize these paths based on your setup
-          source: "path/to/blog/directory"  # Replace with your directory
+          source: "site/"  # Replace with your directory
           branch: gh-pages                 # Replace with your Pages branch
 
       - name: FINAL 

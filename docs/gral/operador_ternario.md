@@ -19,7 +19,7 @@ un condicional simple con una sola sentencia.
 **Historia del operador ternario**
 
 El operador ternario se introdujo en JavaScript en la versión 1.2, lanzada en
-1998. Fue creado por Brendan Eich, el fundador de Mozilla y el creador original
+1998\. Fue creado por Brendan Eich, el fundador de Mozilla y el creador original
 de JavaScript. La idea detrás del operador ternario fue simplificar la
 escritura de condicionales simples y reducir la longitud de los códigos.
 
@@ -31,10 +31,10 @@ La sintaxis del operador ternario es la siguiente:
 
 Donde:
 
-* `condición` es la expresión que se evalúa como verdadera o falsa.
-* `expresión verdadera` es la acción que se ejecuta si la condición es
+- `condición` es la expresión que se evalúa como verdadera o falsa.
+- `expresión verdadera` es la acción que se ejecuta si la condición es
   verdadera.
-* `expresión falsa` es la acción que se ejecuta si la condición es falsa.
+- `expresión falsa` es la acción que se ejecuta si la condición es falsa.
 
 **Casos de aplicación**
 
@@ -43,8 +43,7 @@ condicionales hasta complejos cálculos. Aquí hay algunos ejemplos prácticos:
 
 **1. Condicionales simples**
 
-`let isAdmin = Boolean(users.includes('admin')) ? 'Acceso Autorizado' : 'Acceso
-Denegado';`
+`let isAdmin = Boolean(users.includes('admin')) ? 'Acceso Autorizado' : 'Acceso Denegado';`
 
 En este ejemplo, estamos verificando si el usuario es administrador y, sí, le
 mostramos un mensaje de acceso autorizado, de lo contrario, le mostramos un
@@ -59,8 +58,7 @@ hay valor, estamos reemplazando con cero.
 
 **3. Array y objetos**
 
-`let user = users.find(user => user.name === 'John') ? users.find(user =>
-user.name === 'John') : null;`
+`let user = users.find(user => user.name === 'John') ? users.find(user => user.name === 'John') : null;`
 
 En este ejemplo, estamos buscando un usuario con el nombre 'John' en un array
 y, si lo encontramos, lo estornudamos, de lo contrario, estamos reemplazando

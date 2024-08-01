@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+    <head>
+                <title>Operador ternario - Torrez MN</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+            
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                        <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../assets/css/main.min.css">
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+                <link href="../../stylesheets/extra.css" rel="stylesheet">
+                <script src="../../js/extra.js"></script>
+
+            
+                
+            
+     <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Torrez MN</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../about_me/">[About Me]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../contact/">[Contact]</a>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main>
+                    <!-- block content -->
+<section class="container post">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Operador ternario</h1>
+            
+        </header>
+        <p><p><strong>El Operador Ternario en JavaScript: Un Resumen Histórico y Práctico</strong></p>
+<p><strong>¿Qué vamos a ver?</strong></p>
+<p>En este post, vamos a explorar el operador ternario en JavaScript, un elemento
+fundamental en el lenguaje que muchos programadores pueden conocer, pero no
+siempre utilizan al máximo. Vamos a examinar la historia detrás del operador,
+su sintaxis y algunos ejemplos prácticos de su utilización.</p>
+<p><strong>¿Por qué es importante el operador ternario?</strong></p>
+<p>Aunque JavaScript es un lenguaje muy potente y versátil, tiene un pequeño
+conjunto de características que lo hacen especialmente útil para ciertas
+tareas. Uno de los operadores máspowerful es el operador ternario, que se
+utiliza para evaluar una condición y ejecutar una acción según sea verdadera o
+falsa. El operador ternario es especialmente útil cuando necesitamos reemplazar
+un condicional simple con una sola sentencia.</p>
+<p><strong>Historia del operador ternario</strong></p>
+<p>El operador ternario se introdujo en JavaScript en la versión 1.2, lanzada en
+1998. Fue creado por Brendan Eich, el fundador de Mozilla y el creador original
+de JavaScript. La idea detrás del operador ternario fue simplificar la
+escritura de condicionales simples y reducir la longitud de los códigos.</p>
+<p><strong>Sintaxis del operador ternario</strong></p>
+<p>La sintaxis del operador ternario es la siguiente:</p>
+<p><code>condición ? expresión verdadera : expresión falsa</code></p>
+<p>Donde:</p>
+<ul>
+<li><code>condición</code> es la expresión que se evalúa como verdadera o falsa.</li>
+<li><code>expresión verdadera</code> es la acción que se ejecuta si la condición es
+  verdadera.</li>
+<li><code>expresión falsa</code> es la acción que se ejecuta si la condición es falsa.</li>
+</ul>
+<p><strong>Casos de aplicación</strong></p>
+<p>El operador ternario se utiliza en una variedad de situaciones, desde simples
+condicionales hasta complejos cálculos. Aquí hay algunos ejemplos prácticos:</p>
+<p><strong>1. Condicionales simples</strong></p>
+<p><code>let isAdmin = Boolean(users.includes('admin')) ? 'Acceso Autorizado' : 'Acceso Denegado';</code></p>
+<p>En este ejemplo, estamos verificando si el usuario es administrador y, sí, le
+mostramos un mensaje de acceso autorizado, de lo contrario, le mostramos un
+mensaje de acceso denegado.</p>
+<p><strong>2. Cálculos</strong></p>
+<p><code>let speed = speedometer.reading ? speedometer.reading : 0;</code></p>
+<p>En este ejemplo, estamos leyendo el valor de un indicador de velocidad y, si no
+hay valor, estamos reemplazando con cero.</p>
+<p><strong>3. Array y objetos</strong></p>
+<p><code>let user = users.find(user =&gt; user.name === 'John') ? users.find(user =&gt; user.name === 'John') : null;</code></p>
+<p>En este ejemplo, estamos buscando un usuario con el nombre 'John' en un array
+y, si lo encontramos, lo estornudamos, de lo contrario, estamos reemplazando
+con null.</p>
+<p><strong>Soluciones</strong></p>
+<p>El operador ternario es especialmente útil en situaciones donde necesitamos
+evaluar una condición y ejecutar una acción según sea verdadera o falsa. Aquí
+hay algunas soluciones prácticas para utilizar el operador ternario:</p>
+<p><strong>1. Simplificar condicionales</strong></p>
+<p>El operador ternario puede simplificar la escritura de condicionales simples,
+reduciendo la longitud del código y haciendo que sea más fácil de leer y
+mantener.</p>
+<p><strong>2. Reducir la redundancia</strong></p>
+<p>El operador ternario puede también reducir la redundancia en el código, ya que
+nos permite ejecutar acciones diferentes según sea verdadera o falsa, sin
+necesidad de utilizar condicionales complejos.</p>
+<p><strong>3. Mejorar la performance</strong></p>
+<p>En algunos casos, el operador ternario puede incluso mejorar la performance del
+código, ya que evita la necesidad de ejecutar condicionales complejos.</p>
+<p><strong>Conclusión</strong></p>
+<p>En resumen, el operador ternario en JavaScript es una característica
+fundamental que puede simplificar la escritura de condicionales simples y
+reducir la longitud del código. Aunque puede parecer un poco extraño al
+principio, es un herramienta poderosa que puede mejorar la efectividad y la
+legibilidad del código. En este post, hemos visto algunos ejemplos prácticos de
+cómo utilizar el operador ternario y hemos explorado algunos casos de
+aplicación y soluciones prácticas. Esperamos que hayas aprendido algo nuevo y
+valioso sobre este operador tan útil.</p>
+<p><strong>Hashtags</strong></p>
+<h1 id="javascript-operadorternario-coding-programming-softwaredevelopment">JavaScript #OperadorTernario #Coding #Programming #SoftwareDevelopment</h1>
+<h1 id="webdevelopment-frontend-backend">WebDevelopment #FrontEnd #BackEnd</h1></p>
+    </article>
+</section>
+<!-- endblock -->
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+                    <!-- block footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+                <!-- block copyright -->
+
+    <small class="d-block mb-3">
+        Made with
+        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
+            Simple Blog for MkDocs
+        </a>
+    </small>
+
+<!-- endblock -->
+        </div>
+    </div>
+</footer>
+<!-- endblock -->
+            
+        </div>
+
+            <script>var base_url = '../..';</script>
+            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../../assets/js/main.min.js""></script>
+                <script src="../../js/extra.js" defer></script>
+
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+
+</html>

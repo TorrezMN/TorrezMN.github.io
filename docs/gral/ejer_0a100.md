@@ -6,8 +6,7 @@ manera de familiarizarse con el lenguaje y su sintaxis básica.
 
 **El Código**
 
-Aquí te dejo el código completo que resuelve el ejercicio: ```python for i in
-range(101): print(i) ``` Vamos a analizar este código paso a paso.
+Aquí te dejo el código completo que resuelve el ejercicio: `python for i in range(101): print(i) ` Vamos a analizar este código paso a paso.
 
 La instrucción `for i in range(101):` es la estructura principal de la
 iteración. La función `range()` crea una secuencia de números que es utilizada
@@ -29,7 +28,7 @@ pantalla. Luego, presiona Enter para ejecutar el programa.
 **Resultados**
 
 Al ejecutar el código, verás la salida en la consola, que será una lista de
-números del 0 al 100: ``` 0 1 2 3 ... 95 96 97 98 99 100 ``` **Conclusión**
+números del 0 al 100: `0 1 2 3 ... 95 96 97 98 99 100` **Conclusión**
 
 En este breve ejemplo, hemos aprendido a imprimir los números del 0 al 100 en
 Python utilizando una estructura de iteración `for`. Esta es una excelente

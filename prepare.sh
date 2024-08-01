@@ -19,5 +19,4 @@ for i in $(find -name '*.md');
     done
 
 
-
 mkdocs build --clean

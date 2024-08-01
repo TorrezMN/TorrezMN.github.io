@@ -1,4 +1,5 @@
-name: Deploy MkDocs Blog   
+
+name: Deploy MkDocs Blog
 
 on:
   push:
@@ -6,34 +7,38 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-
-    permissions:
-      id-token: write
-      pages: write
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v3
       - name: List files (for debugging)
         run: ls -R
 
-      - name: Setup dependencies
+      - name: Build
         run: |
           ./dev_setup.sh
           pip install mdformat
           pip install mdformat-gfm
           pip install mdformat-gfm mdformat-frontmatter mdformat-footnote
           pip install mdformat-myst
-      - name: Prepare the site
-        run: sh prepare.sh
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: build
       - uses: actions/deploy-pages@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Customize these paths based on your setup
-          source: "site/"  # Replace with your directory
-          branch: gh-pages                 # Replace with your Pages branch
+          source: build
+          branch: gh-pages
       - name: FINAL 
         run: echo "https://torrezmn.github.io/"

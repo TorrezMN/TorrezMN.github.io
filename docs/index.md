@@ -1,3 +1,5 @@
+
+<!--
 ### Gral bloging
 
 ---
@@ -9,6 +11,8 @@
 - \[FSTRIGS en Python\] (gral/fstrings.md)
 - \[How to Blog\] (gral/how_to_blog.md)
 - \[Operador ternario en Javascript.\] (gral/operador_ternario.md)
+
+-->
 
 ### Data Science
 

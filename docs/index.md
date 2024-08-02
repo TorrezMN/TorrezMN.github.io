@@ -1,8 +1,8 @@
+<!--
 ### Gral bloging
 
 - [How to blog.](gral/how_to_blog.md)
 
-<!--
 - \[Distancia de edicion minima.\] (gral/distancia de edicion minima.md)
 - \[Ejercicio 1\] (gral/ejer_0a100.md)
 - \[FSTRIGS en Python\] (gral/fstrings.md)

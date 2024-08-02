@@ -1,5 +1,7 @@
 
-# PROBLEM DESCRIPTION
+# DESCRIPCION DEL PROBLEMA 
+
+---
 
 Imagina que has sido contratado como Analista de Datos en una **empresa de
 fabricación de dispositivos electrónicos**. Antes de tu reunión inicial con el
@@ -25,11 +27,11 @@ sin operarios a la vista.
 
 La siguiente parada es el ***depósito de productos terminados***. Aquí, ves
 *espacios de bodega densamente cargados y otros espacios donde faltan
-productos*. Escuchas a un empleado diciendo: "Otra vez nos quedamos sin poder
-completar el cargamento de protectores de sobrecargas." Otro empleado responde:
-"aunque no sobren, al menos, los circuitos temporizadores nunca faltan"
-Mientras continúas, otro trabajador menciona: "Tenemos que reubicar las placas
-de control, están ocupando demasiado espacio."
+productos*. Escuchas a un empleado diciendo: "**Otra vez nos quedamos sin poder
+completar el cargamento** de protectores de sobrecargas." Otro empleado
+responde: "aunque no sobren, al menos, los **circuitos temporizadores nunca
+faltan**" Mientras continúas, otro trabajador menciona: "Tenemos que reubicar
+las placas de control, están ocupando demasiado espacio."
 
 Después del recorrido, llegas a la reunión con el equipo directivo. Ellos te
 explican que tu primer proyecto esta relacionado con la optimización los costos
@@ -40,58 +42,67 @@ estos datos, proponer mejoras en la gestión de adquisición y registro de datos
 para luego identificar áreas de mejora y optimización.
 
 
-## OBJETIVOS DEL PROYECTO
+## **OBJETIVOS DEL PROYECTO**
 
-1- Optimización de costos de produccion.
+1- Optimización de costos de producción.
 
 2- Verificar la integridad y veracidad de datos.
 
-3- Proponer mejoras en la adquisision y registro de datos.
+3- Proponer mejoras en la adquisición y registro de datos.
 
-4- Identificar areas de mejora y optimización.
+4- Identificar áreas de mejora y optimización.
 
 
 ### Observaciones sobre los objetivos del proyecto. 
 
-Dado que el presente es un ejercicio teorico solo se puede especular sobre los
-posibles resultados del mismo. Unicamente se presentan posibles caminos a
+Dado que el presente es un ejercicio teórico solo se puede especular sobre los
+posibles resultados del mismo. Únicamente se presentan posibles caminos a
 seguir.
 
 Sobre la *integridad y veracidad de los datos.* **no se provee mayor claridad
-sobre los metodos de recoleccion de datos** actuales y datos disponibles para
-analisis.
+sobre los métodos de recolección de datos** actuales y datos disponibles para
+análisis.
 
-Sobre las *mejoras en la adquisision y registro de datos.* Una vez finalizado
-el proyecto se pueden establecer criterios de validacion y recoleccion de
-datos, segun utilidad caracteristicas, prioridades y necesidades. 
+Sobre las *mejoras en la adquisición y registro de datos.* Una vez finalizado
+el proyecto se pueden establecer criterios de validación y recolección de
+datos, según utilidad características, prioridades y necesidades. 
 
-Sobre *identificar areas de mejora y optimización.* Tanto en los procesos de
-producir como asi tambien los procesos de recoleccion y validacion de datos.
+Sobre *identificar áreas de mejora y optimización.* Tanto en los procesos de
+producir como así también los procesos de recolección y validación de datos.
 Solo es posible proveer sugerencias para mejoras una vez culminada la
-investigacion. 
+investigación. 
 
 
 ## DATOS/HERRAMIENTAS
 
-- Datos historicos.
-    - Registros de produccion.
+Inicialmente se tiene a disposicion, para el desarrollo del proyecto, los
+diguientes datos.
+
+- Datos históricos.
+    - Registros de producción.
     - Inventarios
     - Costos de materia prima.
 
+- Stack de herramientas.
+    - python
+    - pandas
+    - matplotlib
+    - seaborn
+    - jupyter notebooks
 
-## DATOS DE INTERES <a id="datos_de_interes"></a>
+## DATOS DE INTERÉS <a id="datos_de_interes"></a> ---
 
-Se mencionan a continuacion los datos que serian de interes para el proyecto.
-Datos necesarios como asi tambien informacion de utilidad para el proyecto.
+Se mencionan a continuación los datos que serian de interés para el proyecto.
+Datos necesarios como así también información de utilidad para el proyecto.
 
 * **MATERIAS PRIMAS**   
      - Oferta de materias primas y costos.   
      - Costos de almacenamiento.
-     - Normativas de uso internacionales. (Implica algun costo adicional su
-       utilizacion?)
+     - Normativas de uso internacionales. (Implica algún costo adicional su
+       utilización?)
  
-* **PRODUCCION**
-     - Operarios involucrados en produccion y mantenimiento.
+* **PRODUCCIÓN**
+     - Operarios involucrados en producción y mantenimiento.
      - Productividad de cuadrillas de operarios. (Operarios involucrados,
        tiempo en la empresa vs. productividad.)
      - Historial de mantenimiento.
@@ -99,42 +110,45 @@ Datos necesarios como asi tambien informacion de utilidad para el proyecto.
      - Costos de mantenimiento.
      - Costos de inactividad. 
      - Rentabilidad de productos terminados vs materia prima.
-     - Cumplimiento de normas internacionales para la produccion. (Se deben
-       cumplir normas internacionales para la produccion?. Tipo certificaciones
+     - Cumplimiento de normas internacionales para la producción. (Se deben
+       cumplir normas internacionales para la producción?. Tipo certificaciones
        internacionales. permisos ambientales, etc.)
-     - Tiempos de produccion vs. costo por producto.
-     - Tiempos de produccion vs. costo por cuadrilla de operarios.
+     - Tiempos de producción vs. costo por producto.
+     - Tiempos de producción vs. costo por cuadrilla de operarios.
  
 * **PRODUCTOS TERMINADOS**
      - Costo de almacenamiento.
      - "Completar cargamentos".  
-     - Valuacion temporal del producto. (Varia su valor segun el tiempo que
-       pasa en almacen?)
-     - Ubicacion de productos?.
+     - Valuación temporal del producto. (Varia su valor según el tiempo que
+       pasa en almacén?)
+     - Ubicación de productos?.
 
-# PROCEDIMIENTO DE INVESTIGACION 
+## ESTRATEGIAS DE ANALISIS ---
 
-Se describe a continuacion la metodologia de analisis para el presente
-proyecto. Que tipo de analisis se utilizaria. Las herramientas que se
-utilizarian. 
+Se describe a continuacion las estrategias de desarrollo y analisis del
+proyecto. Que tipo de análisis se utilizaría. Las herramientas que se
+utilizarían. 
 
 
 ### OBSERVACIONES INICIALES 
 
-Para realizar la investigacion se aria una segmentacion en areas de interes
-segun lo indicado en el punto anterior: *materias primas, produccion, productos
-terminados*.
+Para realizar la investigación se aria una segmentación en áreas de interés
+según lo indicado en los parrafos anteriores: *materias primas, producción,
+productos terminados*.
 
 Dado que no se puede evaluar del desempeño productivo de una empresa
-considerando unicamente factores internos. Se procederia a la segmentacion en
-periodos temporales de 5 años a partir del año 2000. Siendo asi 4 periodos de 5
-años en total. Esto es porque:
+considerando únicamente factores internos. Se procederían a la segmentación en
+periodos temporales de 6 meses minimo. 
+
+Esto es porque:
+
+- Fiestas nacionales. (Fiesta de virgen de caacupe.)
 
 -  Las regulaciones gubernamentales cambian. Permitiendo o restringiendo
    importaciones. Imponiendo variaciones impositivas. etc.
 -  Existen periodos de inactividad obligatoria como la [pandemia
    covid-19](https://es.wikipedia.org/wiki/Pandemia_de_COVID-19) ocurrida en el
-   año 2020-2023 que afecto la produccion y economia mundial.
+   año 2020-2023 que afecto la producción y economía mundial.
 -  Existen competencias economicas o sanciones impuestas entre gobiernos que
    hacen que la economia y la produccion varie.
 -  En algunas ocaciones las temporadas de invierno son mas fuertes que en otras
@@ -144,9 +158,10 @@ Estas son solo algunas de las razones existentes que hacen necesaria la
 segmentacion temporal en el proceso de analisis para poder evaluar de forma
 individual y veraz los datos existentes.
 
-### Procedimientos para cada area de interes.
+### Procedimientos para cada area de interes. <a
+id='proc_por_area_de_interes'></a>
 
-El procedimiento para realizar el analisis en cada area de interes. seria el
+El procedimiento para realizar el analisis en cada area de interes. Seria el
 siguiente:
 
 - Obtencion de datos mediante consultas sql u otro tipo de metodos.
@@ -175,10 +190,71 @@ de los procesos de la empresa.
 
 **PRESENTACION DE RESULTADOS**   
 
+---
+
 La metodologia de presentacion de los resultados seria a travez de informes
-ejecutivos. No mas de 5 paginas por area de interes resaltando los ayazgos y
-los puntos fuertes y debiles con respecto al area analizadas.
+ejecutivos. No mas de 5 paginas por area de interes resaltando los ayazgos, los
+puntos fuertes y debiles con respecto al area analizadas incluyendo graficas
+para ilustrar los datos de mayor relevancia.
 
-Tambien la preparacion de graficas para ilustrar los datos de mayor relevancia.
+Se prevee tambien la elaboracion de "tableros" con herramientas que permitan el
+acceso 24/7 a la informacion existente permitiendo de esta forma que los
+ejecutivos puedan acceder a la misma cuando sea necesario. 
 
-Entrega de informe completo con toda la informacion dentro del mismo. 
+
+### INCOGNITAS INICIALES
+
+Se exponen algunas "incognitas" que sirven de puntapie inicial para el analisis
+de los datos proveidos por la empresa.
+
+* **MATERIAS PRIMAS**   
+     - Oferta de materias primas y costos.   
+     - Costos de almacenamiento.
+     - Normativas de uso internacionales. (Implica algún costo adicional su
+       utilización?)
+ 
+* **PRODUCCIÓN**
+     - Operarios involucrados en producción y mantenimiento.
+     - Productividad de cuadrillas de operarios. (Operarios involucrados,
+       tiempo en la empresa vs. productividad.)
+     - Historial de mantenimiento.
+     - Cronograma de mantenimiento.
+     - Costos de mantenimiento.
+     - Costos de inactividad. 
+     - Rentabilidad de productos terminados vs materia prima.
+     - Cumplimiento de normas internacionales para la producción. (Se deben
+       cumplir normas internacionales para la producción?. Tipo certificaciones
+       internacionales. permisos ambientales, etc.)
+     - Tiempos de producción vs. costo por producto.
+     - Tiempos de producción vs. costo por cuadrilla de operarios.
+ 
+* **PRODUCTOS TERMINADOS**
+     - Costo de almacenamiento.
+     - "Completar cargamentos".  
+     - Valuación temporal del producto. (Varia su valor según el tiempo que
+       pasa en almacén?)
+     - Ubicación de productos?.
+
+## **PARA FUTURAS PROYECTOS**      
+
+---   
+
+Una vez finalizado el proyecto y para el desarrollo de futuros proyectos.
+Teniendo una vision mas amplia del funcionamiento de los procesos de la empresa
+y dominio de negocio de la empresa. Se pueden establecer criterios de
+automatizacion en la recoleccion de datos. 
+
+A primera vista se pueden identificar dos aspectos a tener en cuenta: *aspectos
+tecnicos y aspectos teoricos/analiticos*.
+
+- *Aspectos tecnicos.* Este aspecto contempla todo lo relacionado a obtencion y
+  obtimisacion de la recoleccion de datos.
+
+- *Aspectos teorico/analiticos* contemplan todo lo relacionado al analisis de
+  los datos. Metodologias de nalisis de datos numericos, temporales, etc. en la
+  seccion donde se detallan los [procedimientos para cada area de
+  interes](#proc_por_area_de_interes) se menciona el "analisis pareto". ara
+  nuevos proyectos se intentaria incorporar nuevos metodos de analisis que sean
+  relevantes al campo de estudio y las necesidades del dominio de interes del
+  proyecto. Se pueden obtimizar tambien los periodos temporales de analisis de
+  datos para el proyecto. Aumentar la temporalidad o reducirla.

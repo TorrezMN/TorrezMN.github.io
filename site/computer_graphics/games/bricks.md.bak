@@ -1,5 +1,4 @@
 ## Build and Break: Conquering Bricks with Code in a JavaScript "Bricks Wall"
-
 Game
 
 Imagine a world where lines of code become bricks, and your keyboard wields a
@@ -7,7 +6,7 @@ virtual paddle, smashing through pixelated walls in a satisfying dance of
 destruction. That's the magic of building a "Bricks Wall" game in JavaScript –
 a thrilling blend of logic, creativity, and pure digital demolition fun.
 
-Intrigued? Fasten your coding seat belts, because in this blog post, we'll dive
+Intrigued? Fasten your coding seatbelts, because in this blog post, we'll dive
 deep into the captivating world of JavaScript "Bricks Wall" game development.
 We'll unveil the secrets of:
 
@@ -23,7 +22,7 @@ We'll unveil the secrets of:
   making your ball ricochet off bricks and walls in a satisfyingly realistic
   ballet of physics.
 - **Leveling up the fun:** Explore power-ups, bonus points, and even multiple
-  levels, injecting excitement and replay ability into your game.
+  levels, injecting excitement and replayability into your game.
 
 But this blog post isn't just about technical wizardry. We'll also explore the
 creative aspects of game design, like:

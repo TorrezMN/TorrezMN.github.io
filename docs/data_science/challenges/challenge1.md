@@ -1,7 +1,28 @@
 
+
+
+<div style="text-align: center; margin-top: 50px; background-color: gray;
+padding: 20px; ">
+
+Este es mi abordaje personal para el desafío. Presento mi estrategia de de
+trabajo para afrontar el desafío. 
+
+Se asume que todo el planteamiento es netamente teórico. Por esta razón pueden
+existir aspectos faltantes que en escenarios reales deben analizarse o
+mejorarse. Por ej. la calidad de los datos disponibles como así también el tipo
+de datos por ej. cajas de papel vs tablas en bases de datos.
+
+</div>
+
+
+
+
+
 # DESCRIPCIÓN DEL PROBLEMA 
 
 ---
+
+
 
 Imagina que has sido contratado como Analista de Datos en una **empresa de
 fabricación de dispositivos electrónicos**. Antes de tu reunión inicial con el
@@ -90,7 +111,13 @@ siguientes datos.
     - seaborn
     - jupyter notebooks
 
-## DATOS DE INTERÉS <a id="datos_de_interes"></a> ---
+
+<a id="datos_de_interes"></a> 
+
+## DATOS DE INTERÉS 
+
+
+---
 
 Se mencionan a continuación los datos que serian de interés para el proyecto.
 Datos necesarios como así también información de utilidad para el proyecto.
@@ -123,7 +150,9 @@ Datos necesarios como así también información de utilidad para el proyecto.
        pasa en almacén?)
      - Ubicación de productos?.
 
-## ESTRATEGIAS DE ANÁLISIS ---
+## ESTRATEGIAS DE ANÁLISIS 
+
+---
 
 Se describe a continuación las estrategias de desarrollo y análisis del
 proyecto. Que tipo de análisis se utilizaría. Las herramientas que se
@@ -137,20 +166,30 @@ según lo indicado en los párrafos anteriores: *materias primas, producción,
 productos terminados*.
 
 Dado que no se puede evaluar del desempeño productivo de una empresa
-considerando únicamente factores internos. Se procederían a la segmentación en
-periodos temporales de 6 meses mínimo. 
+considerando únicamente factores internos. Para el proyecto inicial se
+procedería con un análisis exhaustivo de los datos iniciando con los últimos 10
+años previos al inicio del proyecto. Últimos 10 años en periodos de 2 años.
+Esto es 5 periodos de 2 años cada uno. 
+
+*Una vez culminado el proyecto inicial se pueden reducir los periodos
+temporales para proyectos futuros.*    
+   
 
 Esto es porque:
 
-- Fiestas nacionales. (Fiesta de virgen de caacupe.)
+- Fiestas nacionales. En algunas ocasiones el gobierno dictamina feriados
+  nacionales en memoria de algún evento especial. 
 
 -  Las regulaciones gubernamentales cambian. Permitiendo o restringiendo
    importaciones. Imponiendo variaciones impositivas. etc.
+
 -  Existen periodos de inactividad obligatoria como la [pandemia
    covid-19](https://es.wikipedia.org/wiki/Pandemia_de_COVID-19) ocurrida en el
    año 2020-2023 que afecto la producción y economía mundial.
+
 -  Existen competencias económicas o sanciones impuestas entre gobiernos que
    hacen que la economía y la producción varié.
+
 -  En algunas ocasiones las temporadas de invierno son mas fuertes que en otras
    provocando de esta forma que los operarios sufran mas enfermedades de época.
 
@@ -158,34 +197,41 @@ Estas son solo algunas de las razones existentes que hacen necesaria la
 segmentación temporal en el proceso de análisis para poder evaluar de forma
 individual y veraz los datos existentes.
 
-### Procedimientos para cada área de interés. <a
-id='proc_por_area_de_interes'></a>
+<a id='proc_por_area_de_interes'></a>
+
+### Procedimientos para cada área de interés. 
+
 
 El procedimiento para realizar el análisis en cada área de interés. Seria el
 siguiente:
 
 - Obtención de datos mediante consultas sql u otro tipo de métodos.
+
 - Se realizaran tareas de limpieza de datos y normalización de datos.
+
 - Se realizaran tareas exploratorias de datos. Teniendo en cuenta lo expuesto
   en el apartado [DATOS DE INTERÉS](#datos_de_interes).
+
 - [**ANÁLISIS DE
   Pareto**](https://es.wikipedia.org/wiki/Principio_de_Pareto).[^2]
 [^2]: Es un postulado que establece de manera arbitraria que el el 80% de los
 efectos proviene del 20% de las causas. Podría traducirse en términos
 empresariales: *es probable que el 20% de los clientes generen aproximadamente
 el 80% de los ingresos de una empresa.*  para cada área de interés dentro del
-análisis se intentaría identificar los factores de éxito para la optimisacion
+análisis se intentaría identificar los factores de éxito para la optimización
 de los procesos de la empresa.
 
 - Para cada caso se intentara identificar los factores de mayor productividad
   que son de interés según lo expuesto en el apartado [DATOS DE
   ITERES](#datos_de_interes). 
+
 - Análisis global del proyecto. una vez finalizadas las etapas anteriores y con
   una visión mas amplia de los procesos de la empresa. Se procede a realizar
   una integración global de los resultados. Redactando conclusiones para cada
   área de interés del proyecto.
+
 - conclusiones finales. Integración de conclusiones finales en una conclusión
-  final del proyecto indicando ayaszgos principales y puntos fuertes y débiles
+  final del proyecto indicando hallazgos principales y puntos fuertes y débiles
   del proceso de producción.
 
 **PRESENTACIÓN DE RESULTADOS**   
@@ -193,15 +239,15 @@ de los procesos de la empresa.
 ---
 
 La metodología de presentación de los resultados seria a través de informes
-ejecutivos. No mas de 5 paginas por área de interés resaltando los ayazgos, los
+ejecutivos. No mas de 5 paginas por área de interés resaltando los hallazgos, los
 puntos fuertes y débiles con respecto al área analizadas incluyendo gráficas
 para ilustrar los datos de mayor relevancia.
 
-En cuanto a "graficas ilustrativas" se limitara al uso de graficos de barra y
-graficos de torta en lo posible. Dado que son muy comunes y faciles de
+En cuanto a "gráficas ilustrativas" se limitara al uso de gráficos de barra y
+gráficos de torta en lo posible. Dado que son muy comunes y fáciles de
 interpretar.
 
-Se prevee también la elaboración de "tableros" con herramientas que permitan el
+Se anticipa también la elaboración de "tableros" con herramientas que permitan el
 acceso 24/7 a la información existente permitiendo de esta forma que los
 ejecutivos puedan acceder a la misma cuando sea necesario. Con herramientas
 tales como: plotly-dash, panel, streamlit, etc.
@@ -209,36 +255,62 @@ tales como: plotly-dash, panel, streamlit, etc.
 
 ### INCÓGNITAS INICIALES
 
+A modo "trabajo inicial" se procede a establecer parámetros iniciales de
+comparación para cada una de las categorías expresadas en los párrafos
+anteriores. [DATOS DE INTERÉS](#datos_de_interes).
+
+Esta tarea provee parámetros de comparación iniciales para evaluar
+posteriormente el desempeño de las "mejoras" aplicadas.
+
 Se exponen algunas "incógnitas" que sirven de puntapié inicial para el análisis
 de los datos proveídos por la empresa.
 
 * **MATERIAS PRIMAS**   
-     - Oferta de materias primas y costos.   
-     - Costos de almacenamiento.
-     - Normativas de uso internacionales. (Implica algún costo adicional su
-       utilización?)
+
+     - Cual es la oferta de materias primas? Cuantos proveedores hay? Tiempos
+       de entrega. 
+     - La empresa tiene bodegas propias? Se alquilan? Costos de alquiler.
+     - Existen normativas que regulen la producción? Se necesita habilitación?
+       Las habilitaciones por cuanto tiempo tienen vigencia?
+     - Implican algún costo adicional las habilitaciones?
  
 * **PRODUCCIÓN**
-     - Operarios involucrados en producción y mantenimiento.
-     - Productividad de cuadrillas de operarios. (Operarios involucrados,
-       tiempo en la empresa vs. productividad.)
-     - Historial de mantenimiento.
-     - Cronograma de mantenimiento.
-     - Costos de mantenimiento.
-     - Costos de inactividad. 
-     - Rentabilidad de productos terminados vs materia prima.
-     - Cumplimiento de normas internacionales para la producción. (Se deben
-       cumplir normas internacionales para la producción?. Tipo certificaciones
-       internacionales. permisos ambientales, etc.)
-     - Tiempos de producción vs. costo por producto.
-     - Tiempos de producción vs. costo por cuadrilla de operarios.
+
+     - Desempeño de operarios.
+         - Horas trabajadas.
+         - Faltas
+         - Cumplimiento de tareas.
+     - Cuadrillas de operarios.
+         - Como se crean las cuadrillas de operarios? Se eligen al azar? Se
+           asignan "manualmente"?
+         - Identificar cuadrillas mas productivas. Identificar factores que
+           hacen a la productividad. Son operarios con mucho tiempo en la
+           empresa o poco tiempo. producen en función del salario recibido.
+     - mantenimiento
+         - Existen calendarios de mantenimiento?
+         - Motivos por los cuales hay maquinas paradas.
+         - Historial de mantenimiento.
+         - proveedores de repuestos y costos de mantenimiento.
+         - Costos por inactividad de maquinas y operarios.
+     - Costos de producción vs. materia prima y cadena de suministros.
+     - Normativas internacionales.
+         - Costos de certificaciones.
+         - Costos de habilitaciones.
+         - Permisos de trabajo por factores ambientales.
+     - Tiempos de producción.
+         - Tiempos de producción vs. costos por producto.
+         - Tiempos de producción vs. costos por cuadrillas de operarios.
+
  
 * **PRODUCTOS TERMINADOS**
-     - Costo de almacenamiento.
-     - "Completar cargamentos".  
+
+     - Cuanto cuesta tener los productos almacenados en bodega? (Dinero perdido
+       vs. tiempo perdido.)
+     - Motivos por los que no es posible "completar cargamentos".
      - Valuación temporal del producto. (Varia su valor según el tiempo que
        pasa en almacén?)
-     - Ubicación de productos?.
+     - Estrategias de locación de productos.
+
 
 ## **PARA FUTURAS PROYECTOS**      
 
@@ -253,10 +325,13 @@ A primera vista se pueden identificar dos aspectos a tener en cuenta: *aspectos
 técnicos y aspectos teóricos/analíticos*.
 
 - *Aspectos técnicos.* Este aspecto contempla todo lo relacionado a obtención y
-  obtimizacion de la recolección de datos. Contando con una evaluacion mas
-  detallada de los procesos de recoleccion se pueden proponer modificaciones
-  para *garantizar la veracidad y utilidad de los datos* recolectados. Asi
-  tambien garantizar la disponibilidad de los mismos.
+  optimización de la recolección de datos. Contando con una evaluación mas
+  detallada de los procesos de recolección se pueden proponer modificaciones
+  para *garantizar la veracidad y utilidad de los datos* recolectados. Así
+  también garantizar la disponibilidad de los mismos. En materia de
+  "automatización" de procesos se pueden establecer puntos de interés como la
+  recolección de datos y el proceso de "limpieza de datos" como puntos posibles
+  a procesos de automatización.
 
 - *Aspectos teórico/analíticos* contemplan todo lo relacionado al análisis de
   los datos. Metodologías de análisis de datos numéricos, temporales, etc. en
@@ -267,7 +342,7 @@ técnicos y aspectos teóricos/analíticos*.
   proyecto. Se pueden optimizar también los periodos temporales de análisis de
   datos para el proyecto. Aumentar la temporalidad o reducirla.
 
-Se puede evaluar tambien la implementacion de sistemas de alerta o "modelos
-predictivos" para escases de stock de materia prima o sobre produccion.
+Se puede evaluar también la implementación de sistemas de alerta o "modelos
+predictivos" para escasez de stock de materia prima o sobre producción.
 Permitiendo de esta forma estar preparados o minimizar de forma eficiente el
-gasto de produccion a futuro y maximizando las ganancias.
+gasto de producción a futuro y maximizando las ganancias.

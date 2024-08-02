@@ -1,4 +1,26 @@
 
+function switchFontForGamesPage() {
+    const currentPath = window.location.pathname;
+    if (currentPath.includes('/computer_graphics/games/')) {
+        document.body.classList.add('font-press-start');
+    } else {
+        document.body.classList.remove('font-press-start');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    switchFontForGamesPage();
+});
+
+window.addEventListener('popstate', function() {
+    switchFontForGamesPage();
+});
+
+
+
+
+
+
 // Remove and update the "copy text" on the footer.
 function UpdateCopy() {
     // Select the first 'small' element within the specified div

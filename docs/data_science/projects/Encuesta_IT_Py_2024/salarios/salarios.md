@@ -6096,17 +6096,13 @@ nan,
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_GueyJ"></a>
-    <br/>
-    <br/>
+  <a id="monthly_salary_vs_favorite_framework_table_GueyJ"></a>
+  <br/>
+  <br/>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 50% |
-```
-
 | React.js | 40% |
 | Ruby on Rails | 10% |
     </div>

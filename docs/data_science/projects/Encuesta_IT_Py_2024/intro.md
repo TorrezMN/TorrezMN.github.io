@@ -70,8 +70,9 @@ informational/exploratory purposes only and not as the sole basis for critical
 decisions.
 
 
-### Motivations The motivation to do this work over the results of the
-"Paraguayan IT Professionals" of the 2024 are the following:
+### Motivations 
+The motivation to do this work over the results of the "Paraguayan IT
+Professionals survey" of the 2024 are the following:
 
 - Get a deeper comprehencion of the IT comunity. Its members and technical
   profiles.
@@ -90,7 +91,8 @@ decisions.
 
 
 
-<a id='topic_index'></a> # Topic Index 
+<a id='topic_index'></a> 
+# Topic Index 
 
 ______________________________________________________________________
 
@@ -107,5 +109,9 @@ ______________________________________________________________________
 
 
 # Attributions
-<a href="https://www.flaticon.es/iconos-gratis/ai" title="ai iconos">Ai iconos creados por photo3idea_studio - Flaticon</a>
 
+- <a href="https://www.flaticon.es/iconos-gratis/ai" title="ai iconos">Ai iconos creados por photo3idea_studio - Flaticon</a>
+
+- Los datos para este proyecto fueron proveidos gentilmente pro el equipo de <a
+href="https://proyectosbeta.net/2024/06/resultados-de-la-encuesta-sobre-developers-en-paraguay-2024/
+" title="proyectos beta"> Proyectos Beta </a>.

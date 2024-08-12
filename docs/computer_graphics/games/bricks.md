@@ -1,6 +1,6 @@
 ## Build and Break: Conquering Bricks with Code in a JavaScript "Bricks Wall"
 
-Game
+## Game
 
 Imagine a world where lines of code become bricks, and your keyboard wields a
 virtual paddle, smashing through pixelated walls in a satisfying dance of

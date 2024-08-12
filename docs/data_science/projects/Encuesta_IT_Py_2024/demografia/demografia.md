@@ -1,3 +1,5 @@
+
+
 <!--
 <div id="canvas1"></div>
 <div id="canvas2"></div>
@@ -8,13 +10,20 @@
 - Género
 - Edad actual
 
+En este apartado se estudia la distribucion demografica de los encuestados. En
+relacion a alguna variable de interes, como ser *distribucion de genero por
+edades* entre otros.
+
+Todo esto con la finalidad de establecer algunos parametros de referencia sobre
+los encuestados en materia demografica. 
+
 </br></br>
 
 ### Gender
 
 ![png](demografia_images/output_5_0.png)
 
-\[op\] en materia de genro se encontraron 3 categorias:
+\[op\] En materia de genero se encontraron 3 categorias:
 
 - *male*
 
@@ -22,8 +31,54 @@
 
 - *prefer not to say*
 
-Menos de 50% de los encuestados no pertenece al 'sexo masculino'. Las 2
-minorias existentes no logran sumar el 25% de las repuestas totales.
+De la distribucion de genero encontrada se puede decir que los Varones abarcan
+mas de 80% de los encuestados.
+
+
+
+
+<!-- Start IA comment -->
+<div style="background-color: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px;">
+   
+ <!-- Comment title. -->
+ <div style="background-color:rgba(184,184,184,.35);font-weight: bold; cursor: pointer;padding:0;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';">  
+     <img class="img_icon" src="../../ilustrations/ai.png" alt="Icon" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;">
+     Gender distribution on IT.
+ </div><!-- Ends title. -->
+
+ <!-- Start comment body. -->
+ <div class="comment-content" style="display: none;">
+  The gender distribution in the IT industry in Latin America shows a significant
+  gender gap, with women representing only about 30% of the workforce. The
+  situation varies by country, but the overall trend indicates that men dominate
+  the industry. Efforts are being made to encourage more women to enter the
+  field, but progress has been slow.
+
+  For instance, in Brazil, women made up about 37.4% of the IT workforce in 2021.
+  Meanwhile, in Mexico, women represented around 20% of the IT sector in 2020.
+  These statistics highlight the need for more inclusive policies and initiatives
+  to bridge the gender gap in the tech industry in Latin America.
+
+  <p style="font-size: 0.8em; text-align: right; margin-top: 10px;">
+      (International Labour Organization (ILO), "Women in STEM fields: How to
+      close the gender gap," ILO Report (Accessed on August 9, 2024).)
+  </p>
+ </div><!-- End BODY comment -->
+
+</div><!-- End IA comment -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </br></br>
 
@@ -132,6 +187,56 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 <br/>
     </div>
 </center>
+
+
+
+<!-- Start IA comment -->
+ <div style="background-color: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px;">
+ <!-- Comment title. -->
+ <div style="background-color:rgba(184,184,184,.35);font-weight: bold; cursor: pointer;padding:0;" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none';"> 
+   <img class="img_icon" src="../../ilustrations/ai.png" alt="Icon" style="width: 16px; height: 16px; margin-right: 8px; vertical-align: middle;">
+ Gender and Age distribution in South America's IT industry.
+ </div>
+ <!-- Ends title. -->
+   <!-- Start comment body. -->
+ <div class="comment-content" style="display: none;">
+ 
+
+<h1>Gender and Age Distribution in South America's IT Industry</h1>
+
+<h2>Gender Distribution</h2>
+<p>While the number of women in IT is growing, the industry remains predominantly male-dominated across most South American countries. This is in line with global trends, as reported by organizations like the International Telecommunication Union (ITU).</p>
+<p>Similar to Latin America, women in South American IT tend to be concentrated in specific roles like user experience, design, and quality assurance, while men dominate development, engineering, and IT management.</p>
+<p>The underrepresentation of women in leadership positions is a significant challenge. Studies conducted by organizations like the Inter-American Development Bank (IDB) have highlighted this issue.</p>
+
+<h2>Age Distribution</h2>
+<p>The IT workforce in South America is generally young, with a high concentration of professionals in their 20s and 30s. This demographic is influenced by factors such as higher education trends and the region's overall population structure.</p>
+<p>While the number of experienced IT professionals is increasing, attracting and retaining older workers remains a challenge. This is partly due to the rapid pace of technological change, as noted in reports by the World Economic Forum.</p>
+<p>The digital skills gap, particularly among older workers, is a growing concern. Governments and industry stakeholders are increasingly focusing on upskilling and reskilling programs to address this issue.</p>
+
+<h2>Overcoming Challenges</h2>
+<p>Addressing gender and age disparities in South America's IT industry requires a comprehensive approach:</p>
+<ul>
+<li>Promoting STEM Education: Encouraging girls and young women to pursue STEM subjects is crucial for increasing female representation in the IT sector. Initiatives by organizations like UNESCO can serve as a model.</li>
+<li>Mentorship and Sponsorship: Providing mentorship and sponsorship programs for women can help them advance in their careers.</li>
+<li>Diversity and Inclusion Policies: Companies should implement policies and practices to promote gender and age diversity in the workplace.</li>
+<li>Lifelong Learning: Investing in training and development programs is essential for equipping workers of all ages with the necessary skills.</li>
+</ul>
+
+
+
+
+
+ <p style="font-size: 0.8em; text-align: right; margin-top: 10px;">
+
+(International Telecommunication Union (ITU) , Inter-American Development Bank (IDB) , World Economic Forum , UNESCO.)
+
+ </p>
+ </div><!-- End BODY comment -->
+ </div>
+ <!-- End IA comment -->
+ 
+
 
 ## Gender By Majors
 
@@ -673,254 +778,170 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_Covra"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+  <a id="gender_count_by_majors_table_Covra"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(graphic_design)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(graphic_design)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_hMVFn"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_hMVFn"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
-<p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, computer_engineering, other)<p></em></p>
+ <p class='table_title'><em>Gender total counts by majors. 
+ <p class="table_subtitle">(programming, computer_engineering, other)<p></em></p>
 <br/>
     </div>
 </center>
 
 <center>
-     <div class='stats_table'>
- <a id="gender_count_by_majors_table_7nCyV"></a>
- <br/>
- <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+  <a id="gender_count_by_majors_table_7nCyV"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 75%        |
 | female   | 25%        |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, graphic_design)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, graphic_design)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
+   <div class='stats_table'>
  <a id="gender_count_by_majors_table_DQimz"></a>
- <br/>
- <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
-<p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, electronic_engineering, other ingenerías, other)<p></em></p>
-<br/>
-    </div>
+  <p class='table_title'><em>Gender total counts by majors. 
+  <p class="table_subtitle">(programming, systems_analysis, electronic_engineering, other ingenerías, other)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
+   <div class='stats_table'>
  <a id="gender_count_by_majors_table_4OLS4"></a>
- <br/>
- <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
 
 | Category | Percentage |
 | -------- | ---------- |
 | female   | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(other ingenerías, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(other ingenerías, other)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-    <div class='stats_table'>
-    <a id="gender_count_by_majors_table_sfatr"></a>
-    <br/>
-    <br/>
-    <div style="display: flex; justify-content: center;">
-    <div style="text-align: center;">
+  <div class='stats_table'>
+<a id="gender_count_by_majors_table_sfatr"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | female   | 100%       |
 
-</div>
-</div>
-<br/>
-<p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, computer_engineering, other)<p></em></p>
-<br/>
-    </div>
+ <p class='table_title'><em>Gender total counts by majors. 
+ <p class="table_subtitle">(programming, systems_analysis, computer_engineering, other)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
+  <div class='stats_table'>
  <a id="gender_count_by_majors_table_YUCVe"></a>
- <br/>
- <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, mathematics)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, mathematics)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
  <a id="gender_count_by_majors_table_6JH7Q"></a>
+
+| Category | Percentage |
+| -------- | ---------- |
+| male     | 100%       |
+
+  <p class='table_title'><em>Gender total counts by majors. 
+  <p class="table_subtitle">(programming, electronic_engineering, other)<p></em></p>
  <br/>
+ </div>
+</center>
+
+<center>
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_hHBZ0"></a>
+
+| Category | Percentage |
+| -------- | ---------- |
+| male     | 100%       |
+
+<p class='table_title'><em>Gender total counts by majors. 
+<p class="table_subtitle">(programming, systems_analysis, computer_engineering, electrical_engineering)<p></em></p>
  <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
-
-| Category | Percentage |
-| -------- | ---------- |
-| male     | 100%       |
-
-</div>
-</div>
-<br/>
-<p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, electronic_engineering, other)<p></em></p>
-<br/>
-    </div>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_hHBZ0"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_MuFY5"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
-<p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, computer_engineering, electrical_engineering)<p></em></p>
-<br/>
-    </div>
+  <p class='table_title'><em>Gender total counts by majors. 
+  <p class="table_subtitle">(electrical_engineering)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_MuFY5"></a>
-  <br/>
-  <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_jPEDA"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(electrical_engineering)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, electronic_engineering, mathematics)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_jPEDA"></a>
-  <br/>
-  <br/>
-     <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_1TLd3"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, electronic_engineering, mathematics)<p></em></p>
-<br/>
-    </div>
-</center>
-
-<center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_1TLd3"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
-
-| Category | Percentage |
-| -------- | ---------- |
-| male     | 100%       |
-
-</div>
-</div>
-<br/>
-<p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, civil_engineering)<p></em></p>
+<p class="table_subtitle">(programming, systems_analysis, civil_engineering)<p></em></p>
 <br/>
     </div>
 </center>

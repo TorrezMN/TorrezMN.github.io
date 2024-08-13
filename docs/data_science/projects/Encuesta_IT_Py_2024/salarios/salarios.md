@@ -2,11 +2,17 @@
 
 - Salario mensual
 
-![png](salarios_images/output_5_0.png)
+![png](salarios_images/output_5_0.png)  
 
-![png](salarios_images/output_5_1.png)
+</br></br>
 
-![png](salarios_images/output_5_2.png)
+![png](salarios_images/output_5_1.png)  
+
+</br></br>
+
+![png](salarios_images/output_5_2.png)  
+
+</br></br>
 
 # TIPO DE TRABAJO
 
@@ -14,13 +20,21 @@
 
 - Varia el salario segun el "modo de trabajo"?
 
-![png](salarios_images/output_9_0.png)
+![png](salarios_images/output_9_0.png)  
 
-![png](salarios_images/output_9_1.png)
+</br></br>
 
-![png](salarios_images/output_9_2.png)
+![png](salarios_images/output_9_1.png)  
 
-![png](salarios_images/output_9_3.png)
+</br></br>
+
+![png](salarios_images/output_9_2.png)  
+
+</br></br>
+
+![png](salarios_images/output_9_3.png)  
+
+</br></br>
 
 ## Salarios segun - employment_mode
 
@@ -33,13 +47,21 @@
 "freelance",
 "local_with_foreign_clients"\]
 
-![png](salarios_images/output_13_0.png)
+![png](salarios_images/output_13_0.png)  
 
-![png](salarios_images/output_13_1.png)
+</br></br>
 
-![png](salarios_images/output_13_2.png)
+![png](salarios_images/output_13_1.png)  
 
-![png](salarios_images/output_13_3.png)
+</br></br>
+
+![png](salarios_images/output_13_2.png)  
+
+</br></br>
+
+![png](salarios_images/output_13_3.png)  
+
+</br></br>
 
 ## Salarios segun - role
 
@@ -2375,9 +2397,13 @@
 
 - Si programa en su trabajo. Influye en la paga?
 
-![png](salarios_images/output_20_0.png)
+![png](salarios_images/output_20_0.png)  
 
-![png](salarios_images/output_20_1.png)
+</br></br>
+
+![png](salarios_images/output_20_1.png)  
+
+</br></br>
 
 ## Salarios segun - IT_exp
 
@@ -2395,21 +2421,37 @@
 "1_2 years",
 "\<1 year"\]
 
-![png](salarios_images/output_24_0.png)
+![png](salarios_images/output_24_0.png)  
 
-![png](salarios_images/output_24_1.png)
+</br></br>
 
-![png](salarios_images/output_24_2.png)
+![png](salarios_images/output_24_1.png)  
 
-![png](salarios_images/output_24_3.png)
+</br></br>
 
-![png](salarios_images/output_24_4.png)
+![png](salarios_images/output_24_2.png)  
 
-![png](salarios_images/output_24_5.png)
+</br></br>
 
-![png](salarios_images/output_24_6.png)
+![png](salarios_images/output_24_3.png)  
 
-![png](salarios_images/output_24_7.png)
+</br></br>
+
+![png](salarios_images/output_24_4.png)  
+
+</br></br>
+
+![png](salarios_images/output_24_5.png)  
+
+</br></br>
+
+![png](salarios_images/output_24_6.png)  
+
+</br></br>
+
+![png](salarios_images/output_24_7.png)  
+
+</br></br>
 
 ## Salarios segun - prof_prog_exp
 
@@ -2427,21 +2469,37 @@ get_column_uniques(df, "prof_prog_exp")
 "\<1 year",
 nan\]
 
-![png](salarios_images/output_28_0.png)
+![png](salarios_images/output_28_0.png)  
 
-![png](salarios_images/output_28_1.png)
+</br></br>
 
-![png](salarios_images/output_28_2.png)
+![png](salarios_images/output_28_1.png)  
 
-![png](salarios_images/output_28_3.png)
+</br></br>
 
-![png](salarios_images/output_28_4.png)
+![png](salarios_images/output_28_2.png)  
 
-![png](salarios_images/output_28_5.png)
+</br></br>
 
-![png](salarios_images/output_28_6.png)
+![png](salarios_images/output_28_3.png)  
 
-![png](salarios_images/output_28_7.png)
+</br></br>
+
+![png](salarios_images/output_28_4.png)  
+
+</br></br>
+
+![png](salarios_images/output_28_5.png)  
+
+</br></br>
+
+![png](salarios_images/output_28_6.png)  
+
+</br></br>
+
+![png](salarios_images/output_28_7.png)  
+
+</br></br>
 
 ## Salarios segun - first_code
 
@@ -2811,19 +2869,33 @@ ______________________________________________________________________
   "Trainee",
   "Staff"\]
 
-![png](salarios_images/output_35_0.png)
+![png](salarios_images/output_35_0.png)  
 
-![png](salarios_images/output_35_1.png)
+</br></br>
 
-![png](salarios_images/output_35_2.png)
+![png](salarios_images/output_35_1.png)  
 
-![png](salarios_images/output_35_3.png)
+</br></br>
 
-![png](salarios_images/output_35_4.png)
+![png](salarios_images/output_35_2.png)  
 
-![png](salarios_images/output_35_5.png)
+</br></br>
 
-![png](salarios_images/output_35_6.png)
+![png](salarios_images/output_35_3.png)  
+
+</br></br>
+
+![png](salarios_images/output_35_4.png)  
+
+</br></br>
+
+![png](salarios_images/output_35_5.png)  
+
+</br></br>
+
+![png](salarios_images/output_35_6.png)  
+
+</br></br>
 
 ## Salarios segun - self_assessed_seniority
 
@@ -2839,71 +2911,135 @@ column uniques for "self_assessed_seniority"
 "Desconozco",
 "Staff"\]
 
-![png](salarios_images/output_39_0.png)
+![png](salarios_images/output_39_0.png)  
 
-![png](salarios_images/output_39_1.png)
+</br></br>
 
-![png](salarios_images/output_39_2.png)
+![png](salarios_images/output_39_1.png)  
 
-![png](salarios_images/output_39_3.png)
+</br></br>
 
-![png](salarios_images/output_39_4.png)
+![png](salarios_images/output_39_2.png)  
 
-![png](salarios_images/output_39_5.png)
+</br></br>
 
-![png](salarios_images/output_39_6.png)
+![png](salarios_images/output_39_3.png)  
+
+</br></br>
+
+![png](salarios_images/output_39_4.png)  
+
+</br></br>
+
+![png](salarios_images/output_39_5.png)  
+
+</br></br>
+
+![png](salarios_images/output_39_6.png)  
+
+</br></br>
 
 ## Salarios vs seniority and modality
 
-![png](salarios_images/output_42_0.png)
+![png](salarios_images/output_42_0.png)  
 
-![png](salarios_images/output_42_1.png)
+</br></br>
 
-![png](salarios_images/output_42_2.png)
+![png](salarios_images/output_42_1.png)  
 
-![png](salarios_images/output_42_3.png)
+</br></br>
 
-![png](salarios_images/output_42_4.png)
+![png](salarios_images/output_42_2.png)  
 
-![png](salarios_images/output_42_5.png)
+</br></br>
 
-![png](salarios_images/output_42_6.png)
+![png](salarios_images/output_42_3.png)  
 
-![png](salarios_images/output_42_7.png)
+</br></br>
 
-![png](salarios_images/output_42_8.png)
+![png](salarios_images/output_42_4.png)  
 
-![png](salarios_images/output_42_9.png)
+</br></br>
 
-![png](salarios_images/output_42_10.png)
+![png](salarios_images/output_42_5.png)  
 
-![png](salarios_images/output_42_11.png)
+</br></br>
 
-![png](salarios_images/output_42_12.png)
+![png](salarios_images/output_42_6.png)  
 
-![png](salarios_images/output_42_13.png)
+</br></br>
 
-![png](salarios_images/output_42_14.png)
+![png](salarios_images/output_42_7.png)  
 
-![png](salarios_images/output_42_15.png)
+</br></br>
 
-![png](salarios_images/output_42_16.png)
+![png](salarios_images/output_42_8.png)  
 
-![png](salarios_images/output_42_17.png)
+</br></br>
 
-![png](salarios_images/output_42_18.png)
+![png](salarios_images/output_42_9.png)  
 
-![png](salarios_images/output_42_19.png)
+</br></br>
 
-![png](salarios_images/output_42_20.png)
+![png](salarios_images/output_42_10.png)  
 
-![png](salarios_images/output_42_21.png)
+</br></br>
 
-![png](salarios_images/output_42_22.png)
+![png](salarios_images/output_42_11.png)  
 
-![png](salarios_images/output_42_23.png)
+</br></br>
 
-![png](salarios_images/output_42_24.png)
+![png](salarios_images/output_42_12.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_13.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_14.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_15.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_16.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_17.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_18.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_19.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_20.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_21.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_22.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_23.png)  
+
+</br></br>
+
+![png](salarios_images/output_42_24.png)  
+
+</br></br>
 
 # EDUCACION
 
@@ -2917,13 +3053,21 @@ column uniques for  "formal_edu"
 
 \["doctorate", "Degree", "high_school", "master"\]
 
-![png](salarios_images/output_48_0.png)
+![png](salarios_images/output_48_0.png)  
 
-![png](salarios_images/output_48_1.png)
+</br></br>
 
-![png](salarios_images/output_48_2.png)
+![png](salarios_images/output_48_1.png)  
 
-![png](salarios_images/output_48_3.png)
+</br></br>
+
+![png](salarios_images/output_48_2.png)  
+
+</br></br>
+
+![png](salarios_images/output_48_3.png)  
+
+</br></br>
 
 ## Salarios segun - majors
 
@@ -2943,27 +3087,49 @@ column uniques for  "majors"
 "civil_engineering",
 "electrical_engineering"\]
 
-![png](salarios_images/output_53_0.png)
+![png](salarios_images/output_53_0.png)  
 
-![png](salarios_images/output_53_1.png)
+</br></br>
 
-![png](salarios_images/output_53_2.png)
+![png](salarios_images/output_53_1.png)  
 
-![png](salarios_images/output_53_3.png)
+</br></br>
 
-![png](salarios_images/output_53_4.png)
+![png](salarios_images/output_53_2.png)  
 
-![png](salarios_images/output_53_5.png)
+</br></br>
 
-![png](salarios_images/output_53_6.png)
+![png](salarios_images/output_53_3.png)  
 
-![png](salarios_images/output_53_7.png)
+</br></br>
 
-![png](salarios_images/output_53_8.png)
+![png](salarios_images/output_53_4.png)  
 
-![png](salarios_images/output_53_9.png)
+</br></br>
 
-![png](salarios_images/output_53_10.png)
+![png](salarios_images/output_53_5.png)  
+
+</br></br>
+
+![png](salarios_images/output_53_6.png)  
+
+</br></br>
+
+![png](salarios_images/output_53_7.png)  
+
+</br></br>
+
+![png](salarios_images/output_53_8.png)  
+
+</br></br>
+
+![png](salarios_images/output_53_9.png)  
+
+</br></br>
+
+![png](salarios_images/output_53_10.png)  
+
+</br></br>
 
 ## Salarios segun - formal_edu_importance
 
@@ -2995,15 +3161,25 @@ GRUPO: very_important
 =======================================================
 ```
 
-![png](salarios_images/output_58_0.png)
+![png](salarios_images/output_58_0.png)  
 
-![png](salarios_images/output_58_1.png)
+</br></br>
 
-![png](salarios_images/output_58_2.png)
+![png](salarios_images/output_58_1.png)  
 
-![png](salarios_images/output_58_3.png)
+</br></br>
 
-![png](salarios_images/output_58_4.png)
+![png](salarios_images/output_58_2.png)  
+
+</br></br>
+
+![png](salarios_images/output_58_3.png)  
+
+</br></br>
+
+![png](salarios_images/output_58_4.png)  
+
+</br></br>
 
 # DEMOGRAPHICS
 
@@ -3013,45 +3189,81 @@ ______________________________________________________________________
 
 - Salarios segun "genero".
 
-![png](salarios_images/output_62_0.png)
+![png](salarios_images/output_62_0.png)  
+
+</br></br>
 
 ## Salarios segun - age
 
 - Salarios segun la edad.
 
-![png](salarios_images/output_66_0.png)
+![png](salarios_images/output_66_0.png)  
 
-![png](salarios_images/output_67_0.png)
+</br></br>
 
-![png](salarios_images/output_67_1.png)
+![png](salarios_images/output_67_0.png)  
 
-![png](salarios_images/output_67_2.png)
+</br></br>
 
-![png](salarios_images/output_67_3.png)
+![png](salarios_images/output_67_1.png)  
 
-![png](salarios_images/output_67_4.png)
+</br></br>
 
-![png](salarios_images/output_67_5.png)
+![png](salarios_images/output_67_2.png)  
 
-![png](salarios_images/output_67_6.png)
+</br></br>
 
-![png](salarios_images/output_67_7.png)
+![png](salarios_images/output_67_3.png)  
 
-![png](salarios_images/output_67_8.png)
+</br></br>
 
-![png](salarios_images/output_67_9.png)
+![png](salarios_images/output_67_4.png)  
 
-![png](salarios_images/output_67_10.png)
+</br></br>
 
-![png](salarios_images/output_67_11.png)
+![png](salarios_images/output_67_5.png)  
 
-![png](salarios_images/output_67_12.png)
+</br></br>
 
-![png](salarios_images/output_67_13.png)
+![png](salarios_images/output_67_6.png)  
 
-![png](salarios_images/output_67_14.png)
+</br></br>
 
-![png](salarios_images/output_67_15.png)
+![png](salarios_images/output_67_7.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_8.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_9.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_10.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_11.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_12.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_13.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_14.png)  
+
+</br></br>
+
+![png](salarios_images/output_67_15.png)  
+
+</br></br>
 
 # HERRAMIENTAS
 
@@ -3969,33 +4181,61 @@ ______________________________________________________________________
 
 ## Salarios segun - databases
 
-![png](salarios_images/output_74_0.png)
+![png](salarios_images/output_74_0.png)  
 
-![png](salarios_images/output_74_1.png)
+</br></br>
 
-![png](salarios_images/output_74_2.png)
+![png](salarios_images/output_74_1.png)  
 
-![png](salarios_images/output_74_3.png)
+</br></br>
 
-![png](salarios_images/output_74_4.png)
+![png](salarios_images/output_74_2.png)  
 
-![png](salarios_images/output_74_5.png)
+</br></br>
 
-![png](salarios_images/output_74_6.png)
+![png](salarios_images/output_74_3.png)  
 
-![png](salarios_images/output_74_7.png)
+</br></br>
 
-![png](salarios_images/output_74_8.png)
+![png](salarios_images/output_74_4.png)  
 
-![png](salarios_images/output_74_9.png)
+</br></br>
 
-![png](salarios_images/output_74_10.png)
+![png](salarios_images/output_74_5.png)  
 
-![png](salarios_images/output_74_11.png)
+</br></br>
 
-![png](salarios_images/output_74_12.png)
+![png](salarios_images/output_74_6.png)  
 
-![png](salarios_images/output_74_13.png)
+</br></br>
+
+![png](salarios_images/output_74_7.png)  
+
+</br></br>
+
+![png](salarios_images/output_74_8.png)  
+
+</br></br>
+
+![png](salarios_images/output_74_9.png)  
+
+</br></br>
+
+![png](salarios_images/output_74_10.png)  
+
+</br></br>
+
+![png](salarios_images/output_74_11.png)  
+
+</br></br>
+
+![png](salarios_images/output_74_12.png)  
+
+</br></br>
+
+![png](salarios_images/output_74_13.png)  
+
+</br></br>
 
 ## Salarios segun - platforms
 
@@ -4017,35 +4257,65 @@ column uniques for "platforms"
 "iOS",
 "Raspberry Pi"\]
 
-![png](salarios_images/output_77_0.png)
+![png](salarios_images/output_77_0.png)  
 
-![png](salarios_images/output_77_1.png)
+</br></br>
 
-![png](salarios_images/output_77_2.png)
+![png](salarios_images/output_77_1.png)  
 
-![png](salarios_images/output_77_3.png)
+</br></br>
 
-![png](salarios_images/output_77_4.png)
+![png](salarios_images/output_77_2.png)  
 
-![png](salarios_images/output_77_5.png)
+</br></br>
 
-![png](salarios_images/output_77_6.png)
+![png](salarios_images/output_77_3.png)  
 
-![png](salarios_images/output_77_7.png)
+</br></br>
 
-![png](salarios_images/output_77_8.png)
+![png](salarios_images/output_77_4.png)  
 
-![png](salarios_images/output_77_9.png)
+</br></br>
 
-![png](salarios_images/output_77_10.png)
+![png](salarios_images/output_77_5.png)  
 
-![png](salarios_images/output_77_11.png)
+</br></br>
 
-![png](salarios_images/output_77_12.png)
+![png](salarios_images/output_77_6.png)  
 
-![png](salarios_images/output_77_13.png)
+</br></br>
 
-![png](salarios_images/output_77_14.png)
+![png](salarios_images/output_77_7.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_8.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_9.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_10.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_11.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_12.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_13.png)  
+
+</br></br>
+
+![png](salarios_images/output_77_14.png)  
+
+</br></br>
 
 # LENGUAJES/FRAMEWORKS
 
@@ -4532,289 +4802,573 @@ column uniques for "web_frameworks"
    </div>
 </center>
 
-![png](salarios_images/output_84_0.png)
+![png](salarios_images/output_84_0.png)  
 
-![png](salarios_images/output_84_1.png)
+</br></br>
 
-![png](salarios_images/output_84_2.png)
+![png](salarios_images/output_84_1.png)  
 
-![png](salarios_images/output_84_3.png)
+</br></br>
 
-![png](salarios_images/output_84_4.png)
+![png](salarios_images/output_84_2.png)  
 
-![png](salarios_images/output_84_5.png)
+</br></br>
 
-![png](salarios_images/output_84_6.png)
+![png](salarios_images/output_84_3.png)  
 
-![png](salarios_images/output_84_7.png)
+</br></br>
 
-![png](salarios_images/output_84_8.png)
+![png](salarios_images/output_84_4.png)  
 
-![png](salarios_images/output_84_9.png)
+</br></br>
 
-![png](salarios_images/output_84_10.png)
+![png](salarios_images/output_84_5.png)  
 
-![png](salarios_images/output_84_11.png)
+</br></br>
 
-![png](salarios_images/output_84_12.png)
+![png](salarios_images/output_84_6.png)  
 
-![png](salarios_images/output_84_13.png)
+</br></br>
 
-![png](salarios_images/output_84_14.png)
+![png](salarios_images/output_84_7.png)  
 
-![png](salarios_images/output_84_15.png)
+</br></br>
 
-![png](salarios_images/output_84_16.png)
+![png](salarios_images/output_84_8.png)  
 
-![png](salarios_images/output_84_17.png)
+</br></br>
 
-![png](salarios_images/output_84_18.png)
+![png](salarios_images/output_84_9.png)  
 
-![png](salarios_images/output_84_19.png)
+</br></br>
 
-![png](salarios_images/output_84_20.png)
+![png](salarios_images/output_84_10.png)  
 
-![png](salarios_images/output_84_21.png)
+</br></br>
 
-![png](salarios_images/output_84_22.png)
+![png](salarios_images/output_84_11.png)  
 
-![png](salarios_images/output_84_23.png)
+</br></br>
 
-![png](salarios_images/output_84_24.png)
+![png](salarios_images/output_84_12.png)  
 
-![png](salarios_images/output_84_25.png)
+</br></br>
 
-![png](salarios_images/output_84_26.png)
+![png](salarios_images/output_84_13.png)  
 
-![png](salarios_images/output_84_27.png)
+</br></br>
 
-![png](salarios_images/output_84_28.png)
+![png](salarios_images/output_84_14.png)  
 
-![png](salarios_images/output_84_29.png)
+</br></br>
 
-![png](salarios_images/output_84_30.png)
+![png](salarios_images/output_84_15.png)  
 
-![png](salarios_images/output_84_31.png)
+</br></br>
 
-![png](salarios_images/output_84_32.png)
+![png](salarios_images/output_84_16.png)  
 
-![png](salarios_images/output_84_33.png)
+</br></br>
 
-![png](salarios_images/output_84_34.png)
+![png](salarios_images/output_84_17.png)  
 
-![png](salarios_images/output_84_35.png)
+</br></br>
 
-![png](salarios_images/output_84_36.png)
+![png](salarios_images/output_84_18.png)  
 
-![png](salarios_images/output_84_37.png)
+</br></br>
 
-![png](salarios_images/output_84_38.png)
+![png](salarios_images/output_84_19.png)  
 
-![png](salarios_images/output_84_39.png)
+</br></br>
 
-![png](salarios_images/output_84_40.png)
+![png](salarios_images/output_84_20.png)  
 
-![png](salarios_images/output_84_41.png)
+</br></br>
 
-![png](salarios_images/output_84_42.png)
+![png](salarios_images/output_84_21.png)  
 
-![png](salarios_images/output_84_43.png)
+</br></br>
 
-![png](salarios_images/output_84_44.png)
+![png](salarios_images/output_84_22.png)  
 
-![png](salarios_images/output_84_45.png)
+</br></br>
 
-![png](salarios_images/output_84_46.png)
+![png](salarios_images/output_84_23.png)  
 
-![png](salarios_images/output_84_47.png)
+</br></br>
 
-![png](salarios_images/output_84_48.png)
+![png](salarios_images/output_84_24.png)  
 
-![png](salarios_images/output_84_49.png)
+</br></br>
 
-![png](salarios_images/output_84_50.png)
+![png](salarios_images/output_84_25.png)  
 
-![png](salarios_images/output_84_51.png)
+</br></br>
 
-![png](salarios_images/output_84_52.png)
+![png](salarios_images/output_84_26.png)  
 
-![png](salarios_images/output_84_53.png)
+</br></br>
 
-![png](salarios_images/output_84_54.png)
+![png](salarios_images/output_84_27.png)  
 
-![png](salarios_images/output_84_55.png)
+</br></br>
 
-![png](salarios_images/output_84_56.png)
+![png](salarios_images/output_84_28.png)  
 
-![png](salarios_images/output_84_57.png)
+</br></br>
 
-![png](salarios_images/output_84_58.png)
+![png](salarios_images/output_84_29.png)  
 
-![png](salarios_images/output_84_59.png)
+</br></br>
 
-![png](salarios_images/output_84_60.png)
+![png](salarios_images/output_84_30.png)  
 
-![png](salarios_images/output_84_61.png)
+</br></br>
 
-![png](salarios_images/output_84_62.png)
+![png](salarios_images/output_84_31.png)  
 
-![png](salarios_images/output_84_63.png)
+</br></br>
 
-![png](salarios_images/output_84_64.png)
+![png](salarios_images/output_84_32.png)  
 
-![png](salarios_images/output_84_65.png)
+</br></br>
 
-![png](salarios_images/output_84_66.png)
+![png](salarios_images/output_84_33.png)  
 
-![png](salarios_images/output_84_67.png)
+</br></br>
 
-![png](salarios_images/output_84_68.png)
+![png](salarios_images/output_84_34.png)  
 
-![png](salarios_images/output_84_69.png)
+</br></br>
 
-![png](salarios_images/output_84_70.png)
+![png](salarios_images/output_84_35.png)  
 
-![png](salarios_images/output_84_71.png)
+</br></br>
 
-![png](salarios_images/output_84_72.png)
+![png](salarios_images/output_84_36.png)  
 
-![png](salarios_images/output_84_73.png)
+</br></br>
 
-![png](salarios_images/output_84_74.png)
+![png](salarios_images/output_84_37.png)  
 
-![png](salarios_images/output_84_75.png)
+</br></br>
 
-![png](salarios_images/output_84_76.png)
+![png](salarios_images/output_84_38.png)  
 
-![png](salarios_images/output_84_77.png)
+</br></br>
 
-![png](salarios_images/output_84_78.png)
+![png](salarios_images/output_84_39.png)  
 
-![png](salarios_images/output_84_79.png)
+</br></br>
 
-![png](salarios_images/output_84_80.png)
+![png](salarios_images/output_84_40.png)  
 
-![png](salarios_images/output_84_81.png)
+</br></br>
 
-![png](salarios_images/output_84_82.png)
+![png](salarios_images/output_84_41.png)  
 
-![png](salarios_images/output_84_83.png)
+</br></br>
 
-![png](salarios_images/output_84_84.png)
+![png](salarios_images/output_84_42.png)  
 
-![png](salarios_images/output_84_85.png)
+</br></br>
 
-![png](salarios_images/output_84_86.png)
+![png](salarios_images/output_84_43.png)  
 
-![png](salarios_images/output_84_87.png)
+</br></br>
 
-![png](salarios_images/output_84_88.png)
+![png](salarios_images/output_84_44.png)  
 
-![png](salarios_images/output_84_89.png)
+</br></br>
 
-![png](salarios_images/output_84_90.png)
+![png](salarios_images/output_84_45.png)  
 
-![png](salarios_images/output_84_91.png)
+</br></br>
 
-![png](salarios_images/output_84_92.png)
+![png](salarios_images/output_84_46.png)  
 
-![png](salarios_images/output_84_93.png)
+</br></br>
 
-![png](salarios_images/output_84_94.png)
+![png](salarios_images/output_84_47.png)  
 
-![png](salarios_images/output_84_95.png)
+</br></br>
 
-![png](salarios_images/output_84_96.png)
+![png](salarios_images/output_84_48.png)  
 
-![png](salarios_images/output_84_97.png)
+</br></br>
 
-![png](salarios_images/output_84_98.png)
+![png](salarios_images/output_84_49.png)  
 
-![png](salarios_images/output_84_99.png)
+</br></br>
 
-![png](salarios_images/output_84_100.png)
+![png](salarios_images/output_84_50.png)  
 
-![png](salarios_images/output_84_101.png)
+</br></br>
 
-![png](salarios_images/output_84_102.png)
+![png](salarios_images/output_84_51.png)  
 
-![png](salarios_images/output_84_103.png)
+</br></br>
 
-![png](salarios_images/output_84_104.png)
+![png](salarios_images/output_84_52.png)  
 
-![png](salarios_images/output_84_105.png)
+</br></br>
 
-![png](salarios_images/output_84_106.png)
+![png](salarios_images/output_84_53.png)  
 
-![png](salarios_images/output_84_107.png)
+</br></br>
 
-![png](salarios_images/output_84_108.png)
+![png](salarios_images/output_84_54.png)  
 
-![png](salarios_images/output_84_109.png)
+</br></br>
 
-![png](salarios_images/output_84_110.png)
+![png](salarios_images/output_84_55.png)  
 
-![png](salarios_images/output_84_111.png)
+</br></br>
 
-![png](salarios_images/output_84_112.png)
+![png](salarios_images/output_84_56.png)  
 
-![png](salarios_images/output_84_113.png)
+</br></br>
 
-![png](salarios_images/output_84_114.png)
+![png](salarios_images/output_84_57.png)  
 
-![png](salarios_images/output_84_115.png)
+</br></br>
 
-![png](salarios_images/output_84_116.png)
+![png](salarios_images/output_84_58.png)  
 
-![png](salarios_images/output_84_117.png)
+</br></br>
 
-![png](salarios_images/output_84_118.png)
+![png](salarios_images/output_84_59.png)  
 
-![png](salarios_images/output_84_119.png)
+</br></br>
 
-![png](salarios_images/output_84_120.png)
+![png](salarios_images/output_84_60.png)  
 
-![png](salarios_images/output_84_121.png)
+</br></br>
 
-![png](salarios_images/output_84_122.png)
+![png](salarios_images/output_84_61.png)  
 
-![png](salarios_images/output_84_123.png)
+</br></br>
 
-![png](salarios_images/output_84_124.png)
+![png](salarios_images/output_84_62.png)  
 
-![png](salarios_images/output_84_125.png)
+</br></br>
 
-![png](salarios_images/output_84_126.png)
+![png](salarios_images/output_84_63.png)  
 
-![png](salarios_images/output_84_127.png)
+</br></br>
 
-![png](salarios_images/output_84_128.png)
+![png](salarios_images/output_84_64.png)  
 
-![png](salarios_images/output_84_129.png)
+</br></br>
 
-![png](salarios_images/output_84_130.png)
+![png](salarios_images/output_84_65.png)  
 
-![png](salarios_images/output_84_131.png)
+</br></br>
 
-![png](salarios_images/output_84_132.png)
+![png](salarios_images/output_84_66.png)  
 
-![png](salarios_images/output_84_133.png)
+</br></br>
 
-![png](salarios_images/output_84_134.png)
+![png](salarios_images/output_84_67.png)  
 
-![png](salarios_images/output_84_135.png)
+</br></br>
 
-![png](salarios_images/output_84_136.png)
+![png](salarios_images/output_84_68.png)  
 
-![png](salarios_images/output_84_137.png)
+</br></br>
 
-![png](salarios_images/output_84_138.png)
+![png](salarios_images/output_84_69.png)  
 
-![png](salarios_images/output_84_139.png)
+</br></br>
 
-![png](salarios_images/output_84_140.png)
+![png](salarios_images/output_84_70.png)  
 
-![png](salarios_images/output_84_141.png)
+</br></br>
+
+![png](salarios_images/output_84_71.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_72.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_73.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_74.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_75.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_76.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_77.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_78.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_79.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_80.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_81.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_82.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_83.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_84.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_85.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_86.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_87.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_88.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_89.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_90.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_91.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_92.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_93.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_94.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_95.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_96.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_97.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_98.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_99.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_100.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_101.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_102.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_103.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_104.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_105.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_106.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_107.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_108.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_109.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_110.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_111.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_112.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_113.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_114.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_115.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_116.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_117.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_118.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_119.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_120.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_121.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_122.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_123.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_124.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_125.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_126.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_127.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_128.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_129.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_130.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_131.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_132.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_133.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_134.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_135.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_136.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_137.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_138.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_139.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_140.png)  
+
+</br></br>
+
+![png](salarios_images/output_84_141.png)  
+
+</br></br>
 
 ## Salarios segun - pro_languages
 
@@ -5460,233 +6014,457 @@ nan,
   </div>
 </center>
 
-![png](salarios_images/output_88_0.png)
+![png](salarios_images/output_88_0.png)  
 
-![png](salarios_images/output_88_1.png)
+</br></br>
 
-![png](salarios_images/output_88_2.png)
+![png](salarios_images/output_88_1.png)  
 
-![png](salarios_images/output_88_3.png)
+</br></br>
 
-![png](salarios_images/output_88_4.png)
+![png](salarios_images/output_88_2.png)  
 
-![png](salarios_images/output_88_5.png)
+</br></br>
 
-![png](salarios_images/output_88_6.png)
+![png](salarios_images/output_88_3.png)  
 
-![png](salarios_images/output_88_7.png)
+</br></br>
 
-![png](salarios_images/output_88_8.png)
+![png](salarios_images/output_88_4.png)  
 
-![png](salarios_images/output_88_9.png)
+</br></br>
 
-![png](salarios_images/output_88_10.png)
+![png](salarios_images/output_88_5.png)  
 
-![png](salarios_images/output_88_11.png)
+</br></br>
 
-![png](salarios_images/output_88_12.png)
+![png](salarios_images/output_88_6.png)  
 
-![png](salarios_images/output_88_13.png)
+</br></br>
 
-![png](salarios_images/output_88_14.png)
+![png](salarios_images/output_88_7.png)  
 
-![png](salarios_images/output_88_15.png)
+</br></br>
 
-![png](salarios_images/output_88_16.png)
+![png](salarios_images/output_88_8.png)  
 
-![png](salarios_images/output_88_17.png)
+</br></br>
+
+![png](salarios_images/output_88_9.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_10.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_11.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_12.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_13.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_14.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_15.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_16.png)  
+
+</br></br>
+
+![png](salarios_images/output_88_17.png)  
+
+</br></br>
 
 ## Salarios segun - fav_language
 
-![png](salarios_images/output_90_0.png)
+![png](salarios_images/output_90_0.png)  
 
-![png](salarios_images/output_90_1.png)
+</br></br>
 
-![png](salarios_images/output_90_2.png)
+![png](salarios_images/output_90_1.png)  
 
-![png](salarios_images/output_90_3.png)
+</br></br>
 
-![png](salarios_images/output_90_4.png)
+![png](salarios_images/output_90_2.png)  
 
-![png](salarios_images/output_90_5.png)
+</br></br>
 
-![png](salarios_images/output_90_6.png)
+![png](salarios_images/output_90_3.png)  
 
-![png](salarios_images/output_90_7.png)
+</br></br>
 
-![png](salarios_images/output_90_8.png)
+![png](salarios_images/output_90_4.png)  
 
-![png](salarios_images/output_90_9.png)
+</br></br>
 
-![png](salarios_images/output_90_10.png)
+![png](salarios_images/output_90_5.png)  
 
-![png](salarios_images/output_90_11.png)
+</br></br>
 
-![png](salarios_images/output_90_12.png)
+![png](salarios_images/output_90_6.png)  
 
-![png](salarios_images/output_90_13.png)
+</br></br>
 
-![png](salarios_images/output_90_14.png)
+![png](salarios_images/output_90_7.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_8.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_9.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_10.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_11.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_12.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_13.png)  
+
+</br></br>
+
+![png](salarios_images/output_90_14.png)  
+
+</br></br>
 
 ## Salarios segun lenguaje favorito y seniority
 
-![png](salarios_images/output_93_0.png)
+![png](salarios_images/output_93_0.png)  
 
-![png](salarios_images/output_93_1.png)
+</br></br>
 
-![png](salarios_images/output_93_2.png)
+![png](salarios_images/output_93_1.png)  
 
-![png](salarios_images/output_93_3.png)
+</br></br>
 
-![png](salarios_images/output_93_4.png)
+![png](salarios_images/output_93_2.png)  
 
-![png](salarios_images/output_93_5.png)
+</br></br>
 
-![png](salarios_images/output_93_6.png)
+![png](salarios_images/output_93_3.png)  
 
-![png](salarios_images/output_93_7.png)
+</br></br>
 
-![png](salarios_images/output_93_8.png)
+![png](salarios_images/output_93_4.png)  
 
-![png](salarios_images/output_93_9.png)
+</br></br>
 
-![png](salarios_images/output_93_10.png)
+![png](salarios_images/output_93_5.png)  
 
-![png](salarios_images/output_93_11.png)
+</br></br>
 
-![png](salarios_images/output_93_12.png)
+![png](salarios_images/output_93_6.png)  
 
-![png](salarios_images/output_93_13.png)
+</br></br>
 
-![png](salarios_images/output_93_14.png)
+![png](salarios_images/output_93_7.png)  
 
-![png](salarios_images/output_93_15.png)
+</br></br>
 
-![png](salarios_images/output_93_16.png)
+![png](salarios_images/output_93_8.png)  
 
-![png](salarios_images/output_93_17.png)
+</br></br>
 
-![png](salarios_images/output_93_18.png)
+![png](salarios_images/output_93_9.png)  
 
-![png](salarios_images/output_93_19.png)
+</br></br>
 
-![png](salarios_images/output_93_20.png)
+![png](salarios_images/output_93_10.png)  
 
-![png](salarios_images/output_93_21.png)
+</br></br>
 
-![png](salarios_images/output_93_22.png)
+![png](salarios_images/output_93_11.png)  
 
-![png](salarios_images/output_93_23.png)
+</br></br>
 
-![png](salarios_images/output_93_24.png)
+![png](salarios_images/output_93_12.png)  
 
-![png](salarios_images/output_93_25.png)
+</br></br>
 
-![png](salarios_images/output_93_26.png)
+![png](salarios_images/output_93_13.png)  
 
-![png](salarios_images/output_93_27.png)
+</br></br>
 
-![png](salarios_images/output_93_28.png)
+![png](salarios_images/output_93_14.png)  
 
-![png](salarios_images/output_93_29.png)
+</br></br>
 
-![png](salarios_images/output_93_30.png)
+![png](salarios_images/output_93_15.png)  
 
-![png](salarios_images/output_93_31.png)
+</br></br>
 
-![png](salarios_images/output_93_32.png)
+![png](salarios_images/output_93_16.png)  
 
-![png](salarios_images/output_93_33.png)
+</br></br>
 
-![png](salarios_images/output_93_34.png)
+![png](salarios_images/output_93_17.png)  
 
-![png](salarios_images/output_93_35.png)
+</br></br>
 
-![png](salarios_images/output_93_36.png)
+![png](salarios_images/output_93_18.png)  
 
-![png](salarios_images/output_93_37.png)
+</br></br>
 
-![png](salarios_images/output_93_38.png)
+![png](salarios_images/output_93_19.png)  
 
-![png](salarios_images/output_93_39.png)
+</br></br>
 
-![png](salarios_images/output_93_40.png)
+![png](salarios_images/output_93_20.png)  
 
-![png](salarios_images/output_93_41.png)
+</br></br>
 
-![png](salarios_images/output_93_42.png)
+![png](salarios_images/output_93_21.png)  
 
-![png](salarios_images/output_93_43.png)
+</br></br>
 
-![png](salarios_images/output_93_44.png)
+![png](salarios_images/output_93_22.png)  
 
-![png](salarios_images/output_93_45.png)
+</br></br>
 
-![png](salarios_images/output_93_46.png)
+![png](salarios_images/output_93_23.png)  
 
-![png](salarios_images/output_93_47.png)
+</br></br>
 
-![png](salarios_images/output_93_48.png)
+![png](salarios_images/output_93_24.png)  
 
-![png](salarios_images/output_93_49.png)
+</br></br>
 
-![png](salarios_images/output_93_50.png)
+![png](salarios_images/output_93_25.png)  
 
-![png](salarios_images/output_93_51.png)
+</br></br>
 
-![png](salarios_images/output_93_52.png)
+![png](salarios_images/output_93_26.png)  
 
-![png](salarios_images/output_93_53.png)
+</br></br>
 
-![png](salarios_images/output_93_54.png)
+![png](salarios_images/output_93_27.png)  
 
-![png](salarios_images/output_93_55.png)
+</br></br>
 
-![png](salarios_images/output_93_56.png)
+![png](salarios_images/output_93_28.png)  
 
-![png](salarios_images/output_93_57.png)
+</br></br>
 
-![png](salarios_images/output_93_58.png)
+![png](salarios_images/output_93_29.png)  
 
-![png](salarios_images/output_93_59.png)
+</br></br>
 
-![png](salarios_images/output_93_60.png)
+![png](salarios_images/output_93_30.png)  
 
-![png](salarios_images/output_93_61.png)
+</br></br>
 
-![png](salarios_images/output_93_62.png)
+![png](salarios_images/output_93_31.png)  
 
-![png](salarios_images/output_93_63.png)
+</br></br>
 
-![png](salarios_images/output_93_64.png)
+![png](salarios_images/output_93_32.png)  
 
-![png](salarios_images/output_93_65.png)
+</br></br>
 
-![png](salarios_images/output_93_66.png)
+![png](salarios_images/output_93_33.png)  
 
-![png](salarios_images/output_93_67.png)
+</br></br>
 
-![png](salarios_images/output_93_68.png)
+![png](salarios_images/output_93_34.png)  
 
-![png](salarios_images/output_93_69.png)
+</br></br>
 
-![png](salarios_images/output_93_70.png)
+![png](salarios_images/output_93_35.png)  
 
-![png](salarios_images/output_93_71.png)
+</br></br>
 
-![png](salarios_images/output_93_72.png)
+![png](salarios_images/output_93_36.png)  
 
-![png](salarios_images/output_93_73.png)
+</br></br>
 
-![png](salarios_images/output_93_74.png)
+![png](salarios_images/output_93_37.png)  
 
-![png](salarios_images/output_93_75.png)
+</br></br>
 
-![png](salarios_images/output_93_76.png)
+![png](salarios_images/output_93_38.png)  
 
-![png](salarios_images/output_93_77.png)
+</br></br>
 
-![png](salarios_images/output_93_78.png)
+![png](salarios_images/output_93_39.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_40.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_41.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_42.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_43.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_44.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_45.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_46.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_47.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_48.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_49.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_50.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_51.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_52.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_53.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_54.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_55.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_56.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_57.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_58.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_59.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_60.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_61.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_62.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_63.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_64.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_65.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_66.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_67.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_68.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_69.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_70.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_71.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_72.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_73.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_74.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_75.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_76.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_77.png)  
+
+</br></br>
+
+![png](salarios_images/output_93_78.png)  
+
+</br></br>
 
 ## Salarios segun - least_fav_language
 
@@ -6070,8 +6848,8 @@ nan,
 | JQuery       | 3%         |
 
 <p class="table_subtitle">(3.5M_5M)<p></em></p>
-   </div>
-   </div>
+   <br/>
+  </div>
 </center>
 
 <center>
@@ -6096,57 +6874,44 @@ nan,
 </center>
 
 <center>
+      <div class='stats_table'>
   <a id="monthly_salary_vs_favorite_framework_table_GueyJ"></a>
-  <br/>
-  <br/>
 
 | Category | Percentage |
 | -------- | ---------- |
 | Spring | 50% |
 | React.js | 40% |
 | Ruby on Rails | 10% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(33M_40M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_eUWVG"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_eUWVG"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Django | 50% |
-```
-
 | Spring | 33% |
 | Laravel | 16% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(40M_50M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_6JtDd"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_6JtDd"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Django | 21% |
-```
-
 | React.js | 21% |
 | Spring | 14% |
 | Ruby on Rails | 14% |
@@ -6154,26 +6919,20 @@ nan,
 | Vue.js | 7% |
 | ASP.NET Core | 7% |
 | JQuery | 7% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(50M+)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_eFhuH"></a>
-    <br/>
-    <br/>
+   <div clasS='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_eFhuH"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 27% |
-```
-
 | Laravel | 20% |
 | React.js | 15% |
 | Django | 10% |
@@ -6182,26 +6941,20 @@ nan,
 | JQuery | 5% |
 | Express | 2% |
 | Flask | 2% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(7M_9M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_hp9em"></a>
-    <br/>
-    <br/>
+   <div class='stats_table'>
+ <a id="monthly_salary_vs_favorite_framework_table_hp9em"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 30% |
-```
-
 | Django | 18% |
 | React.js | 12% |
 | ASP.NET Core | 10% |
@@ -6211,26 +6964,20 @@ nan,
 | Ruby on Rails | 4% |
 | Angular | 4% |
 | ASP.NET | 2% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(9M_12M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_R3upE"></a>
-    <br/>
-    <br/>
+    <div calss='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_R3upE"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 32% |
-```
-
 | Django | 20% |
 | Laravel | 8% |
 | Flask | 8% |
@@ -6241,74 +6988,56 @@ nan,
 | Ruby on Rails | 4% |
 | React.js | 4% |
 | JQuery | 4% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(15M_18M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_7zzz3"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_7zzz3"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 28% |
-```
-
 | Laravel | 21% |
 | Vue.js | 14% |
 | React.js | 14% |
 | JQuery | 7% |
 | ASP.NET Core | 7% |
 | Flask | 7% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(24M_27M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_JT9sb"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_JT9sb"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Django | 33% |
-```
-
 | React.js | 33% |
 | JQuery | 33% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(min_wage)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_jVpxq"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_jVpxq"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | React.js | 45% |
-```
-
 | Django | 13% |
 | Vue.js | 9% |
 | Laravel | 9% |
@@ -6317,26 +7046,20 @@ nan,
 | Express | 4% |
 | Ruby on Rails | 4% |
 | Angular | 4% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(2.55M_3.5M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_8XjVX"></a>
-    <br/>
-    <br/>
+   <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_8XjVX"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 35% |
-```
-
 | Laravel | 14% |
 | Flask | 14% |
 | ASP.NET Core | 10% |
@@ -6346,26 +7069,20 @@ nan,
 | JQuery | 3% |
 | Angular | 3% |
 | Angular.js | 3% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(12M_15M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_bDY5S"></a>
-    <br/>
-    <br/>
+       <div class='stats_table'>
+   <a id="monthly_salary_vs_favorite_framework_table_bDY5S"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | React.js | 21% |
-```
-
 | Laravel | 14% |
 | ASP.NET Core | 9% |
 | Spring | 9% |
@@ -6377,97 +7094,73 @@ nan,
 | Flask | 4% |
 | Angular | 4% |
 | Angular.js | 2% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(5M_7M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_AX6VG"></a>
-    <br/>
-    <br/>
+   <div class='stats_table'>
+ <a id="monthly_salary_vs_favorite_framework_table_AX6VG"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | React.js | 57% |
-```
-
 | Spring | 28% |
 | Vue.js | 14% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(21M_24M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_NzSSk"></a>
-    <br/>
-    <br/>
+    <div calss='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_NzSSk"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Django | 30% |
-```
-
 | Spring | 30% |
 | ASP.NET Core | 20% |
 | Laravel | 10% |
 | React.js | 10% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(27M_33M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_favorite_framework_table_sVS7n"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_favorite_framework_table_sVS7n"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Django | 50% |
-```
-
 | Express | 16% |
 | React.js | 16% |
 | Flask | 16% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by favorite frameworks.
 <p class="table_subtitle">(les_than_minimum_wage)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 ## Salarios segun - least_fav_framework
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_QdKYg"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_QdKYg"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 16% |
-```
-
 | JQuery | 12% |
 | CakePHP | 12% |
 | Laravel | 12% |
@@ -6478,26 +7171,20 @@ nan,
 | CodeIgniter | 4% |
 | ASP.NET Core | 4% |
 | ASP.NET | 4% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(3.5M_5M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_4cVt0"></a>
-    <br/>
-    <br/>
+      <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_4cVt0"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Django | 14% |
-```
-
 | Laravel | 14% |
 | Angular.js | 14% |
 | CodeIgniter | 14% |
@@ -6506,99 +7193,75 @@ nan,
 | Gastby | 7% |
 | Angular | 7% |
 | Spring | 7% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(18M_21M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_7Al7C"></a>
-    <br/>
-    <br/>
+      <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_7Al7C"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | JQuery | 42% |
-```
-
 | Django | 28% |
 | ASP.NET Core | 14% |
 | Angular | 14% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(33M_40M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_sqpH9"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_sqpH9"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 20% |
-```
-
 | React.js | 20% |
 | Ruby on Rails | 20% |
 | ASP.NET | 20% |
 | Django | 20% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(40M_50M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_XATw8"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_XATw8"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 30% |
-```
-
 | Angular | 20% |
 | Django | 10% |
 | CodeIgniter | 10% |
 | ASP.NET Core | 10% |
 | ASP.NET | 10% |
 | Flask | 10% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(50M+)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_hc0eq"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_hc0eq"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | JQuery | 21% |
-```
-
 | Spring | 18% |
 | ASP.NET | 15% |
 | CodeIgniter | 15% |
@@ -6609,26 +7272,20 @@ nan,
 | ASP.NET Core | 3% |
 | CakePHP | 3% |
 | Django | 3% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(7M_9M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_ZoU51"></a>
-    <br/>
-    <br/>
+     <div calss='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_ZoU51"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 18% |
-```
-
 | JQuery | 15% |
 | Angular | 15% |
 | ASP.NET Core | 10% |
@@ -6641,26 +7298,20 @@ nan,
 | Express | 2% |
 | Ruby on Rails | 2% |
 | React.js | 2% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(9M_12M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_wjiQj"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_wjiQj"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | React.js | 18% |
-```
-
 | JQuery | 18% |
 | ASP.NET Core | 13% |
 | ASP.NET | 13% |
@@ -6669,26 +7320,20 @@ nan,
 | Spring | 4% |
 | Angular.js | 4% |
 | Ruby on Rails | 4% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
-
+    
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(15M_18M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_wqL9K"></a>
-    <br/>
-    <br/>
+    <div calss='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_wqL9K"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Angular.js | 16% |
-```
-
 | Angular | 16% |
 | Laravel | 8% |
 | React.js | 8% |
@@ -6698,47 +7343,35 @@ nan,
 | Vue.js | 8% |
 | Spring | 8% |
 | Express | 8% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(24M_27M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_6rkkn"></a>
-    <br/>
-    <br/>
+     <div classs='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_6rkkn"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Laravel | 66% |
-```
-
 | Angular.js | 33% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(min_wage)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_xUeWu"></a>
-    <br/>
-    <br/>
+      <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_xUeWu"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | JQuery | 22% |
-```
-
 | Vue.js | 16% |
 | React.js | 11% |
 | Django | 11% |
@@ -6747,26 +7380,20 @@ nan,
 | Spring | 5% |
 | Angular | 5% |
 | CodeIgniter | 5% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(2.55M_3.5M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_KlPRc"></a>
-    <br/>
-    <br/>
+     <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_KlPRc"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | JQuery | 19% |
-```
-
 | ASP.NET | 14% |
 | Spring | 14% |
 | Angular | 9% |
@@ -6777,26 +7404,20 @@ nan,
 | Flask | 4% |
 | Gastby | 4% |
 | Vue.js | 4% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(12M_15M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_px2CO"></a>
-    <br/>
-    <br/>
+      <div calss='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_px2CO"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Spring | 12% |
-```
-
 | React.js | 12% |
 | CakePHP | 9% |
 | ASP.NET | 9% |
@@ -6809,84 +7430,65 @@ nan,
 | Express | 3% |
 | CodeIgniter | 3% |
 | Django | 3% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(5M_7M)<p></em></p>
-    <br/>
+   <br/>
+   </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_meSyq"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_meSyq"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | Angular.js | 57% |
-```
-
 | ASP.NET | 14% |
 | Vue.js | 14% |
 | Angular | 14% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
-
+    
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(21M_24M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_a7krl"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_a7krl"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | ASP.NET | 30% |
-```
-
 | Angular.js | 20% |
 | ASP.NET Core | 20% |
 | Spring | 10% |
 | CodeIgniter | 10% |
 | Django | 10% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(27M_33M)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <a id="monthly_salary_vs_least_fav_framework_table_JOefL"></a>
-    <br/>
-    <br/>
+    <div class='stats_table'>
+  <a id="monthly_salary_vs_least_fav_framework_table_JOefL"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
-
-```
 | ASP.NET Core | 33% |
-```
-
 | Ruby on Rails | 16% |
 | JQuery | 16% |
 | Laravel | 16% |
 | CakePHP | 16% |
-    </div>
-<br/>
-    <p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 
+<p class='table_title' style="text-align: center;"><em>Monthly salary by "least favorite framewor".
 <p class="table_subtitle">(les_than_minimum_wage)<p></em></p>
-    <br/>
+  <br/>
+  </div>
 </center>
 
 # AI
@@ -7127,17 +7729,38 @@ ______________________________________________________________________
 
 --- El salario influye en los despidos? "Salarios despedidos vs. no despedidos".
 
-![png](salarios_images/output_107_0.png)
+![png](salarios_images/output_107_0.png)  
 
-![png](salarios_images/output_107_1.png)
+</br></br>
+<br/>
+<br/>
+<br/>
+
+![png](salarios_images/output_107_1.png)  
+
+</br></br>
 
 ## Salarios segun - working_now
 
-![png](salarios_images/output_109_0.png)
+![png](salarios_images/output_109_0.png)  
 
-![png](salarios_images/output_110_0.png)
+</br></br>
 
-![png](salarios_images/output_110_1.png)
+<br/>
+<br/>
+<br/>
+
+![png](salarios_images/output_110_0.png)  
+
+</br></br>
+
+<br/>
+<br/>
+<br/>
+
+![png](salarios_images/output_110_1.png)  
+
+</br></br>
 
 ## Salarios segun - unemployed_duration
 
@@ -7217,11 +7840,15 @@ Unemploiment duration: \<3_months
 
 ## Salarios segun - same_role
 
-![png](salarios_images/output_116_0.png)
+![png](salarios_images/output_116_0.png)  
+
+  </br></br>
 
 ## Salarios segun - current_vs_prev_salary
 
-![png](salarios_images/output_119_0.png)
+![png](salarios_images/output_119_0.png)  
+
+</br></br>
 
 <center>
 <span class="go_back_button">

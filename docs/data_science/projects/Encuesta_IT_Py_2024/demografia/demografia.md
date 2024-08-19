@@ -256,10 +256,10 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </div>
 </div>
 <br/>
-<p class='table_title'><em>Gender total counts by majors. 
+   <p class='table_title'><em>Gender total counts by majors. 
      <p class="table_subtitle">(systems_analysis)<p></em></p>
 <br/>
-    </div>
+</div>
 </center>
 
 <center>
@@ -522,263 +522,179 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-     <div class='stats_table'>
-        <a id="gender_count_by_majors_table_iMebE"></a>
-    <br/>
-    <br/>
-            <div style="display: flex; justify-content: center;">
-        <div style="text-align: center;">
+      <div class='stats_table'>
+  <a id="gender_count_by_majors_table_iMebE"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(other ingenerías)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(other ingenerías)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-        <a id="gender_count_by_majors_table_UEAI1"></a>
-    <br/>
-    <br/>
-            <div style="display: flex; justify-content: center;">
-        <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_UEAI1"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, computer_engineering, other ingenerías)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, computer_engineering, other ingenerías)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-        <a id="gender_count_by_majors_table_JbWiM"></a>
-    <br/>
-    <br/>
-            <div style="display: flex; justify-content: center;">
-        <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_JbWiM"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-        <div class='stats_table'>
-         <a id="gender_count_by_majors_table_CyME7"></a>
-     <br/>
-     <br/>
-            <div style="display: flex; justify-content: center;">
-         <div style="text-align: center;">
+     <div class='stats_table'>
+  <a id="gender_count_by_majors_table_CyME7"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | female   | 57%        |
 | male     | 42%        |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(other)<p></em></p>
-<br/>
-</div>
+  <br/>
+  </div>
 </center>
 
 <center>
-    <div class='stats_table'>
-        <a id="gender_count_by_majors_table_9sS3M"></a>
-    <br/>
-    <br/>
-    <div style="display: flex; justify-content: center;">
-        <div style="text-align: center;">
+     <div class='stats_table'>
+  <a id="gender_count_by_majors_table_9sS3M"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(systems_analysis, computer_engineering, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(systems_analysis, computer_engineering, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_t07j1"></a>
-  <br/>
-  <br/>
-    <div style="display: flex; justify-content: center;">
-        <div style="text-align: center;">
+      <div class='stats_table'>
+   <a id="gender_count_by_majors_table_t07j1"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 50%        |
 | female   | 50%        |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, computer_engineering, mathematics, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, computer_engineering, mathematics, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-       <a id="gender_count_by_majors_table_5FxzC"></a>
-   <br/>
-   <br/>
-           <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_5FxzC"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 50%        |
 | female   | 50%        |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, graphic_design, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, graphic_design, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_nfWM4"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+      <div class='stats_table'>
+   <a id="gender_count_by_majors_table_nfWM4"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 66%        |
 | female   | 33%        |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-      <a id="gender_count_by_majors_table_EYVju"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_EYVju"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, other ingenerías)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, other ingenerías)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-      <a id="gender_count_by_majors_table_a0GQW"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_a0GQW"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(systems_analysis, civil_engineering)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(systems_analysis, civil_engineering)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-      <a id="gender_count_by_majors_table_YUnJY"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_YUnJY"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | female   | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(mathematics, none)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(mathematics, none)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
      <div class='stats_table'>
-      <a id="gender_count_by_majors_table_sQMx6"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+  <a id="gender_count_by_majors_table_sQMx6"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(computer_engineering, mathematics)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(computer_engineering, mathematics)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-   <div class='stats_table'>
+    <div class='stats_table'>
   <a id="gender_count_by_majors_table_Covra"></a>
 
 | Category | Percentage |
@@ -792,21 +708,21 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-   <div class='stats_table'>
- <a id="gender_count_by_majors_table_hMVFn"></a>
+      <div class='stats_table'>
+  <a id="gender_count_by_majors_table_hMVFn"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
- <p class='table_title'><em>Gender total counts by majors. 
- <p class="table_subtitle">(programming, computer_engineering, other)<p></em></p>
-<br/>
-    </div>
+<p class='table_title'><em>Gender total counts by majors. 
+<p class="table_subtitle">(programming, computer_engineering, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-   <div class='stats_table'>
+     <div class='stats_table'>
   <a id="gender_count_by_majors_table_7nCyV"></a>
 
 | Category | Percentage |
@@ -821,17 +737,17 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-   <div class='stats_table'>
- <a id="gender_count_by_majors_table_DQimz"></a>
+     <div class='stats_table'>
+  <a id="gender_count_by_majors_table_DQimz"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-  <p class='table_title'><em>Gender total counts by majors. 
-  <p class="table_subtitle">(programming, systems_analysis, electronic_engineering, other ingenerías, other)<p></em></p>
- <br/>
- </div>
+<p class='table_title'><em>Gender total counts by majors. 
+<p class="table_subtitle">(programming, systems_analysis, electronic_engineering, other ingenerías, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
@@ -849,22 +765,22 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-  <div class='stats_table'>
-<a id="gender_count_by_majors_table_sfatr"></a>
+    <div class='stats_table'>
+ <a id="gender_count_by_majors_table_sfatr"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | female   | 100%       |
 
- <p class='table_title'><em>Gender total counts by majors. 
- <p class="table_subtitle">(programming, systems_analysis, computer_engineering, other)<p></em></p>
+<p class='table_title'><em>Gender total counts by majors. 
+<p class="table_subtitle">(programming, systems_analysis, computer_engineering, other)<p></em></p>
  <br/>
  </div>
 </center>
 
 <center>
-  <div class='stats_table'>
- <a id="gender_count_by_majors_table_YUCVe"></a>
+    <div class='stats_table'>
+  <a id="gender_count_by_majors_table_YUCVe"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -877,22 +793,22 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-     <div class='stats_table'>
- <a id="gender_count_by_majors_table_6JH7Q"></a>
+    <div class='stats_table'>
+  <a id="gender_count_by_majors_table_6JH7Q"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-  <p class='table_title'><em>Gender total counts by majors. 
-  <p class="table_subtitle">(programming, electronic_engineering, other)<p></em></p>
+<p class='table_title'><em>Gender total counts by majors. 
+<p class="table_subtitle">(programming, electronic_engineering, other)<p></em></p>
  <br/>
  </div>
 </center>
 
 <center>
-   <div class='stats_table'>
- <a id="gender_count_by_majors_table_hHBZ0"></a>
+     <div class='stats_table'>
+  <a id="gender_count_by_majors_table_hHBZ0"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -900,27 +816,27 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(programming, systems_analysis, computer_engineering, electrical_engineering)<p></em></p>
- <br/>
- </div>
+  <br/>
+  </div>
 </center>
 
 <center>
-   <div class='stats_table'>
- <a id="gender_count_by_majors_table_MuFY5"></a>
+     <div class='stats_table'>
+  <a id="gender_count_by_majors_table_MuFY5"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-  <p class='table_title'><em>Gender total counts by majors. 
-  <p class="table_subtitle">(electrical_engineering)<p></em></p>
- <br/>
- </div>
+<p class='table_title'><em>Gender total counts by majors. 
+<p class="table_subtitle">(electrical_engineering)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-   <div class='stats_table'>
- <a id="gender_count_by_majors_table_jPEDA"></a>
+    <div class='stats_table'>
+  <a id="gender_count_by_majors_table_jPEDA"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -933,8 +849,8 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-   <div class='stats_table'>
- <a id="gender_count_by_majors_table_1TLd3"></a>
+     <div class='stats_table'>
+  <a id="gender_count_by_majors_table_1TLd3"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -942,71 +858,50 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(programming, systems_analysis, civil_engineering)<p></em></p>
-<br/>
-    </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_wNIpK"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_wNIpK"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, computer_engineering, graphic_design)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, computer_engineering, graphic_design)<p></em></p>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_vgmI0"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-     <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_vgmI0"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, mathematics, other)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, mathematics, other)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-      <a id="gender_count_by_majors_table_04Xdy"></a>
-  <br/>
-  <br/>
-      <div style="display: flex; justify-content: center;">
-      <div style="text-align: center;">
+   <div class='stats_table'>
+ <a id="gender_count_by_majors_table_04Xdy"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
 | male     | 100%       |
 
-</div>
-</div>
-<br/>
 <p class='table_title'><em>Gender total counts by majors. 
-     <p class="table_subtitle">(programming, systems_analysis, electronic_engineering)<p></em></p>
-<br/>
-    </div>
+<p class="table_subtitle">(programming, systems_analysis, electronic_engineering)<p></em></p>
+  <br/>
+  </div>
 </center>
 
 <center>

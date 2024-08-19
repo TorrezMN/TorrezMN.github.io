@@ -260,6 +260,67 @@ end
    leveraging the personal access token for authentication.</p>
 </li>
 </ol>
+<hr />
+<h3 id="the-curl-command">The <code>curl</code> Command</h3>
+<p>The <code>curl</code> command is used to send an HTTP request to the GitHub API to create
+a new Gist. Below is a breakdown of each line and the flags used:</p>
+<pre><code class="language-fish">curl -L \
+-X POST \
+-H &quot;Accept: application/vnd.github+json&quot; \
+-H &quot;Authorization: Bearer $GITHUB_TOKEN&quot; \
+-H &quot;X-GitHub-Api-Version: 2022-11-28&quot; \
+https://api.github.com/gists \
+-d &quot;$payload&quot;
+</code></pre>
+<ol>
+<li>
+<p><strong><code>curl -L \</code></strong>:</p>
+<ul>
+<li><strong><code>curl</code></strong>: The command-line tool used to transfer data to or from a server.</li>
+<li><strong><code>-L</code></strong>: This flag tells <code>curl</code> to follow any redirects. This is useful if the URL provided might redirect to another URL (like from <code>http</code> to <code>https</code>), ensuring that the request reaches its destination.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>-X POST \</code></strong>:</p>
+<ul>
+<li><strong><code>-X</code></strong>: Specifies the HTTP method to use. </li>
+<li><strong><code>POST</code></strong>: This indicates that we're making a POST request, which is typically used to send data to the server, such as creating a new resource.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>-H "Accept: application/vnd.github+json" \</code></strong>:</p>
+<ul>
+<li><strong><code>-H</code></strong>: Adds a header to the request.</li>
+<li><strong><code>"Accept: application/vnd.github+json"</code></strong>: This header tells the server that the client expects a response in JSON format specific to GitHub's API.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>-H "Authorization: Bearer $GITHUB_TOKEN" \</code></strong>:</p>
+<ul>
+<li><strong><code>"Authorization: Bearer $GITHUB_TOKEN"</code></strong>: This header provides the authorization token required to authenticate the request. The <code>Bearer</code> keyword is followed by the token stored in the <code>GITHUB_TOKEN</code> environment variable.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>-H "X-GitHub-Api-Version: 2022-11-28" \</code></strong>:</p>
+<ul>
+<li><strong><code>"X-GitHub-Api-Version: 2022-11-28"</code></strong>: This custom header specifies the version of the GitHub API to use. It ensures that the request is handled according to the API version specified, maintaining compatibility with any changes GitHub might make in future versions.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>https://api.github.com/gists \</code></strong>:</p>
+<ul>
+<li>This is the URL to which the request is sent. It points to the GitHub API endpoint for creating new Gists.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>-d "$payload"</code></strong>:</p>
+<ul>
+<li><strong><code>-d</code></strong>: This flag indicates that the following string is the data to be sent in the request body.</li>
+<li><strong><code>"$payload"</code></strong>: This variable contains the JSON-formatted data that includes the Gist's description, visibility setting, and file content. This payload is sent as the body of the POST request.</li>
+</ul>
+</li>
+</ol>
+<hr />
 <h3 id="how-to-use-the-function">How to Use the Function</h3>
 <ol>
 <li><strong>Navigate to the directory</strong> containing the file you want to save as a Gist.</li>
@@ -273,8 +334,7 @@ snippets to GitHub Gists, making it quick and convenient to store and share
 code directly from the terminal. The flexibility to set the visibility of the
 Gist ensures you can control who has access to your snippets, whether they are
 public or private.</p>
-<hr />
-<p><sub>Blog post created with the assistance of ChatGPT. Big thanks to OpenAI and my own tinkering brain for making this possible!</sub></p></p>
+<hr /></p>
     </article>
 </section>
 <!-- endblock -->

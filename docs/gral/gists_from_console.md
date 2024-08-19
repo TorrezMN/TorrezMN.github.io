@@ -1,32 +1,108 @@
-```markdown
-# How to Create a GitHub Gist with Multiline File Content Using Fish Shell
+## Problem
 
-Recently, I encountered a problem while trying to create a GitHub Gist using a Fish shell function. The goal was to automate the process of creating a private Gist by uploading a file's content directly to GitHub. However, I ran into some issues, especially when dealing with files that contained multiple lines.
+As developers, we often find ourselves needing a quick and easy way to save
+code snippets or entire scripts for future reference. GitHub Gists provide a
+convenient way to store and share these snippets. However, manually creating a
+Gist through the GitHub interface can be time-consuming, especially when you
+want to save snippets directly from your terminal.
 
-### The Problem
+## Idea
 
-Initially, my Fish function only pushed the first line of the file to the Gist, ignoring the rest. Additionally, I encountered errors related to JSON formatting when trying to include the entire file content in the payload.
+To streamline the process of saving code snippets as Gists, I wanted to create
+a Fish shell function that could take a file, description, and visibility
+setting as arguments, and automatically create a Gist. This way, I could
+quickly push snippets to GitHub without leaving the terminal.
 
-### The Solution
+## Stack
 
-To solve this, I needed a way to properly escape the file content, including handling newlines and special characters, so it could be safely included in the JSON payload required by GitHub's API. Here's the final Fish function that worked perfectly:
+To implement this solution, I used:
+
+- **Fish Shell**: A smart and user-friendly command line shell.
+
+- **cURL**: A command line tool for transferring data with URLs.
+
+- **GitHub API**: The interface for creating Gists programmatically.
+
+- **Python**: To handle JSON string processing.
+
+## Solutions
+
+### Proposed Solution
+The solution involves creating a Fish shell function that:
+
+1. Takes a filename, description, and visibility setting as inputs.
+
+2. Reads the file content, processes it for safe JSON transfer, and constructs a JSON payload.
+
+3. Sends the payload to GitHub's API to create a new Gist with the provided details.
+
+### Token Creation
+
+Before you can use this function, you'll need a GitHub token with `gists`
+permissions. Here’s how to create it:
+
+1. **Go to GitHub**: Log in to your GitHub account and navigate to
+   [Settings](https://github.com/settings/profile).
+
+2. **Generate Token**: Under "Developer settings," click on "Personal access
+   tokens" and generate a new token.
+
+3. **Set Permissions**: Ensure the token has the `gists` scope enabled. This
+   allows the token to create and manage Gists.
+
+4. **Store the Token**: Once generated, store the token securely in an
+   environment variable, like `GITHUB_TOKEN`.
+
+### Exporting the Token as an Environment Variable
+
+To make sure your Fish shell function can access your GitHub token, you'll need
+to export it as an environment variable. Here’s how you can do it:
+
+1. Open your terminal.
+
+2. Run the following command to export the token as an environment variable:
+
+```fish set -Ux GITHUB_TOKEN your_token_here ```
+
+Replace `your_token_here` with the actual token you generated from GitHub.
+
+3. This command makes the `GITHUB_TOKEN` available globally in your Fish shell
+sessions.
+
+4. If you want this token to persist across sessions, add the command to your
+`config.fish` file, usually located in `~/.config/fish/`.
+
+## Fish Function
+
+Here's the Fish function to create a Gist:
 
 ```fish
 function new_gist
     # Check if the required arguments are provided
-    if test (count $argv) -lt 2
-        echo "Usage: new_gist <filename> <description>"
+    if test (count $argv) -lt 3
+        echo "Usage: new_gist <filename> <description> <visible>"
         return 1
     end
 
     set filename $argv[1]
     set description $argv[2]
+    set visible $argv[3]
+
+    # Convert the "visible" argument to a boolean value
+    if test "$visible" = "True"
+        set public true
+    else if test "$visible" = "False"
+        set public false
+    else
+        echo "The 'visible' argument must be either 'True' or 'False'."
+        return 1
+    end
 
     # Read the file content, escape necessary characters, and handle newlines
     set filecontent (cat $filename | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')
 
     # Construct the JSON payload using the output from Python
-    set payload '{"description": "'$description'", "public": false, "files": {"'$filename'": {"content": '$filecontent'}}}'
+    set payload '{"description": "'$description'", "public": '$public', "files": {"'$filename'": {"content": '$filecontent'}}}'
 
     # Make the request to create the gist
     curl -L \
@@ -39,19 +115,48 @@ function new_gist
 end
 ```
 
-### Why This Works
+### Explanation
 
-This solution works by leveraging Python's `json.dumps()` to properly escape the file content. Python's JSON module ensures that all necessary characters (like newlines, quotes, etc.) are correctly handled according to JSON specifications, making it a reliable way to construct the payload.
+1. **Argument Handling**: The function expects three arguments: the file name,
+   description, and visibility. If the visibility is not `True` or `False`, it
+   will prompt the user to correct it.
+  
+2. **Visibility Handling**: The visibility argument controls whether the Gist
+   will be public or private. It converts the string "True" or "False" into a
+   boolean value that the GitHub API can process.
+  
+3. **File Content Processing**: Fish shell and JSON processing can be tricky
+   due to special characters and newlines. This function uses Python to safely
+   encode the file content into a JSON-compatible format.
+  
+4. **Payload Construction**: The JSON payload is built using the provided
+   arguments and processed content, ensuring it is correctly formatted for the
+   GitHub API.
+  
+5. **cURL Command**: The function uses cURL to send the request to GitHub,
+   leveraging the personal access token for authentication.
 
-### Conclusion
+### How to Use the Function
 
-This function now successfully uploads the entire content of a file to a GitHub Gist, even if the file contains multiple lines. It's a simple yet powerful example of how different tools can be combined in Fish shell to solve practical problems.
+1. **Navigate to the directory** containing the file you want to save as a Gist.
+2. **Run the command**: `new_gist <file.ext> <description> <visible>`.
+   1. For example: `new_gist myscript.py "My Python Script" True`.
+3. **Check GitHub**: Your new Gist should now be available in your GitHub account, either as a public or private Gist, depending on the visibility you set.
+
+## Conclusions
+
+This Fish shell function significantly simplifies the process of saving code
+snippets to GitHub Gists, making it quick and convenient to store and share
+code directly from the terminal. The flexibility to set the visibility of the
+Gist ensures you can control who has access to your snippets, whether they are
+public or private.
 
 ---
 
-<!--
-Hidden attribution: This blog post was created with the assistance of ChatGPT, a large language model trained by OpenAI. 
--->
-```
+<sub>Blog post created with the assistance of ChatGPT. Big thanks to OpenAI and my own tinkering brain for making this possible!</sub>
 
-Feel free to modify the content as needed. Thank you for the attribution—it's much appreciated!
+
+
+
+
+

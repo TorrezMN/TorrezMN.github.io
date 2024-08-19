@@ -1,11 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .nav-link[rel="next"] {display: none;}
 .nav-link[rel="prev"] {display: none;}
 
 .title {display: none;}
 
+.font-press-start {
+    font-family: 'Press Start 2P', cursive;
+}
 
 
 
+
+
+.img_icon{
+    min-width:50px;
+    min-height:50px;
+    border-radius:50%;
+    box-shadow: none;
+}
+
+.comment-content {
+  transition: all 0.3s ease;
+}
 
 
 body {

@@ -136,6 +136,51 @@ end
 5. **cURL Command**: The function uses cURL to send the request to GitHub,
    leveraging the personal access token for authentication.
 
+---
+
+### The `curl` Command
+
+The `curl` command is used to send an HTTP request to the GitHub API to create
+a new Gist. Below is a breakdown of each line and the flags used:
+
+```fish
+curl -L \
+-X POST \
+-H "Accept: application/vnd.github+json" \
+-H "Authorization: Bearer $GITHUB_TOKEN" \
+-H "X-GitHub-Api-Version: 2022-11-28" \
+https://api.github.com/gists \
+-d "$payload"
+```
+
+1. **`curl -L \`**:
+    - **`curl`**: The command-line tool used to transfer data to or from a server.
+    - **`-L`**: This flag tells `curl` to follow any redirects. This is useful if the URL provided might redirect to another URL (like from `http` to `https`), ensuring that the request reaches its destination.
+
+2. **`-X POST \`**:
+    - **`-X`**: Specifies the HTTP method to use. 
+    - **`POST`**: This indicates that we're making a POST request, which is typically used to send data to the server, such as creating a new resource.
+
+3. **`-H "Accept: application/vnd.github+json" \`**:
+    - **`-H`**: Adds a header to the request.
+    - **`"Accept: application/vnd.github+json"`**: This header tells the server that the client expects a response in JSON format specific to GitHub's API.
+
+4. **`-H "Authorization: Bearer $GITHUB_TOKEN" \`**:
+    - **`"Authorization: Bearer $GITHUB_TOKEN"`**: This header provides the authorization token required to authenticate the request. The `Bearer` keyword is followed by the token stored in the `GITHUB_TOKEN` environment variable.
+
+5. **`-H "X-GitHub-Api-Version: 2022-11-28" \`**:
+    - **`"X-GitHub-Api-Version: 2022-11-28"`**: This custom header specifies the version of the GitHub API to use. It ensures that the request is handled according to the API version specified, maintaining compatibility with any changes GitHub might make in future versions.
+
+6. **`https://api.github.com/gists \`**:
+    - This is the URL to which the request is sent. It points to the GitHub API endpoint for creating new Gists.
+
+7. **`-d "$payload"`**:
+    - **`-d`**: This flag indicates that the following string is the data to be sent in the request body.
+    - **`"$payload"`**: This variable contains the JSON-formatted data that includes the Gist's description, visibility setting, and file content. This payload is sent as the body of the POST request.
+
+
+---
+
 ### How to Use the Function
 
 1. **Navigate to the directory** containing the file you want to save as a Gist.
@@ -153,7 +198,6 @@ public or private.
 
 ---
 
-<sub>Blog post created with the assistance of ChatGPT. Big thanks to OpenAI and my own tinkering brain for making this possible!</sub>
 
 
 

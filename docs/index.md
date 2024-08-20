@@ -13,13 +13,19 @@
 
 -->
 
+### General stuff 
+
+______________________________________________________________________
+
+- [How to create Github gists from fish console.](gral/gists_from_console.md)
+- [Sharing Github gists from fish console.](gral/share_gist_from_console.md)
+
 ### Data Science
 
 ______________________________________________________________________
 
 - [Challenge 1](data_science/challenges/challenge1.md)
 - [Encuesta devs paraguay 2024](data_science/projects/Encuesta_IT_Py_2024/intro.md)
-- [How to create Github gists from fish console.](gral/gists_from_console.md)
 
 ### Games
 

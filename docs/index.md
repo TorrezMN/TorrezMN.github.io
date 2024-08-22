@@ -13,12 +13,17 @@
 
 -->
 
+### Challenges 
+- [List of challenges.](challenges/index.md)
+
+
 ### General stuff 
 
 ______________________________________________________________________
 
 - [How to create Github gists from fish console.](gral/gists_from_console.md)
 - [Sharing Github gists from fish console.](gral/share_gist_from_console.md)
+- [GitHub User Info Fetcher.](gral/gh_user_info.md)
 
 ### Data Science
 

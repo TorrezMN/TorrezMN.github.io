@@ -689,12 +689,12 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(computer_engineering, mathematics)<p></em></p>
-  <br/>
-  </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-    <div class='stats_table'>
+     <div class='stats_table'>
   <a id="gender_count_by_majors_table_Covra"></a>
 
 | Category | Percentage |
@@ -703,12 +703,12 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(graphic_design)<p></em></p>
-  <br/>
-  </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-      <div class='stats_table'>
+    <div class='stats_table'>
   <a id="gender_count_by_majors_table_hMVFn"></a>
 
 | Category | Percentage |
@@ -717,12 +717,12 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(programming, computer_engineering, other)<p></em></p>
-  <br/>
-  </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
+    <div class='stats_table'>
   <a id="gender_count_by_majors_table_7nCyV"></a>
 
 | Category | Percentage |
@@ -737,8 +737,8 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-     <div class='stats_table'>
-  <a id="gender_count_by_majors_table_DQimz"></a>
+    <div class='stats_table'>
+ <a id="gender_count_by_majors_table_DQimz"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -746,12 +746,12 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(programming, systems_analysis, electronic_engineering, other ingenerías, other)<p></em></p>
-  <br/>
-  </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-   <div class='stats_table'>
+    <div class='stats_table'>
  <a id="gender_count_by_majors_table_4OLS4"></a>
 
 | Category | Percentage |
@@ -779,8 +779,8 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-    <div class='stats_table'>
-  <a id="gender_count_by_majors_table_YUCVe"></a>
+     <div class='stats_table'>
+ <a id="gender_count_by_majors_table_YUCVe"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -794,7 +794,7 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <center>
     <div class='stats_table'>
-  <a id="gender_count_by_majors_table_6JH7Q"></a>
+ <a id="gender_count_by_majors_table_6JH7Q"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -807,8 +807,8 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-     <div class='stats_table'>
-  <a id="gender_count_by_majors_table_hHBZ0"></a>
+    <div class='stats_table'>
+ <a id="gender_count_by_majors_table_hHBZ0"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -816,13 +816,13 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(programming, systems_analysis, computer_engineering, electrical_engineering)<p></em></p>
-  <br/>
-  </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-     <div class='stats_table'>
-  <a id="gender_count_by_majors_table_MuFY5"></a>
+    <div class='stats_table'>
+ <a id="gender_count_by_majors_table_MuFY5"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -830,13 +830,13 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 
 <p class='table_title'><em>Gender total counts by majors. 
 <p class="table_subtitle">(electrical_engineering)<p></em></p>
-  <br/>
-  </div>
+ <br/>
+ </div>
 </center>
 
 <center>
-    <div class='stats_table'>
-  <a id="gender_count_by_majors_table_jPEDA"></a>
+     <div class='stats_table'>
+ <a id="gender_count_by_majors_table_jPEDA"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -849,8 +849,8 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-     <div class='stats_table'>
-  <a id="gender_count_by_majors_table_1TLd3"></a>
+    <div class='stats_table'>
+ <a id="gender_count_by_majors_table_1TLd3"></a>
 
 | Category | Percentage |
 | -------- | ---------- |
@@ -863,7 +863,7 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-   <div class='stats_table'>
+    <div class='stats_table'>
  <a id="gender_count_by_majors_table_wNIpK"></a>
 
 | Category | Percentage |
@@ -877,7 +877,7 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-   <div class='stats_table'>
+    <div class='stats_table'>
  <a id="gender_count_by_majors_table_vgmI0"></a>
 
 | Category | Percentage |
@@ -891,7 +891,7 @@ En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la
 </center>
 
 <center>
-   <div class='stats_table'>
+    <div class='stats_table'>
  <a id="gender_count_by_majors_table_04Xdy"></a>
 
 | Category | Percentage |

@@ -4,6 +4,19 @@ AnálisisDeDatos ,OptimizaciónDeProducción ,GestiónDeInventarios ,Estrategias
 <div style="text-align: center; margin-top: 50px; background-color: gray;
 padding: 20px; ">
 
+
+Este desafío es una oportunidad crítica para demostrar habilidades analíticas
+en el contexto de una postulación para un puesto de analista de datos. Se trata
+de abordar un problema real relacionado con la optimización de costos de
+producción en una empresa de fabricación de dispositivos electrónicos,
+analizando datos históricos y proponiendo mejoras estratégicas. La capacidad
+para analizar y interpretar datos, verificar su integridad y aplicar soluciones
+efectivas en un entorno teórico es esencial para destacar en el proceso de
+selección. Este desafío no solo permite evaluar competencias técnicas, sino
+también la habilidad para abordar problemas complejos y presentar soluciones
+prácticas y bien fundamentadas.
+
+
 Este es mi abordaje personal para el desafío. Presento mi estrategia de de
 trabajo para afrontar el desafío. 
 

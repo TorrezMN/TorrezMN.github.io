@@ -13463,18 +13463,3 @@ grouped_grid_barh_chart(
 
 ![png](output_67_0.png)
 
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```
-
-```python
-
-```

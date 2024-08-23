@@ -17,6 +17,11 @@
 - [List of challenges.](challenges/index.md)
 - [Fake Server](challenges/facke_server.md)
 
+### Django 
+
+______________________________________________________________________
+
+- [Django models and custom methods.](django/django_models_custom_methods.md)
 
 ### General stuff 
 

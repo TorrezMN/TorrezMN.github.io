@@ -1,5 +1,5 @@
-
-
+# Optimización de Costos de Producción: Estrategias y Análisis de Datos en una Empresa Electrónica
+AnálisisDeDatos ,OptimizaciónDeProducción ,GestiónDeInventarios ,EstrategiasDeMejora
 
 <div style="text-align: center; margin-top: 50px; background-color: gray;
 padding: 20px; ">

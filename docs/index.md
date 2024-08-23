@@ -15,6 +15,7 @@
 
 ### Challenges 
 - [List of challenges.](challenges/index.md)
+- [Fake Server](challenges/facke_server.md)
 
 
 ### General stuff 
@@ -24,6 +25,10 @@ ______________________________________________________________________
 - [How to create Github gists from fish console.](gral/gists_from_console.md)
 - [Sharing Github gists from fish console.](gral/share_gist_from_console.md)
 - [GitHub User Info Fetcher.](gral/gh_user_info.md)
+- [Leveraging Twitter API for NLP: A Simple Tweet Collection Script.](gral/sabueso.md)
+
+- [Retrieving and Storing CodePen Data with Python](computer_graphics/get_codepen_data.md)
+- [Retrieving and Saving Data from CodeSandbox: A Python Guide](computer_graphics/get_codesandbox_data.md)
 
 ### Data Science
 

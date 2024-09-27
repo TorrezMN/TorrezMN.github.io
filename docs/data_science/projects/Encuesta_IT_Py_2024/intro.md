@@ -35,7 +35,7 @@ programming language as answer option.
 
 
 
-3. **Data collection methods**:All data was collected using the tools provided
+3. **Data collection methods**: All data was collected using the tools provided
 by the "*Google Forms*" platform. This platform allows users to:
     - *Create* the survey quickly and easily.
     - *Share* the survey on different platforms through a link.

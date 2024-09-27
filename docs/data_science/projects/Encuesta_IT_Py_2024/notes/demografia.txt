@@ -1,0 +1,7 @@
+# Demografia
+
+El genero "masculino" tiene mayor representatividad dentro de la encuesta. Abarca mas del 80% de los encuestados.
+La "edad actual" con independencia del genero de los encuestados abarca desde los 30 a los 39 años al momento de la encuesta.
+Si se toma como base la edad de los encuestados al momento de la encuesta y se compara por genero. En todos los casos los "masculinos" superan ampliamente la representacion "femenina" dentro de la encuesta.
+En el caso de los "masculinos" se da la mayor representatividad en el rango etario de los 30-34 años. En el caso de los "femeninos" se da en el rango de los 25-29 años de edad.
+En la clasificacion "gender by majors" solo se puede observar una "representacion" en las siguientes carreras: system analysis, programming, computer engineering, others. Para cada uno de estos casos se observa tambien que la distribucion no es representativa para ambos generos. Se observa que el "genero masculino" supera muy ampliamente la representacion "femenina" por mas del 70-80% en todos los casos. En donde no se puede distingir representacion de ambos generos, solo se observa representacion "masculina" dentro de la categoria.

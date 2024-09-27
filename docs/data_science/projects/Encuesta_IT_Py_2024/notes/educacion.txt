@@ -1,0 +1,10 @@
+# Educacion
+Entre los encuestados mas del 50% se encuentra dentro de una de las siguientes categorias: programming, computer engineering, systems analysis. Siendo estas categorias las que cuentan con mayor representacion.
+System analysis es la categoria con mayor representacion.
+# Educacion vs. modo de trabajo
+Para el caso de systems analysis. la mayoria de los encuestados se encuentra entre una de las siguientes categorias: hibrido, remoto y onsite. Son mas del 50% de los encuestados.
+Para la modalidad de trabajo "remoto" cuentan con mayor aceptacion las categorias de "computer engineering y systems analysis". Sumando entre las dos aproximadamente el 50% de los encuestados.
+Para la categoria de "work mode onsite" los grupos con mayor aceptacion son: computer engineering, systems analysis, programming. Sumando aproximadamente el 50% de los encuestados.
+# Education vs emploiment mode.
+Para todas las categorias, se puede observar que todos poseen un "degree y highschool" como parte de su formacion "academica".
+Se observa que los encuestados con "masters y doctorados" son una absoluta minoria.

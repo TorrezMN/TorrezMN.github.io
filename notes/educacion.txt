@@ -1,0 +1,25 @@
+# Educacion
+se explora el aspecto 'educacional' de ls datos. Con especial enfacis en el 'impacto' de la educacion foramal o informal en la comunidad IT del paraguay.
+Mas del 50% de los encuestados se encuetnra entre las siguientes categorias: programming, computer_engineering, system_analysis. Siendo estas las carreras con mayor popularidad entre los encuestados.
+# Educacion vs. Modalidad de trabajo.
+Se le da especial interes a las carreras con mayor representacion.
+Para el caso de 'systems_analysis' se da que la mayor cantidad de los encuestados se distribuye entre: hibrid, remote, onsite. \n Para el caso de 'programming' se vuelve a repetir el patron. \n Para el caso de 'computer_engineering' se da el mismo caso.
+# Education vs employment mode
+Para este caso se da que la mayoria de los 'systems_analysis' poseen 'empleador local'.
+para los 'programming' y los 'computer_engineering' se da el mismo caso. Mas del 50% poseen 'empleador local'.
+# Education vs. IT experience
+Para el caso de 'system_analysis' se da que las categorias con mayor representacion son los que los encuestados tienen entre 3 y 12 años de experiencia en IT. Asi tambien las de menor representacion son las que sus encuestados tienen menos de 1 año de experiencia y mas de 26 años de experiencia.
+Para la mayoria de los casos se puede observar que los grupos mas representados poseen entre 1/2 y 12 años de experiencia en IT.
+En algunos de los grupos donde no se da esa 'distribucion'. Estos grupos son sumamente minoritarios como para considerarlos.
+# Education vs. first code
+En el caso de los encuestados con 'system_analysis' son expuestos a la programacion antes de los 10 años de edad y los 17 años de edad.
+Para el caso de 'programming' tambien se da el mismo patron.
+Para el caso de 'computer_engineering' tambien se da el mismo patron.
+Para la mayoria de los casos/carreras representadas en la encuesta se puede observar que los encuestados son expuestos a temprana edad a la programacion. Con menos de 10 años ya se exponen a la programacion. Esto independientemente del modo o programa de estudios de los mismos.
+# Education vs assigned seniority
+Para el casos de 'systems_analysis' se da que las categorias con mayor representacion son: junior, senior y mid-senior. siendo 'senior' la categoria con mayor representacion.
+Para el caso de 'programming' se repite el mismo patron.
+Para el caso de 'computer_engineering' se da que las categorias mas representadas son: mid-senior, y senior.
+Para la mayoria de las 'carreras' representadas en la encuesta se da que los encuestados se les assigna el grado de 'senior' o 'mid-senior' en general.
+# Education vs. self assigned seniority.
+Para el caso de: systems analysis, programming y computer engineering se da que las 3 categorias de seniority con mayor representacion son: junior, senior y mid-senior.

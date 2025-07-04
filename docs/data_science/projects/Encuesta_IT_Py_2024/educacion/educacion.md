@@ -15,20 +15,21 @@ enphasis in the inpact on the IT world of the paraguayan profesionals.
 - 'civil_engineering'
 - 'electrical_engineering'
 
-* Se puede ver que existe un numero muuy reducido de accrearas representadas.
+* It can be seen that there is a very small number of accrearas represented.
+
 
 <center>
 ![png](educacion_images/output_7_0.png) 
 </center>        
 
-Las carreras con **mayor representacion** entre los encuestados son:
+The careers with the **greatest representation** among those surveyed are:
 
 - Programming
-- CS Engineering
+-CS Engineering
 - Systems analysis
 
-Entre estas 3 carreras se ditribuye mas del 50% de los encuestados. Siendo
-**systems analysis** la carrera con mas representacion.
+More than 50% of those surveyed are distributed between these 3 careers. Being
+**systems analysis** the race with the most representation.
 
 <center>
      <div class='stats_table'>
@@ -114,15 +115,6 @@ Access to Formal Education in South America: A Gender Perspective
 
 
 
-
-
-
-
-
-
-
-
-
 <!-- Start IA comment -->
  <div style="background-color: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-bottom: 10px;">
  <!-- Comment title. -->
@@ -177,8 +169,6 @@ IT Careers and Majors in South America
  </div>
  <!-- End IA comment -->
  
-
-
 
 ## **Education vs work_mode**   
    

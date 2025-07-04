@@ -7,15 +7,15 @@
 
 # **Demographics**
 
-- Género
-- Edad actual
+- Gender
+- Current age
 
-En este apartado se estudia la distribucion demografica de los encuestados. En
-relacion a alguna variable de interes, como ser *distribucion de genero por
-edades* entre otros.
+In this section, the demographic distribution of the respondents is studied. In
+relation to some variable of interest, such as *gender distribution by
+ages* among others.
 
-Todo esto con la finalidad de establecer algunos parametros de referencia sobre
-los encuestados en materia demografica. 
+All this with the purpose of establishing some reference parameters on
+respondents in demographic matters.
 
 </br></br>
 
@@ -23,7 +23,7 @@ los encuestados en materia demografica.
 
 ![png](demografia_images/output_5_0.png)
 
-\[op\] En materia de genero se encontraron 3 categorias:
+\[op\] In terms of gender, 3 categories were found:
 
 - *male*
 
@@ -31,9 +31,8 @@ los encuestados en materia demografica.
 
 - *prefer not to say*
 
-De la distribucion de genero encontrada se puede decir que los Varones abarcan
-mas de 80% de los encuestados.
-
+From the gender distribution found, it can be said that Men encompass
+more than 80% of those surveyed.
 
 
 
@@ -86,31 +85,31 @@ mas de 80% de los encuestados.
 
 ![png](demografia_images/output_8_0.png)
 
-\[op\] Los grupos mas concentrados de encuestados tienen mas de **35 años**
-mientras que la los grupos de menor edad, en todas las categorias, no alcanzan
-a sobrepasar el 50%. La mayor concentracion de encuestados esta en el grupo
-etario de **30-34** años. El grupo etarios de encuestados que concentra la
-mayor cantidad de encuestados comienza en los 30 años y termina el los 39 años.
+\[op\] The most concentrated groups of respondents are over **25 years old**
+while the younger age groups, in all categories, do not reach
+to exceed 50%. The highest concentration of respondents is in the group
+age of **30-34** years. The age group of respondents that concentrates the
+The largest number of respondents begin at age 25 and end at age 39.
 
 # Ages by gender.
 
 ![png](demografia_images/output_13_0.png)
 
-\[op\] En el caso de la comparacion de distribuciones etarias por genero. Cuando
-se comparan genero masculino y femenino. Se observan que en la mayoria de las
-categorias etarias, en ningun caso, existe una distribucion "igualitaria" de
-representacion de generos. En todos los casos la representacion "masculina"
-supera amplamente a la femenina. (No se tomo en consideracion la categoria
-"prefiero no contestar debido que no es una categoria representativa.)
+\[op\] In the case of comparing age distributions by gender. When
+male and female gender are compared. It is observed that in most of the
+age categories, in no case is there an "equal" distribution of
+representation of genres. In all cases the "male" representation
+vastly surpasses the feminine one. (The category was not taken into consideration
+"I prefer not to answer because it is not a representative category.)
 
-Las 4 categorias con mayor reprecentacion som:
+The 4 categories with the greatest representation are:
 
 - 20-24
 - 25-29
 - 30-34
 - 35-39
 
-En ninguno de los casos anteriores el % de mujeres supera el 50% del total de la categoria.
+In none of the previous cases does the % of women exceed 50% of the total category.
 
 <center>
      <div class='stats_table'>

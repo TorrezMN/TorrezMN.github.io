@@ -1,0 +1,12 @@
+# Empleo y condiciones de trabajo.
+# Se explora el tipo de empleo y las condiciones de trabajo.
+Para el punto de "modalidad de trabajo" la distribucion de los encuestados se da entre las siguientes categorias: remotos, presencia, hibrido. Abarcando estas mas del 80% de los encuestados.
+para la "modalidad de empleo" se da que el 'empleo local' y el 'empleo remoto' abarcan mas del 60% de los encuestados. La mayor cantidad de los encuestados posee 'empleador local'.
+En el 'rol' de los encuestados se puede encontrar una variedad amplia de categorias. Pero la mayor consentracion se da en los siguientes tres roles: frontend_dev, backend_dev, full_stack_dev. 
+En cuanto a la 'modalidad vs el seniority asignado' se pudo ver que la mayoria de los encuestados que trabajan en un formato 'hibrido' son seniors en su rubro.
+Para la modalidad 'onsite' se observa un gran numero de encuestados de nivel 'senior' seguidos por un grupo de 'juniors'.
+Para el modo 'remote' se observa un fenomeno contrario donde los 'juniors' se encuentran fuera del top 3 de los senioritys con mayor representacion. Siendo seniors, mid-seniors y no-aplica los grupos con mayor representacion en la categoria 'remote'.
+Para la seccion 'modalidad vs seniority auto asignado' se puede ver que en las 'modalidad de trabajo' con mayor representacion entre los encuestados se encuentran los 'seniors' y 'mid-seniors' entre los roles asignados con mayor numero de representantes y pueden encontrarse algunos 'juinors'. Las modalidades con mayor representacion son: hibrido, onsite y remote. En el caso de la modalidad 'hibrida' de trabajo es el unico en donde el rol asignado 'junior' no se encuentra entre los 3 con mayor representatividad.
+La gran mayoria de los encuestados 'pueden codificar'. CODIFICAN POR TRABAJO
+El seniority asignado en el trabajo para los encuestados. La representatividad se divide en: senior, mid-senior, junior. Siendo 'senior' la categoria con mayor cantidad de representantes.
+Cuando se les pregunto 'cual consideras que es tu nivel de seniority?' en la mayoria de los casos la representacion por categorias aumento. Muchos de los encuestados consideran que poseen un seniority mas alto que el asignado en sus respectivos trabajos. Sumas totales para seniority asignado: 'senior': 161. 'mid-senior': 79. 'junior':58. Sumas totales para senioritys auto asignados: 'senior':164. 'mid-senior':121. 'junior':48.

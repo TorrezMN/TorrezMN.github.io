@@ -1,0 +1,9 @@
+# Experiencia y eduacion.
+En el rubro de 'experiencia en it' se puede ver que mas del 50% de los encuestados tiene entre 3 y 10 años de experiencia en it.
+Se les pregunto sobre la 'experiencia programando profesionalmente' a los encuestados y varia desde 'menos de un años hasta mas de 26 años'.
+Aun asi existe un grupo bastante grande de programadores que varian en experiencia entre 3 y 9 años de experiencia profesional.
+Se les pregunto a que 'edad escribieron la primera linea de codigo' en una pc. y varian en 2 categorias: los que empezaron antes de llegar a los 10 años de edad y los que empezaron entre los 14 y los 17 años de edad. Siendo estos 2 grupos los que cuentan con la mayor cantidad de representantes en la encuesta.
+Se verifico tambien la 'educacion formal vs. IT experience' para intentar ver los años de experiencia segun el tipo de educacion de los encuestados.
+para el grupo de los 'analistas de sistemas' los años de experiencia varian entre los 3 y los 12 años.
+el top3 de las categorias con mayor representatividad.
+para el grupo de 'programacion' las categorias con mayor cantidad de representantes varia entre los 3 y los 17 años.

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-                <title>Como hacer un blog. - Torrez MN</title>
+                <title>Retrieving and Storing CodePen Data with Python - Torrez MN</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,39 +106,110 @@
     <article>
         <header>
             
-                <h1 class=" title" id="component-title">Como hacer un blog.</h1>
+                <h1 class=" title" id="component-title">Retrieving and Storing CodePen Data with Python</h1>
             
         </header>
-        <p><h1 id="como-hacer-un-blog">Como hacer un blog.</h1>
-<p>¡Comienza tu blog con MkDocs! Una experiencia sencilla y potente</p>
-<p>¿Quieres crear un blog sin complicaciones? MkDocs te ofrece una solución
-intuitiva y versátil para dar vida a tu espacio online. Olvídate de complejas
-interfaces y plataformas abrumadoras, con MkDocs puedes enfocarte en lo que
-realmente importa: compartir tus ideas con el mundo.</p>
-<p>En este blog post te guiaremos paso a paso en la creación de tu blog con
-MkDocs. Descubrirás por qué esta herramienta se ha convertido en la favorita de
-principiantes y expertos por igual.</p>
-<p>¿Qué encontrarás en este post?</p>
-<p><code>Introducción a MkDocs: Una descripción de sus características principales y
-ventajas. Instalación y configuración: Guía rápida para poner en marcha MkDocs
-en tu computadora. Creación de contenido: Aprende a escribir entradas
-atractivas y a estructurar tu blog. Personalización: Ajusta la apariencia de tu
-blog con temas y plugins. Publicación: Comparte tu blog con el mundo en
-diferentes plataformas.</code></p>
-<p>¿Listo para comenzar tu aventura bloguera? ¡Emprende este viaje con MkDocs y
-disfruta de una experiencia sencilla, flexible y gratificante!</p>
-<p>Palabras clave: MkDocs, blog, crear blog, tutorial, guía, principiantes,
-herramienta, SEO, optimización, contenido, publicación, personalización.</p>
-<p>Recuerda: Optimiza tu introducción para los motores de búsqueda utilizando
-palabras clave relevantes y una estructura clara.</p>
-<p>Aquí te dejo algunos consejos adicionales:</p>
-<p><code>Utiliza un título atractivo y descriptivo. Escribe un párrafo inicial que
-enganche al lector y explique el tema del post. Destaca los beneficios de usar
-MkDocs. Incluye una lista de los temas que se tratarán en el post. Utiliza un
-lenguaje claro y conciso. Formatea el texto para que sea fácil de leer. Incluye
-imágenes y videos para mejorar la experiencia visual. Promociona tu blog en
-redes sociales y otras plataformas.</code></p>
-<p>¡Éxito en tu aventura bloguera con MkDocs!</p></p>
+        <p><h1 id="retrieving-and-storing-codepen-data-with-python">Retrieving and Storing CodePen Data with Python</h1>
+<p>In this blog post, we'll discuss how to retrieve and save data from CodePen
+using Python. We will use the <code>requests</code> library to fetch data from the CodePen
+RSS feed, convert it to JSON format using an API service, and then save it to a
+file. This approach is useful for archiving your CodePen projects or analyzing
+your work over time.</p>
+<hr />
+<h4 id="problem">Problem</h4>
+<p>Managing and analyzing CodePen projects can be cumbersome, especially if you
+have numerous pens. Manually collecting and storing data about these pens can
+be time-consuming. Automating this process not only saves time but also ensures
+that you have a structured and accessible record of your work.</p>
+<h4 id="idea-proposed-solution">Idea / Proposed Solution</h4>
+<p>To address this issue, we propose a Python script that fetches data from
+CodePen's RSS feed, converts it into JSON format using an external API, and
+saves it into a JSON file. This script will streamline the data retrieval
+process and make it easy to archive or analyze your CodePen projects.</p>
+<h4 id="stack">Stack</h4>
+<ul>
+<li><strong>Python</strong>: The programming language used for scripting.</li>
+<li><strong>requests</strong>: A Python library for making HTTP requests.</li>
+<li><strong>json</strong>: A Python library for handling JSON data.</li>
+<li><strong>RSS to JSON API</strong>: An external service to convert RSS feeds to JSON format.</li>
+</ul>
+<h4 id="functionalities">Functionalities</h4>
+<ol>
+<li><strong>Fetch Data from RSS Feed</strong>: Retrieve CodePen data from the RSS feed URL.</li>
+<li><strong>Convert RSS to JSON</strong>: Use an API service to convert RSS feed data to JSON format.</li>
+<li><strong>Save Data to JSON File</strong>: Store the converted JSON data into a file for future use.</li>
+</ol>
+<h4 id="code-explanation-of-code">Code / Explanation of Code</h4>
+<p>Here's the complete code with comments for better understanding:</p>
+<pre><code class="language-python">#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Author: Torrez, Milton N.
+
+import requests
+import json
+
+# Define the URL for the CodePen RSS feed
+penRss = &quot;https://codepen.io/torrezmn/public/feed/&quot;
+
+# Define the URL for the RSS to JSON API with the CodePen RSS feed URL
+rss2jsonApi = &quot;https://api.rss2json.com/v1/api.json?rss_url=&quot; + penRss
+
+# Send a GET request to the RSS to JSON API
+req = requests.get(rss2jsonApi)
+
+# Load the JSON response from the API
+data = json.loads(req.text)
+
+# Save the JSON data to a file named &quot;codepens.json&quot;
+with open(&quot;codepens.json&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    # Dump the data into the JSON file with readable formatting
+    json.dump(data, f, ensure_ascii=False, indent=4)
+</code></pre>
+<p><strong>Explanation:</strong></p>
+<ol>
+<li>
+<p><strong>Imports</strong>: Import the necessary <code>requests</code> and <code>json</code> libraries.</p>
+</li>
+<li>
+<p><strong>Define URLs</strong>: Set the <code>penRss</code> variable to the CodePen RSS feed URL and
+   construct the <code>rss2jsonApi</code> URL to convert the RSS feed into JSON format
+   using the RSS to JSON API.</p>
+</li>
+<li>
+<p><strong>Send Request</strong>: Use <code>requests.get()</code> to fetch data from the RSS to JSON
+   API.</p>
+</li>
+<li>
+<p><strong>Parse JSON</strong>: Convert the response text into a Python dictionary using
+   <code>json.loads()</code>.</p>
+</li>
+<li>
+<p><strong>Save Data</strong>: Write the JSON data to a file named <code>codepens.json</code>. This
+   file is encoded in UTF-8 and formatted with an indentation of 4 spaces for
+   better readability.</p>
+</li>
+</ol>
+<h4 id="conclusions">Conclusions</h4>
+<p>Automating the process of retrieving and storing CodePen data using Python
+provides a convenient way to manage and archive your projects. By leveraging
+the <code>requests</code> library for HTTP requests and the <code>json</code> library for data
+handling, you can efficiently collect and save information about your CodePen
+pens.</p>
+<h4 id="future-work">Future Work</h4>
+<ol>
+<li><strong>Error Handling</strong>: Add error handling to manage potential issues, such as failed requests or invalid responses.</li>
+<li><strong>Data Processing</strong>: Enhance the script to perform basic analysis or filtering of the retrieved data.</li>
+<li><strong>User Input</strong>: Allow users to specify different CodePen RSS feed URLs or additional parameters.</li>
+<li><strong>Automation</strong>: Schedule the script to run periodically to keep the data updated.</li>
+<li><strong>Integration</strong>: Integrate with other tools or services for further data processing or visualization.</li>
+</ol>
+<p>By building on this basic script, you can create a more comprehensive tool for
+managing and analyzing your CodePen projects, making it easier to track and
+understand your work over time.</p>
+<hr />
+<!--
+**SEO Keywords**: CodePen data retrieval, Python script for CodePen, save CodePen data, CodePen RSS feed, Python requests library, JSON data storage, automate data collection
+--></p>
     </article>
 </section>
 <!-- endblock -->

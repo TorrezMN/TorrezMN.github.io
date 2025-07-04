@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-                <title>Fake Server - Torrez MN</title>
+                <title>Building a Fake Data Server with Python: A Comprehensive Guide - Torrez MN</title>
 
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,45 +106,452 @@
     <article>
         <header>
             
-                <h1 class=" title" id="component-title">Fake Server</h1>
+                <h1 class=" title" id="component-title">Building a Fake Data Server with Python: A Comprehensive Guide</h1>
             
         </header>
-        <p><h1 id="fake-server">Fake Server</h1>
+        <p><h1 id="building-a-fake-data-server-with-python-a-comprehensive-guide">Building a Fake Data Server with Python: A Comprehensive Guide</h1>
+<p>In this blog post, we'll explore how to create a fake data server using Python,
+which can be particularly useful for testing and development purposes. We'll
+walk through the problem, propose a solution, discuss the stack, outline the
+functionalities, and explain the code. By the end, you'll have a clear
+understanding of how to set up a fake data server and some ideas for future
+enhancements.</p>
 <hr />
-<p>In an attempt to understand a little more and to challenge myself, I thought
-about the possibility of writing a <strong>web server completely from scratch</strong>.</p>
-<h2 id="the-problem">The Problem</h2>
-<hr />
-<p>The challenge in this case, as mentioned in the previous paragraph, is to build
-a web server. In order to avoid doing something "repeated", I will try to
-complicate the challenge by proposing some entry requirements.</p>
+<h4 id="problem">Problem</h4>
+<p>In many software development projects, developers need to work with data for
+testing and development purposes. However, using real data can be impractical
+or infeasible due to privacy concerns, lack of data availability, or simply the
+need for a large volume of data. This is where fake data comes in handy.
+Generating fake data helps simulate real-world scenarios without compromising
+sensitive information.</p>
+<h4 id="idea-proposed-solution">Idea / Proposed Solution</h4>
+<p>The idea is to build a server that can generate and serve various types of fake
+data on demand. This server will respond to different API endpoints with fake
+profiles, names, addresses, countries, jobs, and more. Using the Faker library
+in Python, we can easily create this fake data, while the HTTP server will
+handle client requests and deliver the data in a structured format.</p>
+<h4 id="stack">Stack</h4>
 <ul>
-<li>
-<p>It happens that in the development stages of any project, it is necessary to
-  have test data, and in many cases, it is an unnecessary complexity to try to
-  provide oneself with that test data.</p>
-</li>
-<li>
-<p>The server must have some endpoints that return JSON objects with data.</p>
-</li>
-<li>
-<p>The quantity of data per object must be configurable.</p>
-</li>
-<li>
-<p>The server must be able to perform recurring verification tasks in web
-  projects, for example, verifying email addresses.</p>
-</li>
+<li><strong>Python</strong>: The programming language used to implement the server.</li>
+<li><strong>Faker</strong>: A library for generating fake data.</li>
+<li><strong>http.server</strong>: A built-in Python module for creating an HTTP server.</li>
+<li><strong>uuid</strong>: A module for generating unique identifiers.</li>
+<li><strong>json</strong>: A module for handling JSON data.</li>
 </ul>
-<h2 id="previous-considerations">Previous Considerations</h2>
+<h4 id="functionalities">Functionalities</h4>
+<ol>
+<li><strong>Serve Static Documentation</strong>: Serve a static HTML file as the main documentation page.</li>
+<li><strong>Generate Basic Profiles</strong>: Return a single or multiple fake user profiles.</li>
+<li><strong>Generate Full Profiles</strong>: Return a full fake profile, optionally filtered by sex.</li>
+<li><strong>Generate Names and Surnames</strong>: Provide single or multiple fake names and surnames.</li>
+<li><strong>Generate Addresses</strong>: Provide single or multiple fake addresses.</li>
+<li><strong>Generate Countries</strong>: Return a single or multiple fake countries.</li>
+<li><strong>Generate Jobs</strong>: Provide single or multiple fake job titles.</li>
+</ol>
+<h4 id="code-explanation-of-code">Code / Explanation of Code</h4>
+<p>Here's the complete code with comments added for clarity:</p>
+<pre><code class="language-python">import json
+from http.server import BaseHTTPRequestHandler
+from urllib import parse
+from faker import Faker
+from random import choice
+import uuid
+import re
+
+# Import additional providers from Faker
+from faker.providers import profile
+from faker.providers import geo
+
+class Fake_Server(BaseHTTPRequestHandler):
+    # Handle HTTP GET requests
+    def do_GET(self):
+        &quot;&quot;&quot;
+        Handles HTTP GET requests.
+        Responds with various types of fake data based on the request path.
+        &quot;&quot;&quot;
+        # Serve the main documentation page
+        if self.path == '/':
+            self.path = '/public_doc/index.html'
+            try:
+                # Attempt to open and read the file
+                file_to_open = open(self.path[1:]).read()
+                self.send_response(200)
+            except:
+                file_to_open = 'File not found!'
+                self.send_response(404)
+            self.end_headers()
+            self.wfile.write(bytes(file_to_open, 'utf-8'))
+
+        # Handle basic profile requests
+        if re.match(r'/basic_profile$', self.path):
+            &quot;&quot;&quot;
+            Returns a basic user profile with a unique ID.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'basic_profile': Faker().simple_profile()
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple basic profiles
+        if re.match(r'/basic_profile/various/\d$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of basic user profiles.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            quant = int(self.path.split('/')[-1])
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'required_quantity': quant,
+                'profiles': [Faker().simple_profile() for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for basic profiles by sex
+        if re.match(r'/basic_profile/sex/[M|F]$', self.path):
+            &quot;&quot;&quot;
+            Returns a basic profile for the specified sex.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            sex = self.path.split('/')[-1]
+            F = Faker()
+            F.add_provider(profile)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'sex_req': sex,
+                'basic_profile': F.simple_profile(sex=sex)
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple basic profiles by sex
+        if re.match(r'/basic_profile/sex/[M|F]/\d+$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of basic profiles for the specified sex.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            sex = self.path.split('/')[-2]
+            quant = int(self.path.split('/')[-1])
+            F = Faker()
+            F.add_provider(profile)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'sex_req': sex,
+                'quantity_required': quant,
+                'profiles': [F.simple_profile(sex=sex) for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for a full profile
+        if re.match(r'/full_profile$', self.path):
+            &quot;&quot;&quot;
+            Returns a complete personal profile.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            F = Faker()
+            F.add_provider(profile)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'full_profile': F.profile()
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for a full profile by sex
+        if re.match(r'/full_profile/sex/[M|F]$', self.path):
+            &quot;&quot;&quot;
+            Returns a full profile for the specified sex.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            F = Faker()
+            F.add_provider(profile)
+            sex = self.path.split('/')[-1]
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'sex_required': sex,
+                'full_profile': F.profile(sex=sex)
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple basic profiles by ID
+        if re.match(r'/basic_profile/\d+', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of basic profiles.
+            &quot;&quot;&quot;
+            total_req = int(self.path.split('/')[-1])
+            req = {
+                'req_url': self.path,
+                'quantity_req': total_req,
+                'profiles': [Faker().simple_profile() for i in range(total_req)]
+            }
+            message = json.dumps(req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple full profiles by sex
+        if re.match(r'/full_profile/sex/[M|F]/\d+$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of full profiles for the specified sex.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            F = Faker()
+            F.add_provider(profile)
+            sex = self.path.split('/')[-2]
+            quant = int(self.path.split('/')[-1])
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'sex_required': sex,
+                'required_quantity': quant,
+                'profiles': [F.profile(sex=sex) for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for a full name
+        if re.match(r'/full_name$', self.path):
+            &quot;&quot;&quot;
+            Returns a full name.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'full_name': Faker().name()
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self
+
+.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple full names
+        if re.match(r'/full_name/\d+$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of full names.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            quant = int(self.path.split('/')[-1])
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'quantity_required': quant,
+                'full_names': [Faker().name() for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for an address
+        if re.match(r'/address$', self.path):
+            &quot;&quot;&quot;
+            Returns a random address.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'address': Faker().address()
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple addresses
+        if re.match(r'/address/\d+$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of addresses.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            quant = int(self.path.split('/')[-1])
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'quantity_required': quant,
+                'addresses': [Faker().address() for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for a country
+        if re.match(r'/country$', self.path):
+            &quot;&quot;&quot;
+            Returns a random country.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            F = Faker()
+            F.add_provider(geo)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'country': F.country()
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple countries
+        if re.match(r'/country/\d+$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of countries.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            quant = int(self.path.split('/')[-1])
+            F = Faker()
+            F.add_provider(geo)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'quantity_required': quant,
+                'countries': [F.country() for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for a job title
+        if re.match(r'/job$', self.path):
+            &quot;&quot;&quot;
+            Returns a random job title.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'job': Faker().job()
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+
+        # Handle requests for multiple job titles
+        if re.match(r'/job/\d+$', self.path):
+            &quot;&quot;&quot;
+            Returns a specified number of job titles.
+            &quot;&quot;&quot;
+            parsed_path = parse.urlparse(self.path)
+            quant = int(self.path.split('/')[-1])
+            data_req = {
+                'id': str(uuid.uuid4()),
+                'req_url': self.path,
+                'quantity_required': quant,
+                'jobs': [Faker().job() for i in range(quant)]
+            }
+            message = json.dumps(data_req)
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json; charset=utf-8')
+            self.end_headers()
+            self.wfile.write(bytes(message, 'utf-8'))
+</code></pre>
+<p><strong>Explanation:</strong></p>
+<ol>
+<li>
+<p><strong>Imports and Setup</strong>: Import necessary libraries and modules for handling
+   HTTP requests, generating fake data, and working with JSON.</p>
+</li>
+<li>
+<p><strong>Request Handling</strong>: The <code>do_GET</code> method processes incoming GET requests.
+   Based on the URL path, it determines which type of fake data to generate and
+   send back. For each type of data, it constructs a JSON response containing
+   the fake data and relevant metadata.</p>
+</li>
+<li>
+<p><strong>Endpoints</strong>:</p>
+</li>
+<li><code>/</code> serves a static documentation page.</li>
+<li><code>/basic_profile</code> returns a single fake user profile.</li>
+<li><code>/basic_profile/various/</code> returns multiple fake profiles.</li>
+<li><code>/basic_profile/sex/[M|F]</code> returns profiles filtered by sex.</li>
+<li><code>/full_profile</code> returns a complete profile.</li>
+<li><code>/full_profile/sex/[M|F]</code> returns complete profiles filtered by sex.</li>
+<li><code>/full_name</code> returns a full name.</li>
+<li><code>/address</code> returns a random address.</li>
+<li><code>/country</code> returns a random country.</li>
+<li>
+<p><code>/job</code> returns a random job title.</p>
+</li>
+<li>
+<p><strong>Response Construction</strong>: For each endpoint, the server generates the
+   requested data, formats it as JSON, and sends it back to the client with
+   appropriate headers.</p>
+</li>
+</ol>
+<h4 id="conclusions">Conclusions</h4>
+<p>Building a fake data server can greatly streamline the development and testing
+process by providing a flexible and automated way to generate realistic data.
+The code provided demonstrates a basic implementation of such a server using
+Python and the Faker library. This approach allows developers to request
+different types of fake data as needed, helping to simulate various scenarios
+and edge cases.</p>
+<h4 id="future-work">Future Work</h4>
+<ol>
+<li><strong>Enhanced Data Types</strong>: Expand the server to handle additional types of
+   fake data, such as credit card numbers, dates, or user agents.</li>
+<li><strong>Data Validation</strong>: Implement data validation to ensure the generated data
+   meets specific criteria or formats.</li>
+<li><strong>Performance Improvements</strong>: Optimize the server for handling a higher
+   volume of requests or larger datasets.</li>
+<li><strong>Authentication</strong>: Add authentication mechanisms to control access to the
+   server and its endpoints.</li>
+<li><strong>Custom Data Generation</strong>: Allow users to specify custom formats or
+   templates for the generated data.</li>
+</ol>
+<p>By continuously improving and expanding the server, developers can create a
+more powerful tool for generating fake data, further enhancing their
+development and testing workflows.</p>
 <hr />
-<p>For this case, the language to be used will be <strong>Python</strong> because of its
-characteristics that we all already know and because it is the one I use the
-most.</p>
-<h2 id="basic-design">Basic Design</h2>
-<hr />
-<p>Lo primero que tenemos que hacer es parar un poquito y PENSAR que estamos haciendo.</p>
-<h2 id="conclusions">Conclusions</h2>
-<hr /></p>
+<!--
+**SEO Keywords**: fake data server, Python, Faker library, HTTP server, fake data generation, data testing, development tools, Python HTTP server, API endpoints, JSON responses
+--></p>
     </article>
 </section>
 <!-- endblock -->

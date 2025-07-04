@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+    <head>
+                <title>Sharing Gists with Fish Shell and Python - Torrez MN</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+            
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                        <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../assets/css/main.min.css">
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+                <link href="../../stylesheets/extra.css" rel="stylesheet">
+                <script src="../../js/extra.js"></script>
+
+            
+                
+            
+     <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Torrez MN</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../about_me/">[About Me]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../contact/">[Contact]</a>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main>
+                    <!-- block content -->
+<section class="container post">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Sharing Gists with Fish Shell and Python</h1>
+            
+        </header>
+        <p><h1 id="sharing-gists-with-fish-shell-and-python">Sharing Gists with Fish Shell and Python</h1>
+<h2 id="what-you-will-learn-here">What You Will Learn Here</h2>
+<p>In this blog post, you'll learn how to automate the process of sharing GitHub
+gists using a Fish shell function combined with a Python script. We'll cover:</p>
+<ul>
+<li>How to fetch and manage public gists from GitHub.</li>
+<li>How to integrate Python with shell scripting to create a user-friendly menu.</li>
+<li>How to handle user input and clipboard operations programmatically.</li>
+</ul>
+<h2 id="problem">Problem</h2>
+<p>Managing and sharing GitHub gists can be cumbersome if done manually. You often need to:</p>
+<ul>
+<li>Fetch a list of your gists.</li>
+<li>Identify the one you want to share.</li>
+<li>Copy its URL to your clipboard for sharing.</li>
+</ul>
+<p>This process can be tedious, especially when dealing with a large number of
+gists or when frequent sharing is required.</p>
+<h2 id="proposed-solution">Proposed Solution</h2>
+<p>We propose a solution that automates the process using a Fish shell function
+and a Python script. The function will:</p>
+<ol>
+<li>Fetch your public gists from GitHub using the GitHub API.</li>
+<li>Use Python to present a menu of gists in a readable format.</li>
+<li>Allow you to select a gist and copy its URL to the clipboard for easy sharing.</li>
+</ol>
+<h2 id="tools-needed">Tools Needed</h2>
+<p>To implement this solution, you'll need the following tools:</p>
+<ul>
+<li><strong>Fish Shell:</strong> For scripting and executing shell commands.</li>
+<li><strong>cURL:</strong> For fetching data from the GitHub API.</li>
+<li><strong>Python 3:</strong> For processing data and generating a user interface.</li>
+<li><strong>Python Libraries:</strong> <code>pyfiglet</code> for ASCII art, <code>pyperclip</code> for clipboard operations.</li>
+<li><strong>GitHub API Token:</strong> For authenticating requests to GitHub.</li>
+</ul>
+<h2 id="the-function">The Function</h2>
+<p>Here's the Fish shell function used to share a gist, followed by a line-by-line explanation:</p>
+<pre><code class="language-fish"># Shares a gist.
+function share_gist
+    # Check if the GITHUB_TOKEN variable is set
+    if test -z &quot;$GITHUB_TOKEN&quot;
+        echo &quot;Error: GITHUB_TOKEN is not set. Please set your GitHub token as an environment variable.&quot;
+        return 1
+    end
+
+    # Fetch the user's public gists using GitHub API and token authentication
+    set response (curl -s -H &quot;Authorization: token $GITHUB_TOKEN&quot; \
+                        -H &quot;Accept: application/vnd.github.v3+json&quot; \
+                        &quot;https://api.github.com/gists&quot;)
+
+    # Check if response is empty or contains an error
+    if test -z &quot;$response&quot; -o &quot;$response&quot; = &quot;* Not Found *&quot;
+        echo &quot;Error: Failed to fetch gists or no gists found.&quot;
+        return 1
+    end
+
+    # Use Python to create a menu of public gists
+    python3 -c &quot;
+import json
+import sys
+import pyfiglet
+import pyperclip
+
+def print_ascii_title(title):
+    ascii_art = pyfiglet.figlet_format(title, font='slant')  # You can choose different fonts
+    print(ascii_art)
+
+response = json.loads(sys.argv[1])
+
+# Create a dictionary with description as key and html_url as value for public gists
+gist_dict = {
+    i.get('description', 'No Description'): i.get('html_url', 'No URL')
+    for i in response
+    if i.get('public', False)
+}
+
+# Print the ASCII title
+print_ascii_title('* Select Gist *')
+
+# Print a numbered menu
+if not gist_dict:
+    print('No public gists available.')
+    sys.exit()
+
+for idx, (description, url) in enumerate(gist_dict.items(), start=1):
+    print(f'{idx}. {description}')
+
+# Read user input
+try:
+    selected_index = int(input('Enter the number of the gist to copy the URL: '))
+    if selected_index &lt; 1 or selected_index &gt; len(gist_dict):
+        print('Error: Invalid selection.')
+        sys.exit()
+except ValueError:
+    print('Error: Invalid input. Please enter a number.')
+    sys.exit()
+
+# Get the URL of the selected gist
+selected_description = list(gist_dict.keys())[selected_index - 1]
+selected_url = gist_dict[selected_description]
+
+# Copy the URL to the clipboard
+pyperclip.copy(selected_url)
+print(f'Selected URL copied to clipboard: {selected_url}')
+&quot; &quot;$response&quot;
+end
+</code></pre>
+<h3 id="line-by-line-explanation">Line-by-Line Explanation</h3>
+<ol>
+<li>
+<p><strong>Function Definition:</strong>
+   <code>fish
+   function share_gist</code>
+   Defines a new Fish shell function named <code>share_gist</code>.</p>
+</li>
+<li>
+<p><strong>Check for <code>GITHUB_TOKEN</code>:</strong>
+   <code>fish
+   if test -z "$GITHUB_TOKEN"
+       echo "Error: GITHUB_TOKEN is not set. Please set your GitHub token as an environment variable."
+       return 1
+   end</code>
+   Checks if the <code>GITHUB_TOKEN</code> environment variable is set. If not, prints an error message and exits.</p>
+</li>
+<li>
+<p><strong>Fetch Gists Using cURL:</strong>
+   <code>fish
+   set response (curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                       -H "Accept: application/vnd.github.v3+json" \
+                       "https://api.github.com/gists")</code>
+   Uses <code>cURL</code> to fetch public gists from GitHub's API.</p>
+</li>
+<li>
+<p><strong>Check for API Errors:</strong>
+   <code>fish
+   if test -z "$response" -o "$response" = "* Not Found *"
+       echo "Error: Failed to fetch gists or no gists found."
+       return 1
+   end</code>
+   Checks if the response is empty or contains an error message.</p>
+</li>
+<li>
+<p><strong>Python Script Execution:</strong>
+   <code>fish
+   python3 -c "
+   import json
+   import sys
+   import pyfiglet
+   import pyperclip</code>
+   Executes a Python script to process and display the gists. It uses
+   <code>pyfiglet</code> to print an ASCII title and <code>pyperclip</code> to copy the selected URL
+   to the clipboard.</p>
+</li>
+<li>
+<p><strong>Generate ASCII Title:</strong>
+   <code>python
+   def print_ascii_title(title):
+       ascii_art = pyfiglet.figlet_format(title, font='slant')  # You can choose different fonts
+       print(ascii_art)</code>
+   Defines a function to generate and print ASCII art for the title.</p>
+</li>
+<li>
+<p><strong>Process Gist Data:</strong>
+   <code>python
+   gist_dict = {
+       i.get('description', 'No Description'): i.get('html_url', 'No URL')
+       for i in response
+       if i.get('public', False)
+   }</code>
+   Creates a dictionary of public gists with descriptions and URLs.</p>
+</li>
+<li>
+<p><strong>Display Gist Menu:</strong>
+   <code>python
+   for idx, (description, url) in enumerate(gist_dict.items(), start=1):
+       print(f'{idx}. {description}')</code>
+   Prints a numbered list of gists.</p>
+</li>
+<li>
+<p><strong>Handle User Input:</strong>
+   <code>python
+   selected_index = int(input('Enter the number of the gist to copy the URL: '))</code>
+   Reads and validates user input for selecting a gist.</p>
+</li>
+<li>
+<p><strong>Copy URL to Clipboard:</strong>
+    <code>python
+    pyperclip.copy(selected_url)
+    print(f'Selected URL copied to clipboard: {selected_url}')</code>
+    Copies the selected gist URL to the clipboard and prints a confirmation message.</p>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>By combining Fish shell scripting with Python, you can efficiently manage and
+share your GitHub gists. This approach simplifies the process of interacting
+with the GitHub API, provides a user-friendly interface for selecting and
+copying gists, and integrates various tools to enhance your workflow.
+Automating repetitive tasks like these can save time and improve productivity,
+making it easier to focus on your code rather than on administrative tasks.</p></p>
+    </article>
+</section>
+<!-- endblock -->
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+                    <!-- block footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+                <!-- block copyright -->
+
+    <small class="d-block mb-3">
+        Made with
+        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
+            Simple Blog for MkDocs
+        </a>
+    </small>
+
+<!-- endblock -->
+        </div>
+    </div>
+</footer>
+<!-- endblock -->
+            
+        </div>
+
+            <script>var base_url = '../..';</script>
+            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../../assets/js/main.min.js""></script>
+                <script src="../../js/extra.js" defer></script>
+
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+
+</html>

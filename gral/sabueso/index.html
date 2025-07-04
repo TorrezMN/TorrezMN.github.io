@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+    <head>
+                <title>Leveraging Twitter API for NLP: A Simple Tweet Collection Script - Torrez MN</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+            
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                        <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../assets/css/main.min.css">
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+                <link href="../../stylesheets/extra.css" rel="stylesheet">
+                <script src="../../js/extra.js"></script>
+
+            
+                
+            
+     <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Torrez MN</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../about_me/">[About Me]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../contact/">[Contact]</a>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main>
+                    <!-- block content -->
+<section class="container post">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Leveraging Twitter API for NLP: A Simple Tweet Collection Script</h1>
+            
+        </header>
+        <p><h1 id="leveraging-twitter-api-for-nlp-a-simple-tweet-collection-script">Leveraging Twitter API for NLP: A Simple Tweet Collection Script</h1>
+<p>TwitterAPI ,NLPScripts ,DataCollection ,PythonProgramming</p>
+<hr />
+<h4 id="introduction">Introduction</h4>
+<p>In the realm of Natural Language Processing (NLP), data is paramount. Social
+media platforms, especially Twitter, offer a rich source of real-time data that
+can be leveraged for various NLP tasks. This blog post explores a Python script
+designed to collect tweets from Twitter, providing a foundational tool for NLP
+enthusiasts and researchers.</p>
+<hr />
+<h4 id="motivations">Motivations</h4>
+<p>With the Twitter API offering extensive access to real-time tweet data, the
+need to gather and analyze this data for NLP purposes has grown. Whether for
+sentiment analysis, trend detection, or linguistic research, having a reliable
+method to collect tweets on specific topics is crucial. This script simplifies
+the process of collecting tweets by leveraging Twitter’s streaming API,
+allowing users to focus on analyzing the data rather than dealing with complex
+data collection issues.</p>
+<hr />
+<h4 id="expectatives">Expectatives</h4>
+<p>The script is designed to:</p>
+<ul>
+<li>Stream real-time tweets based on a specific keyword.</li>
+<li>Collect tweets until a predefined count is reached.</li>
+<li>Save the collected tweets in JSON format for easy analysis.</li>
+<li>Be easily adaptable for various NLP tasks, making it a versatile tool for researchers and developers.</li>
+</ul>
+<hr />
+<h4 id="code">Code</h4>
+<p>Here’s the Python script used for collecting tweets:</p>
+<pre><code class="language-python">#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Author: Torrez, Milton N.
+
+import os
+import uuid
+import json
+import configparser
+import tweepy
+from tweepy import Stream
+from time import sleep
+import sys
+
+# Load configuration
+config = configparser.ConfigParser()
+config.read(&quot;config.ini&quot;)
+
+# Twitter API credentials
+ACCESS_TOKEN = os.getenv(&quot;TWITTER_ACCESS_TOKEN&quot;, config.get(&quot;twitter&quot;, &quot;access_token&quot;))
+ACCESS_TOKEN_SECRET = os.getenv(&quot;TWITTER_ACCESS_TOKEN_SECRET&quot;, config.get(&quot;twitter&quot;, &quot;access_token_secret&quot;))
+CONSUMER_KEY = os.getenv(&quot;TWITTER_CONSUMER_KEY&quot;, config.get(&quot;twitter&quot;, &quot;api_key&quot;))
+CONSUMER_SECRET = os.getenv(&quot;TWITTER_CONSUMER_SECRET&quot;, config.get(&quot;twitter&quot;, &quot;api_secret_key&quot;))
+
+auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+
+api = tweepy.API(auth)
+
+class MyStreamListener(tweepy.StreamListener):
+    def __init__(self, api):
+        super().__init__(api)
+        self.tweets_list = []
+
+    def on_status(self, status):
+        print(&quot;=&quot; * 20)
+        print(&quot;TAMAÑO DE LA LISTA -&gt; &quot;, len(self.tweets_list))
+        print(&quot;=&quot; * 20)
+        if len(self.tweets_list) &lt;= int(arguments[2]):
+            self.add_new_status(status)
+        else:
+            self.save_tweets()
+            self.clear_list()
+
+    def clear_list(self):
+        print(&quot;CLEARING LIST!&quot;)
+        self.tweets_list.clear()
+
+    def save_tweets(self):
+        path = f&quot;./tweets/{arguments[1]}&quot;
+
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        with open(
+            f&quot;./tweets/{arguments[1]}/{arguments[1]}_{arguments[2]}_{uuid.uuid4().hex[:3]}.json&quot;,
+            &quot;w&quot;,
+            encoding=&quot;utf-8&quot;,
+        ) as f:
+            json.dump(self.tweets_list, f, ensure_ascii=False, indent=4)
+
+    def add_new_status(self, status):
+        print(&quot;ADDING NEW TWEET!&quot;)
+        self.tweets_list.append(status._json)
+
+    def on_error(self, status_code):
+        if status_code == 420:
+            print(&quot;Rate limit exceeded, stopping stream.&quot;)
+            return False
+        print(f&quot;Encountered an error: {status_code}&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    if len(sys.argv) != 3:
+        print(&quot;Usage: python main.py &lt;keyword&gt; &lt;tweet_count&gt;&quot;)
+        sys.exit(1)
+
+    arguments = sys.argv
+    stream_listener = MyStreamListener(api)
+    stream = tweepy.Stream(auth=api.auth, listener=stream_listener)
+
+    try:
+        stream.filter(
+            track=[arguments[1]],
+            languages=[&quot;es&quot;]
+        )
+    except KeyboardInterrupt:
+        print(&quot;Stream stopped by user.&quot;)
+    except Exception as e:
+        print(f&quot;An error occurred: {e}&quot;)
+</code></pre>
+<hr />
+<h4 id="code-explanation">Code Explanation</h4>
+<ol>
+<li>
+<p><strong>Configuration Loading</strong>: The script starts by loading API credentials from
+   a <code>config.ini</code> file or environment variables. This is essential for
+   authenticating with the Twitter API.</p>
+</li>
+<li>
+<p><strong>Authentication</strong>: Using <code>tweepy.OAuthHandler</code>, the script sets up the
+   authentication required for accessing Twitter’s API.</p>
+</li>
+<li>
+<p><strong>StreamListener Class</strong>: <code>MyStreamListener</code> inherits from
+<code>tweepy.StreamListener</code> and manages the collection and storage of tweets. Key
+methods include:</p>
+</li>
+<li><code>on_status</code>: Called when a new tweet arrives. It checks if the tweet count
+     has reached the limit and either saves the data or continues collecting.</li>
+<li><code>clear_list</code>: Clears the tweet list after saving.</li>
+<li><code>save_tweets</code>: Saves the collected tweets to a JSON file.</li>
+<li><code>add_new_status</code>: Adds a new tweet to the list.</li>
+<li>
+<p><code>on_error</code>: Handles errors, including rate limits.</p>
+</li>
+<li>
+<p><strong>Main Execution</strong>: The script takes command-line arguments for the keyword
+   and tweet count, initializes the stream, and starts filtering tweets based
+   on the provided keyword.</p>
+</li>
+</ol>
+<hr />
+<h4 id="conclusions">Conclusions</h4>
+<p>The script offers a straightforward and effective method for collecting tweets
+for NLP tasks. By focusing on a specific keyword, users can gather relevant
+    tweets in real-time and store them for later analysis. This approach
+    simplifies the data collection process, allowing researchers and developers
+    to concentrate on analyzing and interpreting the data.</p>
+<hr />
+<h4 id="future-work">Future Work</h4>
+<ol>
+<li>
+<p><strong>Enhanced Error Handling</strong>: Implement more robust error handling and
+   logging to better manage various API issues and connectivity problems.</p>
+</li>
+<li>
+<p><strong>Data Storage Improvements</strong>: Explore alternative data storage solutions,
+   such as databases, to handle large volumes of tweets more efficiently.</p>
+</li>
+<li>
+<p><strong>Feature Expansion</strong>: Extend the script to support additional Twitter API
+   features, such as user timelines or specific tweet types, to enhance data
+   collection capabilities.</p>
+</li>
+<li>
+<p><strong>User Interface</strong>: Develop a user-friendly interface for setting parameters
+   and managing the data collection process, making the tool more accessible to
+   non-technical users.</p>
+</li>
+<li>
+<p><strong>API Updates</strong>: Stay updated with changes in the Twitter API and adapt the
+   script as needed to maintain functionality and compliance.</p>
+</li>
+</ol>
+<hr /></p>
+    </article>
+</section>
+<!-- endblock -->
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+                    <!-- block footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+                <!-- block copyright -->
+
+    <small class="d-block mb-3">
+        Made with
+        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
+            Simple Blog for MkDocs
+        </a>
+    </small>
+
+<!-- endblock -->
+        </div>
+    </div>
+</footer>
+<!-- endblock -->
+            
+        </div>
+
+            <script>var base_url = '../..';</script>
+            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../../assets/js/main.min.js""></script>
+                <script src="../../js/extra.js" defer></script>
+
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+
+</html>

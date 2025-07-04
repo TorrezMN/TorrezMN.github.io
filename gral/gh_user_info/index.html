@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+    <head>
+                <title>Gh user info - Torrez MN</title>
+
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            
+            
+            
+
+            
+                <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+            
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                        <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../assets/css/main.min.css">
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+                <link href="../../stylesheets/extra.css" rel="stylesheet">
+                <script src="../../js/extra.js"></script>
+
+            
+                
+            
+     <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+
+    <body>
+        <div class="container py-3">
+            <header>
+                    <!-- block header -->
+<nav class="navbar navbar-expand-xl border-bottom">
+    <div class="container-fluid">
+        
+
+        
+            <span class=" fs-4 title-color site-name" id="component-site-name" style="text-transform: uppercase;">Torrez MN</span>
+        
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+            <ul class="navbar-nav">
+
+                <!-- block menu -->
+                <li class="nav-item">
+                    <!-- block menu -->
+    
+        <li class="nav-item" id="component-menu">
+            <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../..">[Home]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../about_me/">[About Me]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="
+                            nav-link text-gray text-decoration-none" href="../../contact/">[Contact]</a>
+                        </li>
+            </ul>
+        </li>
+<!-- endblock -->
+                </li>
+                <!-- endblock -->
+
+                <!-- block search -->
+                <li class="nav-item">
+                    <a class="collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="md-search-icon">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <!--  endblock -->
+
+                <!-- block source -->
+                <li class="nav-item">
+                    
+                </li>
+                <!--  endblock -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--  endblock -->
+            </header>
+
+            <main>
+                    <!-- block content -->
+<section class="container post">
+    <article>
+        <header>
+            
+                <h1 class=" title" id="component-title">Gh user info</h1>
+            
+        </header>
+        <p><h3 id="github-user-info-fetcher-a-fish-shell-function-for-quick-access">GitHub User Info Fetcher: A Fish Shell Function for Quick Access</h3>
+<h4 id="problem">Problem</h4>
+<p>When working with GitHub, you often need quick access to a user's profile information, including their repositories, bio, and other relevant details. The GitHub web interface provides this information, but it can be cumbersome to navigate through multiple pages to get the data you need. Moreover, when working in a terminal environment, it’s much more convenient to have this information displayed right in your shell. </p>
+<h4 id="idea-and-possible-use-cases">Idea and Possible Use Cases</h4>
+<p>The idea is to create a simple and efficient way to retrieve GitHub user information directly from the command line without needing to open a browser. This could be useful in a variety of situations:</p>
+<ul>
+<li><strong>Developers</strong>: Quickly checking the profile of a collaborator or a potential contributor.</li>
+<li><strong>Hiring Managers</strong>: Reviewing the GitHub profiles of job candidates.</li>
+<li><strong>Open Source Contributors</strong>: Finding and exploring repositories of other developers.</li>
+</ul>
+<p>The function we’re about to discuss accomplishes this by fetching and displaying the user information using the GitHub API, all from the comfort of your Fish shell.</p>
+<h4 id="proposed-solution">Proposed Solution</h4>
+<p>The solution is a Fish shell function named <code>gh_user_info</code> that takes a GitHub username as an argument, retrieves the user’s profile and repository information using the GitHub API, and prints it to the terminal. The function is designed to be easy to use, and since the GitHub API doesn’t require an access token for public data, no special setup or authentication is needed.</p>
+<h4 id="how-to-do-it-in-theory">How to Do It (In Theory)</h4>
+<p>Here’s a high-level overview of how this solution works:</p>
+<ol>
+<li><strong>User Input</strong>: The function accepts a GitHub username as an argument.</li>
+<li><strong>API Requests</strong>: It uses Python to send HTTP GET requests to the GitHub API.</li>
+<li><strong>Data Parsing</strong>: The API responses are parsed to extract relevant information such as username, bio, number of repositories, and more.</li>
+<li><strong>Output</strong>: The parsed information is printed to the terminal in a readable format, including some ASCII art for a stylish touch.</li>
+</ol>
+<p>This approach leverages the powerful combination of Fish shell scripting and Python, making it both flexible and easy to extend.</p>
+<h4 id="the-function">The Function</h4>
+<p>Here is the <code>gh_user_info</code> function, complete with inline comments for clarity:</p>
+<pre><code class="language-fish">function gh_user_info
+    # Check if the required arguments are provided
+    if test (count $argv) -lt 1
+        echo &quot;Usage: gh_user_info &lt;username&gt;&quot;
+        return 1
+    end
+
+    set username $argv[1]
+
+    # Fetch user info from GitHub API and print it using Python
+    python3 -c &quot;
+import pyfiglet
+import requests
+import json
+
+def print_ascii_title(title):
+    # Generate and print ASCII art for the title using pyfiglet
+    ascii_art = pyfiglet.figlet_format(title, font='slant')
+    print(ascii_art)
+
+def print_user_info(username):
+    profile_url = f'https://api.github.com/users/{username}'
+    try:
+        # Send a GET request to fetch the user's profile data
+        response = requests.get(profile_url)
+        response.raise_for_status()  # Raise an HTTPError for bad responses (4xx, 5xx)
+    except requests.exceptions.RequestException as e:
+        # Print an error message if the request fails
+        print(f'Error: Unable to fetch user info for {username}. {str(e)}')
+        return
+
+    # Parse the JSON response into a Python dictionary
+    user_data = response.json()
+    # Print relevant user information
+    print(f'Username: {user_data.get(\&quot;login\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Name: {user_data.get(\&quot;name\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Location: {user_data.get(\&quot;location\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Bio: {user_data.get(\&quot;bio\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Public Repos: {user_data.get(\&quot;public_repos\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Followers: {user_data.get(\&quot;followers\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Following: {user_data.get(\&quot;following\&quot;, \&quot;N/A\&quot;)}')
+    print(f'Profile URL: {user_data.get(\&quot;html_url\&quot;, \&quot;N/A\&quot;)}')
+    # Fetch and print the user's repositories
+    print_repos(username)
+
+def print_repos(username):
+    repos_url = f'https://api.github.com/users/{username}/repos'
+    try:
+        # Send a GET request to fetch the user's repositories
+        response = requests.get(repos_url)
+        response.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        # Print an error message if the request fails
+        print(f'Error: Unable to fetch repositories for {username}. {str(e)}')
+        return
+
+    repos = response.json()
+    if repos:
+        # Print a list of the user's public repositories
+        print('\nPublic Repositories:')
+        for repo in repos:
+            name = repo.get('name', 'N/A')
+            description = repo.get('description', 'No description provided')
+            url = repo.get('html_url', 'N/A')
+            print(f'  - {name}: {description}')
+            print(f'    {url}\n')
+    else:
+        print('No public repositories available.')
+
+# Generate and print the ASCII title 'User Info'
+print_ascii_title('User Info')
+# Fetch and print the GitHub user information
+print_user_info('$username')
+    &quot;
+end
+</code></pre>
+<h4 id="step-by-step-explanation-of-the-function">Step by Step Explanation of the Function</h4>
+<p>Let's break down how the <code>gh_user_info</code> function works:</p>
+<ol>
+<li><strong>Argument Check</strong>: </li>
+<li>The function starts by checking if the user provided a GitHub username.</li>
+<li>
+<p>If no username is provided, it displays a usage message and exits.</p>
+</li>
+<li>
+<p><strong>Setting the Username</strong>:</p>
+</li>
+<li>
+<p>The username is extracted from the command-line arguments and stored in the <code>username</code> variable.</p>
+</li>
+<li>
+<p><strong>Python Script Execution</strong>:</p>
+</li>
+<li>The core of the function is a Python script embedded within the Fish shell function.</li>
+<li>
+<p>The script first imports necessary libraries (<code>pyfiglet</code> for ASCII art and <code>requests</code> for making HTTP requests).</p>
+</li>
+<li>
+<p><strong>Generating ASCII Art</strong>:</p>
+</li>
+<li>
+<p>The <code>print_ascii_title</code> function generates an ASCII art title using the <code>pyfiglet</code> library and prints it.</p>
+</li>
+<li>
+<p><strong>Fetching User Info</strong>:</p>
+</li>
+<li>The <code>print_user_info</code> function sends a GET request to the GitHub API to fetch the user's profile data.</li>
+<li>It handles errors gracefully, printing a message if the request fails.</li>
+<li>
+<p>If the request is successful, it extracts and prints key information such as the username, name, location, bio, public repositories, followers, and the profile URL.</p>
+</li>
+<li>
+<p><strong>Fetching Repositories</strong>:</p>
+</li>
+<li>The <code>print_repos</code> function sends a GET request to fetch the user's repositories.</li>
+<li>
+<p>It also handles errors and prints a list of the user's public repositories, including their names, descriptions, and URLs.</p>
+</li>
+<li>
+<p><strong>Output</strong>:</p>
+</li>
+<li>The function prints all the gathered information in a user-friendly format, making it easy to see the most important details at a glance.</li>
+</ol>
+<h4 id="conclusion">Conclusion</h4>
+<p>The <code>gh_user_info</code> function is a practical tool for quickly accessing GitHub user information directly from the command line. It leverages the power of Fish shell and Python, making it both flexible and easy to use. The function does not require any special tokens or authentication since it only accesses public data available through the GitHub API. </p>
+<p>This solution is especially useful for developers, hiring managers, or anyone who frequently interacts with GitHub. With this function, you can get a comprehensive overview of a user's GitHub profile with a single command, saving you time and effort.</p>
+<p>Try it out, and you'll find it to be a handy addition to your Fish shell toolbox!</p></p>
+    </article>
+</section>
+<!-- endblock -->
+            </main>
+
+            
+                    <!-- block preview -->
+<!-- endblock -->
+            
+
+            
+                    <!-- block footer -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top" id="component-footer">
+    <div class="row">
+        <div class="col-12 col-md">
+                <!-- block copyright -->
+
+    <small class="d-block mb-3">
+        Made with
+        <a href="https://github.com/FernandoCelmer/mkdocs-simple-blog" target="_blank" rel="noopener">
+            Simple Blog for MkDocs
+        </a>
+    </small>
+
+<!-- endblock -->
+        </div>
+    </div>
+</footer>
+<!-- endblock -->
+            
+        </div>
+
+            <script>var base_url = '../..';</script>
+            <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
+            <script src="../../assets/js/bootstrap.bundle.min.js""></script>
+            <script src="../../assets/js/main.min.js""></script>
+                <script src="../../js/extra.js" defer></script>
+
+    <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+</script></body>
+
+</html>
